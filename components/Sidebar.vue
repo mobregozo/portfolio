@@ -2,9 +2,10 @@
   <nav
     class="flex items-center justify-between flex-wrap md:flex-col md:align-center md:justify-center bg-teal-500 p-6"
   >
-    <div class="flex items-center flex-shrink-0 text-white mr-6">
-      <span class="font-semibold text-xl tracking-tight">Tailwind CSS</span>
-    </div>
+    <avatar />
+    <!-- <div class="flex items-center flex-shrink-0 text-white mr-6">
+      <span class="font-semibold text-xl tracking-tight">Manuel Obregozo</span>
+    </div> -->
     <div class="block md:hidden">
       <button
         v-on:click="isActive = !isActive"
@@ -24,21 +25,21 @@
       v-bind:class="{ hidden: isActive }"
       class="flex-initial w-full block md:block"
     >
-      <div class="text-sm lg:flex-grow">
+      <div class="md:text-center text-md">
         <a
           href="#responsive-header"
           class="block mt-4 text-teal-200 hover:text-white mr-4"
-          >Docs</a
+          >ABOUT</a
         >
         <a
           href="#responsive-header"
           class="block mt-4 text-teal-200 hover:text-white mr-4"
-          >Examples</a
+          >EXPERIENCE</a
         >
         <a
           href="#responsive-header"
-          class="block mt-4 text-teal-200 hover:text-white"
-          >Blog</a
+          class="block mt-4 text-teal-200 hover:text-white mr-4"
+          >INTERESTS</a
         >
       </div>
     </div>
@@ -46,7 +47,12 @@
 </template>
 
 <script>
+import Avatar from './Avatar.vue'
+
 export default {
+  components: {
+    Avatar
+  },
   data: () => {
     return {
       isActive: 'false'

@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen md:flex">
     <sidebar />
-    <div class="flex-1">Main content area</div>
+    <div class="flex-1 p-5">Main content area</div>
   </div>
 </template>
 
