@@ -1,54 +1,26 @@
 <template>
-  <div class="min-h-screen md:flex">
+  <div class="md:h-screen md:absolute md:top-0 md:bottom-0 md:flex">
     <sidebar />
-    <div class="flex-1 p-5">Main content area</div>
+    <div class="scrollable flex-1 p-5 pl-30 md:overflow-scroll">
+      <resume />
+    </div>
   </div>
 </template>
 
 <script>
 import Sidebar from '~/components/Sidebar.vue'
+import Resume from '~/components/Resume.vue'
 
 export default {
   components: {
-    Sidebar
+    Sidebar,
+    Resume
   }
 }
 </script>
 
 <style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+.scrollable {
+  scroll-behavior: smooth;
 }
 </style>

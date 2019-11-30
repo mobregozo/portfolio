@@ -1,7 +1,12 @@
+// TODO: para device poner min-height: 100vh; en los h-screen
+
 <template>
-  <section id="page-top">
+  <section class="scrollable">
     <div class="container-fluid p-0">
-      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+      <section
+        id="about"
+        class="md:h-screen sm:min-h-screen resume-section p-3 p-lg-5 d-flex d-column"
+      >
         <div class="my-auto">
           <h1 class="mb-0">
             Name
@@ -41,16 +46,46 @@
           </ul>
         </div>
       </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+      <section
+        id="experience"
+        class="md:h-screen sm:min-h-screen resume-section p-3 p-lg-5 d-flex flex-column"
+      >
         <div class="my-auto">
           <h2 class="mb-5">Experience</h2>
-
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Role</h3>
               <div class="subheading mb-3">Company</div>
-              <p>- Description.</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+                alias pariatur eaque ad deleniti obcaecati nemo aliquam odit
+                perspiciatis sint.Nam sit neque fugiat incidunt voluptatem
+                repellat omnis accusantium voluptas!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+                alias pariatur eaque ad deleniti obcaecati nemo aliquam odit
+                perspiciatis sint.Nam sit neque fugiat incidunt voluptatem
+                repellat omnis accusantium voluptas!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+                alias pariatur eaque ad deleniti obcaecati nemo aliquam odit
+                perspiciatis sint.Nam sit neque fugiat incidunt voluptatem
+                repellat omnis accusantium voluptas!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+                alias pariatur eaque ad deleniti obcaecati nemo aliquam odit
+                perspiciatis sint.Nam sit neque fugiat incidunt voluptatem
+                repellat omnis accusantium voluptas!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+                alias pariatur eaque ad deleniti obcaecati nemo aliquam odit
+                perspiciatis sint.Nam sit neque fugiat incidunt voluptatem
+                repellat omnis accusantium voluptas!
+              </p>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">Date</span>
@@ -58,11 +93,12 @@
           </div>
         </div>
       </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+      <section
+        id="education"
+        class="md:h-screen sm:min-h-screen resume-section p-3 p-lg-5 d-flex flex-column"
+      >
         <div class="my-auto">
           <h2 class="mb-5">Education</h2>
-
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">University</h3>
@@ -73,7 +109,10 @@
         </div>
       </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+      <section
+        id="skills"
+        class="md:h-screen sm:min-h-screen resume-section p-3 p-lg-5 d-flex flex-column"
+      >
         <div class="my-auto">
           <h2 class="mb-5">Skills</h2>
 
@@ -82,7 +121,10 @@
         </div>
       </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+      <section
+        id="interests"
+        class="md:h-screen sm:min-h-screen resume-section p-3 p-lg-5 d-flex flex-column"
+      >
         <div class="my-auto">
           <h2 class="mb-5">Interests / Personal Life</h2>
           <p>Description.</p>

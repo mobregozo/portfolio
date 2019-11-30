@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="flex items-center justify-between flex-wrap md:flex-col md:align-center md:justify-center bg-teal-500 p-6"
+    class="sm:fixed md:relative md:max-w-xs flex items-center justify-between flex-wrap md:flex-col md:align-center md:justify-center bg-teal-500 p-6"
   >
     <avatar />
     <!-- <div class="flex items-center flex-shrink-0 text-white mr-6">
@@ -27,17 +27,26 @@
     >
       <div class="md:text-center text-md">
         <a
-          href="#responsive-header"
+          v-on:click="isActive = !isActive"
+          href="#about"
           class="block mt-4 text-teal-200 hover:text-white mr-4"
           >ABOUT</a
         >
         <a
-          href="#responsive-header"
+          v-on:click="isActive = !isActive"
+          href="#experience"
           class="block mt-4 text-teal-200 hover:text-white mr-4"
           >EXPERIENCE</a
         >
         <a
-          href="#responsive-header"
+          v-on:click="isActive = !isActive"
+          href="#skills"
+          class="block mt-4 text-teal-200 hover:text-white mr-4"
+          >SKILLS</a
+        >
+        <a
+          v-on:click="isActive = !isActive"
+          href="#interests"
           class="block mt-4 text-teal-200 hover:text-white mr-4"
           >INTERESTS</a
         >
