@@ -66,6 +66,9 @@ export default {
       this.menuActive = label
       this.isActive = !this.isActive
     }
+  },
+  mounted: {
+    //TODO: Add IntersectionObserver
   }
 }
 </script>
