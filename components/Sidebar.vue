@@ -27,28 +27,15 @@
     >
       <div class="md:text-center text-md">
         <a
-          v-on:click="isActive = !isActive"
-          href="#about"
-          class="block mt-4 text-teal-200 hover:text-white mr-4"
-          >ABOUT</a
-        >
-        <a
-          v-on:click="isActive = !isActive"
-          href="#experience"
-          class="block mt-4 text-teal-200 hover:text-white mr-4"
-          >EXPERIENCE</a
-        >
-        <a
-          v-on:click="isActive = !isActive"
-          href="#skills"
-          class="block mt-4 text-teal-200 hover:text-white mr-4"
-          >SKILLS</a
-        >
-        <a
-          v-on:click="isActive = !isActive"
-          href="#interests"
-          class="block mt-4 text-teal-200 hover:text-white mr-4"
-          >INTERESTS</a
+          v-for="item in menuItems"
+          v-bind:key="item.id"
+          v-on:click="activeMenu(item.label)"
+          v-bind:class="[
+            item.label === menuActive ? 'text-white' : 'text-teal-200'
+          ]"
+          v-bind:href="'#' + item.label.toLowerCase()"
+          class="block mt-4 font-bold hover:text-white mr-4"
+          >{{ item.label }}</a
         >
       </div>
     </div>
@@ -64,7 +51,20 @@ export default {
   },
   data: () => {
     return {
-      isActive: 'false'
+      isActive: false,
+      menuActive: 'ABOUT',
+      menuItems: [
+        { label: 'ABOUT' },
+        { label: 'EXPERIENCE' },
+        { label: 'SKILLS' },
+        { label: 'INTERESTS' }
+      ]
+    }
+  },
+  methods: {
+    activeMenu(label) {
+      this.menuActive = label
+      this.isActive = !this.isActive
     }
   }
 }

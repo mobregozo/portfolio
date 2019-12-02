@@ -1,7 +1,7 @@
 <template>
   <div class="md:h-screen md:absolute md:top-0 md:bottom-0 md:flex">
     <sidebar />
-    <div class="scrollable flex-1 p-5 pl-30 md:overflow-scroll">
+    <div class="scrollable flex-1 p-6 md:overflow-scroll">
       <resume />
     </div>
   </div>
