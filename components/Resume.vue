@@ -21,7 +21,7 @@
           </div>
           <p class="mb-2 mt-8 text-gray-600 font-semibold">
             I am an enthusiastic Front End Developer from a little town called
-            Necochea from Argentina. Passionate about software development and
+            Necochea in the cost of Argentina. Passionate about software development and
             developer communities.
           </p>
           <p class="mb-2 text-gray-600 font-semibold">
