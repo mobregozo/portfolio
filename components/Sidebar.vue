@@ -1,15 +1,12 @@
 <template>
   <nav
-    class="sm:fixed md:relative md:max-w-xs flex items-center justify-between flex-wrap md:flex-col md:align-center md:justify-center bg-teal-500 p-6"
+    class="fixed z-50 left-0 right-0 md:relative md:max-w-xs flex items-center justify-between flex-wrap md:flex-col md:align-center md:justify-center bg-primary-500 p-6"
   >
     <avatar />
-    <!-- <div class="flex items-center flex-shrink-0 text-white mr-6">
-      <span class="font-semibold text-xl tracking-tight">Manuel Obregozo</span>
-    </div> -->
     <div class="block md:hidden">
       <button
         v-on:click="isActive = !isActive"
-        class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
+        class="flex items-center px-3 py-2 border rounded text-primary-200 border-primary-400 hover:text-white hover:border-white"
       >
         <svg
           class="fill-current h-3 w-3"
@@ -31,7 +28,7 @@
           v-bind:key="item.id"
           v-on:click="activeMenu(item.label)"
           v-bind:class="[
-            item.label === menuActive ? 'text-white' : 'text-teal-200'
+            item.label === menuActive ? 'text-white' : 'text-primary-200'
           ]"
           v-bind:href="'#' + item.label.toLowerCase()"
           class="block mt-4 font-bold hover:text-white mr-4"
@@ -61,14 +58,29 @@ export default {
       ]
     }
   },
+  mounted() {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          this.menuActive = entry.target.id.toUpperCase()
+        }
+      })
+    })
+
+    const about = document.getElementById('about')
+    const skills = document.getElementById('skills')
+    const experience = document.getElementById('experience')
+    const interests = document.getElementById('interests')
+    observer.observe(about)
+    observer.observe(skills)
+    observer.observe(experience)
+    observer.observe(interests)
+  },
   methods: {
     activeMenu(label) {
       this.menuActive = label
       this.isActive = !this.isActive
     }
-  },
-  mounted: {
-    //TODO: Add IntersectionObserver
   }
 }
 </script>
