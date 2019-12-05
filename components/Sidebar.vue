@@ -53,7 +53,6 @@ export default {
       menuItems: [
         { label: 'ABOUT' },
         { label: 'EXPERIENCE' },
-        { label: 'SKILLS' },
         { label: 'INTERESTS' }
       ]
     }
@@ -63,16 +62,15 @@ export default {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           this.menuActive = entry.target.id.toUpperCase()
+          console.log('changed menu to', this.menuActive)
         }
       })
     })
 
     const about = document.getElementById('about')
-    const skills = document.getElementById('skills')
     const experience = document.getElementById('experience')
     const interests = document.getElementById('interests')
     observer.observe(about)
-    observer.observe(skills)
     observer.observe(experience)
     observer.observe(interests)
   },
