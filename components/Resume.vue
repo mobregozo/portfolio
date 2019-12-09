@@ -18,13 +18,13 @@
           </div>
           <p class="mb-2 mt-8 text-gray-600 font-semibold">
             I am an enthusiastic Front End Developer from a little town called
-            Necochea in the cost of Argentina. Passionate about software
+            Necochea in the coast of Argentina. Passionate about software
             development and developer communities.
           </p>
           <p class="mb-2 text-gray-600 font-semibold">
-            Currently, I am centered on the web, desktop, and hybrid mobile
+            Currently, I am centered on web, desktop, and hybrid mobile
             applications, using different JavaScript related Frameworks. I have
-            worked as a developer for more than 9 years, in different kinds of
+            worked as a developer for more than 8 years, in different kinds of
             business domains, across a variety of platforms. I executed and
             contributed to full-stack development projects from design to
             testing and up to production deployment, with an emphasis on front
@@ -94,8 +94,8 @@
                 most of the cases, the products that I developed are for small
                 local business, and with learning and testing purposes about a
                 particular technology that I like to learn. Mainly about
-                different Javascript frameworks/libraries suchÍ as React,
-                Svelte, VueJs, Angular, Ionic, among others.
+                different Javascript frameworks/libraries such as React, Svelte,
+                VueJs, Angular, Ionic, among others.
               </p>
             </div>
           </div>
@@ -189,19 +189,20 @@
                 at NORSYNC - Tandil, Argentina
               </div>
               <p class="mt-8 text-gray-600 font-semibold">
-                At Norsync were we worked in a startup model I was really
+                At Norsyncm were we worked in a startup model, I was really
                 involved in all the phases of the development cycle of the
-                projects. I gained experience in other areas such as design and
-                marketing.
+                projects. I also gained experience in other areas such as design
+                and marketing.
               </p>
               <p class="mt-8 text-gray-600 font-semibold">
                 Worked as a Web and Mobile Front End Developer, where I
                 developed several hybrid applications and web apps from scratch
                 that are now still in production, including Application
                 distribution into the different stores. Regarding the business
-                domain, the applications were Booking systems, Ticket systems,
-                Live feed events applications, among others. For restaurants,
-                sports clubs, bars, shopping, and different kind of stores.
+                domain, the applications were Booking systems, Ticket systems
+                and Live feed events applications, among others. These apps were
+                implemented in stores succh as restaurants, sports clubs, bars
+                and shoppings.
               </p>
               <p class="mt-5 text-gray-600 font-semibold">
                 <strong>Main Technologies:</strong>
@@ -225,14 +226,14 @@
                 Software Engineer
               </h3>
               <div class="mb-3 font-bold text-gray-600">
-                at SPARK DIGITAL (former DevSpark ) - Tandil, The Netherlands
+                at SPARK DIGITAL (former DevSpark ) - Tandil, Argentina
               </div>
               <p class="mt-8 text-gray-600 font-semibold">
                 Within Devspark I did my first official step into Front End
                 development, something that I was already doing in my free time.
-                I gained experience in integration strategies, management, and
-                team building. I had direct contact with many stakeholders from
-                several backgrounds and their clients.
+                I also gained experience in integration strategies, management,
+                and team building. I had direct contact with many stakeholders
+                from several backgrounds and their clients.
               </p>
               <p class="mt-8 text-gray-600 font-semibold">
                 Lead a front end development of a SPA. A private online social
@@ -314,7 +315,7 @@
           <h2 class="mb-5 text-6xl font-bold leading-none">Interests</h2>
           <p class="mb-2 mt-8 text-gray-600 font-semibold">
             Besides work, I usually spend my free time outdoors playing sports
-            and traveling around, taking pictures of everything I see.
+            and travelling around, taking pictures of everything I see.
           </p>
           <p class="mb-2 mt-8 text-gray-600 font-semibold">
             Related to sports I am passionate about football, love to read and
