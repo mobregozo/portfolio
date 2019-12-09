@@ -39,7 +39,7 @@
             <a
               target="blank"
               class="mr-4 text-gray-600 hover:text-gray-500"
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/manuelobregozo/?locale=en_US"
             >
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>
@@ -49,7 +49,7 @@
             <a
               target="blank"
               class="mr-4 text-gray-600 hover:text-gray-500"
-              href="https://github.com/"
+              href="https://github.com/mobregozo"
             >
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>
@@ -59,7 +59,7 @@
             <a
               target="blank"
               class="mr-4 text-gray-600 hover:text-gray-500"
-              href="https://github.com/"
+              href="https://stackoverflow.com/users/6098430/manuel-obregozo"
             >
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>
@@ -75,18 +75,47 @@
       >
         <div class="my-auto">
           <h1 class="mb-5 text-6xl font-bold leading-none">Experience</h1>
+          <p class="text-gray-600 font-semibold">
+            I have worked as a Developer since 2011, I started as a
+            consultant/back end developer, and due to the fact that I always
+            liked UI/UX related topics, I did a switch to front end in 2013 when
+            I started my first assigment. And since then, I have been exploring
+            different technologies, and I still enjoy the challenges it brings.
+          </p>
+
           <div class="flex flex-no-wrap flex-col md:flex-row mb-5 py-10">
             <div class="mr-auto">
-              <h3
-                class="m-0 font-bold text-gray-700 text-3xl leading-none text-secondary-400"
-              >
-                Front End Developer
-              </h3>
               <div class="mb-3 font-bold text-gray-600">
-                at FRONTMEN - Amsterdam, The Netherlands
+                Side Projects
               </div>
-              <div class="mb-3 font-bold text-gray-600">LOGOS PLACEHOLDER</div>
               <p class="text-gray-600 font-semibold">
+                Since I started to work with front end technologies I work in
+                different side-projects outside of my full-time assigments. In
+                most of the cases, the products that I developed are for small
+                local business, and with learning and testing purposes about a
+                particular technology that I like to learn. Mainly about
+                different Javascript frameworks/libraries suchÍ as React,
+                Svelte, VueJs, Angular, Ionic, among others.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-no-wrap flex-col md:flex-row mb-5 py-10">
+            <div class="mr-auto">
+              <div class="md:flex items-center md:justify-between">
+                <h3
+                  class="m-0 font-bold text-gray-700 text-3xl leading-none text-secondary-400"
+                >
+                  Front End Developer
+                </h3>
+                <div class="text-primary-500 font-bold whitespace-no-wrap">
+                  SINCE FEB 2018
+                </div>
+              </div>
+              <div class="mb-3 mt-1 font-semibold text-lg text-gray-600">
+                at <span class="text-black">FRONTMEN </span>- Amsterdam, The
+                Netherlands
+              </div>
+              <p class="text-gray-600">
                 I have worked at Rabobank, one of main banks in The Netherlands,
                 as a Senior Front End Developer. I was part of the front end
                 platform team, helping to deliver the new development ecosystem
@@ -97,16 +126,11 @@
                 coordinated deployments & versioning amongst others) among with
                 the new upcoming design of the different apps.
               </p>
-              <p class="mt-5 text-gray-600 font-semibold">
-                <strong>Main Technologies:</strong>
+              <p class="mt-5 text-gray-600">
+                <span class="font-bold">Main Technologies:</span>
                 JavaScript, AngularJs, Angular, Ionic, Stencil, Redux, among
                 others.
               </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary-500 font-bold mt-10 md:mt-0"
-                >February 2017 - Present
-              </span>
             </div>
           </div>
           <div
@@ -124,7 +148,7 @@
               <p class="mt-8 text-gray-600 font-semibold">
                 Within Mobiquity I worked as a Front End Developer for different
                 business domains. Gained a lot of experience working in an
-                international environment.
+                international environment, and interview recruiting process.
               </p>
               <p class="mt-8 text-gray-600 font-semibold">
                 Worked at Backbase, an online banking platform, as a Front End
@@ -135,7 +159,7 @@
               </p>
               <p class="mt-5 text-gray-600 font-semibold">
                 <strong>Main Technologies:</strong>
-                AngularJs, Angular,Protractor and Jasmine.
+                AngularJs, Angular, Protractor and Jasmine.
               </p>
               <p class="mt-8 text-gray-600 font-semibold">
                 Worked as a Web Developer for an e-commerce hybrid Mobile
@@ -143,11 +167,13 @@
               </p>
               <p class="mt-5 text-gray-600 font-semibold">
                 <strong>Main Technologies:</strong>
-                Angular and Ionic 3.x.
+                Angular and Ionic
               </p>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary-500 font-bold">NOVEMBER </span>
+              <div class="text-primary-500 font-bold whitespace-no-wrap">
+                JUN 2017 - JAN 2018
+              </div>
             </div>
           </div>
           <div
@@ -163,23 +189,30 @@
                 at NORSYNC - Tandil, Argentina
               </div>
               <p class="mt-8 text-gray-600 font-semibold">
-                Worked as a Web and Mobile Front End Developer. Where I
+                At Norsync were we worked in a startup model I was really
+                involved into all the phases of the development cycle of the
+                projects. I gained experience in other areas such as design and
+                marketing.
+              </p>
+              <p class="mt-8 text-gray-600 font-semibold">
+                Worked as a Web and Mobile Front End Developer, where I
                 developed several hybrid applications and web apps from the
-                scratch that are now still in production. And like in all
-                startups I was really involved into all the phases of the
-                development of the projects. Regarding the business domain, the
-                applications were Booking systems, Ticket systems, Live events
-                streaming applications, among others. For restaurants, sport
-                clubs, bars, shoppings, and different kind of stores.
+                scratch that are now still in production, including Application
+                distribuitons into the different stores. Regarding the business
+                domain, the applications were Booking systems, Ticket systems,
+                Live feed events applications, among others. For restaurants,
+                sport clubs, bars, shoppings, and different kind of stores.
               </p>
               <p class="mt-5 text-gray-600 font-semibold">
                 <strong>Main Technologies:</strong>
-                JavaScript (AngularJs, Ionic-Framework, NodeJs, Protractor and
-                Jasmine), Bootstrap, HTML, SASS, CSS and Gulp.
+                AngularJs, Angular, Ionic, NodeJs, Protractor, Jasmine,
+                Bootstrap and Gulp.
               </p>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary-500 font-bold">NOVEMBER </span>
+              <div class="text-primary-500 font-bold whitespace-no-wrap">
+                JAN 2016 - MAY 2017
+              </div>
             </div>
           </div>
           <div
@@ -197,8 +230,8 @@
               <p class="mt-8 text-gray-600 font-semibold">
                 Within Devspark I did my first official step into Front End
                 development, something that I was already doing on my free time.
-                Gained experience in integration strategies, management, and
-                team building. Direct contact with many stakeholders from
+                I gained experience in integration strategies, management, and
+                team building. I had direct contact with many stakeholders from
                 several backgrounds, and their clients.
               </p>
               <p class="mt-8 text-gray-600 font-semibold">
@@ -212,8 +245,8 @@
               </p>
               <p class="mt-5 text-gray-600 font-semibold">
                 <strong>Main Technologies:</strong>
-                Django, Heroku, AngularJs v1.x, JavaScript, JQuery, HTML5,
-                protractor, jasmine, SASS, CSS, Bootstrap and Grunt.
+                Django, Heroku, AngularJs, JQuery, Protractor, jasmine, SASS,
+                CSS, Bootstrap and Grunt.
               </p>
               <p class="mt-8 text-gray-600 font-semibold">
                 Worked as an APIgee 4G developer,which is a cloud based platform
@@ -226,12 +259,13 @@
               </p>
               <p class="mt-5 text-gray-600 font-semibold">
                 <strong>Main Technologies:</strong>
-                APIGee products, JavaScript, RESTful, Jmeter, SoapUI, among
-                others.
+                APIGee products, JavaScript, RESTful, Jmeter and SoapUI.
               </p>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary-500 font-bold">NOVEMBER </span>
+              <div class="text-primary-500 font-bold whitespace-no-wrap">
+                Apr 2014 – Dec 2015
+              </div>
             </div>
           </div>
           <div
@@ -248,7 +282,7 @@
               </div>
               <p class="mt-8 text-gray-600 font-semibold">
                 Gained experience in office environment, customer care, and
-                working with distributed remote teams
+                working with distributed remote teams.
               </p>
               <p class="mt-8 text-gray-600 font-semibold">
                 Worked as a JD Edwards developer, an Enterprise Resource
@@ -262,12 +296,13 @@
               </p>
               <p class="mt-5 text-gray-600 font-semibold">
                 <strong>Main Technologies:</strong>
-                JD Edwards, Oracle SQL, ERP technologies related, and a bit of
-                C++.
+                JD Edwards, Oracle SQL, ERP technologies related and C/C++.
               </p>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary-500 font-bold">NOVEMBER </span>
+              <div class="text-primary-500 font-bold whitespace-no-wrap">
+                NOV 2011 - NOV 2012
+              </div>
             </div>
           </div>
         </div>
@@ -279,16 +314,16 @@
         <div class="my-auto">
           <h2 class="mb-5 text-6xl font-bold leading-none">Interests</h2>
           <p class="mb-2 mt-8 text-gray-600 font-semibold">
-            Besides work, I usually spend my free time being outdoors playing
-            sports or travelling around, taking pictures about everything I see.
+            Besides work, I usually spend my free time outdoors playing sports
+            and travelling around, taking pictures about everything I see.
           </p>
           <p class="mb-2 mt-8 text-gray-600 font-semibold">
-            Related to sports I was always super passionate about football, love
-            to read and talk about it, and of course play as much as I can.
+            Related to sports I am passionate about football, love to read and
+            talk about it, and of course play as much as I can.
           </p>
           <p class="mb-2 mt-8 text-gray-600 font-semibold">
             When I am not running outside, I am behind my drums, instrument that
-            I play since I was a little kid, and still enjoy playing the good
+            I play since I was a little kid, and I still enjoy playing the good
             old punk rock songs that I used to listen when I was at high school.
           </p>
           <div class="mt-10 flex flex-wrap items-center justify-around">
