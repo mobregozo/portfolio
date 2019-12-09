@@ -103,7 +103,7 @@
           <div
             v-for="job in experiences"
             v-bind:key="job.companyName"
-            class="flex flex-no-wrap flex-col md:flex-row border-solid border-t-2 border-gray-200 py-10"
+            class="flex flex-no-wrap flex-col md:flex-row border-solid border-t-2 border-gray-200 pt-10 pb-2"
           >
             <div class="mr-auto">
               <div class="md:flex items-center md:justify-between">
@@ -127,7 +127,7 @@
               <div
                 v-for="project in job.projects"
                 :key="project.description"
-                class="mt-3 mb-8 last-child:mb-0"
+                class="mt-3 mb-8 pl-4 last:mb-0"
               >
                 <p class="text-gray-600 text-justify">
                   {{ project.description }}

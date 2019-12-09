@@ -1164,7 +1164,7 @@
     consola "^2.11.0"
     stylelint-webpack-plugin "^1.1.0"
 
-"@nuxtjs/tailwindcss@^1.0.0":
+"@nuxtjs/tailwindcss@1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@nuxtjs/tailwindcss/-/tailwindcss-1.2.0.tgz#e558ef3c4a19e57f5e962b7f4ae8522fa3494891"
   integrity sha512-ZVwN7o6Ot/e3deJy8rfbzkl+JAbBouGosAY02UPiTMfBFGNYV+d3OXijpSfaMXnipHVgPZeBzs17tyGmx0p1ZQ==
