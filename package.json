@@ -13,7 +13,7 @@
     "test": "jest"
   },
   "engines": {
-    "yarn": "^0.14.0"
+    "yarn": "^1.17.0"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint"
