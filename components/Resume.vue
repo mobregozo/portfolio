@@ -24,7 +24,7 @@
           <p class="mb-2 text-gray-600 font-semibold">
             Currently, I am centered on the web, desktop, and hybrid mobile
             applications, using different JavaScript related Frameworks. I have
-            worked as a developer for more than 9 years, in different kind of
+            worked as a developer for more than 9 years, in different kinds of
             business domains, across a variety of platforms. I executed and
             contributed to full-stack development projects from design to
             testing and up to production deployment, with an emphasis on front
@@ -115,13 +115,13 @@
                 at <span class="text-black">FRONTMEN </span>- Amsterdam, The
                 Netherlands
               </div>
-              <p class="text-gray-600">
-                I have worked at Rabobank, one of main banks in The Netherlands,
-                as a Senior Front End Developer. I was part of the front end
-                platform team, helping to deliver the new development ecosystem
-                that is now used across the entire organization. In this regard
-                I have actively been involved in the decision-making when
-                selecting, migrating, introducing and implementing a new
+              <p class="text-gray-600 text-justify">
+                I have worked at Rabobank, one of the main banks in The
+                Netherlands, as a Senior Front End Developer. I was part of the
+                front end platform team, helping to deliver the new development
+                ecosystem that is now used across the entire organization. In
+                this regard I have actively been involved in the decision-making
+                when selecting, migrating, introducing and implementing a new
                 monorepo set-up (to enhance collaboration, code reachability,
                 coordinated deployments & versioning amongst others) among with
                 the new upcoming design of the different apps.
@@ -190,18 +190,18 @@
               </div>
               <p class="mt-8 text-gray-600 font-semibold">
                 At Norsync were we worked in a startup model I was really
-                involved into all the phases of the development cycle of the
+                involved in all the phases of the development cycle of the
                 projects. I gained experience in other areas such as design and
                 marketing.
               </p>
               <p class="mt-8 text-gray-600 font-semibold">
                 Worked as a Web and Mobile Front End Developer, where I
-                developed several hybrid applications and web apps from the
-                scratch that are now still in production, including Application
-                distribuitons into the different stores. Regarding the business
+                developed several hybrid applications and web apps from scratch
+                that are now still in production, including Application
+                distribution into the different stores. Regarding the business
                 domain, the applications were Booking systems, Ticket systems,
                 Live feed events applications, among others. For restaurants,
-                sport clubs, bars, shoppings, and different kind of stores.
+                sports clubs, bars, shopping, and different kind of stores.
               </p>
               <p class="mt-5 text-gray-600 font-semibold">
                 <strong>Main Technologies:</strong>
@@ -229,10 +229,10 @@
               </div>
               <p class="mt-8 text-gray-600 font-semibold">
                 Within Devspark I did my first official step into Front End
-                development, something that I was already doing on my free time.
+                development, something that I was already doing in my free time.
                 I gained experience in integration strategies, management, and
                 team building. I had direct contact with many stakeholders from
-                several backgrounds, and their clients.
+                several backgrounds and their clients.
               </p>
               <p class="mt-8 text-gray-600 font-semibold">
                 Lead a front end development of a SPA. A private online social
@@ -246,16 +246,16 @@
               <p class="mt-5 text-gray-600 font-semibold">
                 <strong>Main Technologies:</strong>
                 Django, Heroku, AngularJs, JQuery, Protractor, jasmine, SASS,
-                CSS, Bootstrap and Grunt.
+                CSS, Bootstrap, and Grunt.
               </p>
               <p class="mt-8 text-gray-600 font-semibold">
-                Worked as an APIgee 4G developer,which is a cloud based platform
-                for APIs. My duties were design and development of RESTful APIs
-                into Apigee Platform. In order to expose automatic digital
-                supply chain services to increase platform’s integration
-                capabilities with third party applications. Application’s issue
-                diagnostics and resolution, deployment management and customer
-                service orientation.
+                Worked as an APIgee 4G developer, which is a cloud-based
+                platform for APIs. My duties were the design and development of
+                RESTful APIs into Apigee Platform. In order to expose automatic
+                digital supply chain services to increase the platform’s
+                integration capabilities with third-party applications.
+                Application’s issue diagnostics and resolution, deployment
+                management and customer service orientation.
               </p>
               <p class="mt-5 text-gray-600 font-semibold">
                 <strong>Main Technologies:</strong>
@@ -289,10 +289,9 @@
                 Planning. My responsibilities included business process
                 optimization, in order to improve our client’s business
                 activities such as sales, deliveries, payments, production,
-                inventory administration and administration quality. Review code
-                for quality and adherence to standards. And, apply and analyze
-                business requests to determine how best to create successful
-                resolution.
+                inventory, and administration quality. Review code for quality
+                and adherence to standards. And, apply and analyze business
+                requests to determine how best to create successful resolution.
               </p>
               <p class="mt-5 text-gray-600 font-semibold">
                 <strong>Main Technologies:</strong>
@@ -315,7 +314,7 @@
           <h2 class="mb-5 text-6xl font-bold leading-none">Interests</h2>
           <p class="mb-2 mt-8 text-gray-600 font-semibold">
             Besides work, I usually spend my free time outdoors playing sports
-            and travelling around, taking pictures about everything I see.
+            and traveling around, taking pictures of everything I see.
           </p>
           <p class="mb-2 mt-8 text-gray-600 font-semibold">
             Related to sports I am passionate about football, love to read and
@@ -324,7 +323,8 @@
           <p class="mb-2 mt-8 text-gray-600 font-semibold">
             When I am not running outside, I am behind my drums, instrument that
             I play since I was a little kid, and I still enjoy playing the good
-            old punk rock songs that I used to listen when I was at high school.
+            old punk rock songs that I used to listen to when I was at high
+            school.
           </p>
           <div class="mt-10 flex flex-wrap items-center justify-around">
             <img
