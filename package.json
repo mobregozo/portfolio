@@ -12,6 +12,9 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "test": "jest"
   },
+  "engines": {
+    "yarn": "^0.14.0"
+  },
   "lint-staged": {
     "*.{js,vue}": "eslint"
   },
