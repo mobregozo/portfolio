@@ -9,7 +9,10 @@
           </h1>
           <h3 class="font-bold text-gray-600 mb-2 text-2xl">
             FRONT END DEVELOPER ·
-            <a class="font-bold text-primary-500" href="mailto:email">
+            <a
+              class="font-bold text-primary-500"
+              href="mailto:obregozo.manuel@gmail.com"
+            >
               OBREGOZO.MANUEL@GMAIL.COM
             </a>
           </h3>
@@ -149,32 +152,38 @@
       >
         <div class="my-auto">
           <h2 class="mb-5 text-6xl font-bold leading-none">Interests</h2>
-          <p class="mb-2 mt-8 text-gray-600 font-semibold">
+          <p class="mb-2 mt-8 text-gray-600 font-semibold text-justify">
             Besides work, I usually spend my free time outdoors playing sports
             and travelling around, taking pictures of everything I see.
           </p>
-          <p class="mb-2 mt-4 text-gray-600 font-semibold">
+          <p class="mb-2 mt-2 text-gray-600 font-semibold text-justify">
             Related to sports I am passionate about football, love to read and
             talk about it, and of course play as much as I can.
           </p>
-          <p class="mb-2 mt-4 text-gray-600 font-semibold">
+          <p class="mb-2 mt-2 text-gray-600 font-semibold text-justify">
             When I am not running outside, I am behind my drums, instrument that
             I play since I was a little kid, and I still enjoy playing the good
             old punk rock songs that I used to listen to when I was at high
             school.
           </p>
-          <div class="mt-10 flex flex-wrap items-center justify-around">
+          <div
+            class="mt-10 flex flex-no-wrap sm:flex-wrap items-center md:justify-around"
+          >
             <img
-              class="flex-none my-5"
-              src="https://via.placeholder.com/400x300.png"
+              class="img-gallery rounded-lg shadow-lg mt-5"
+              src="/beach.jpg"
             />
             <img
-              class="flex-none my-5"
-              src="https://via.placeholder.com/400x300.png"
+              class="img-gallery rounded-lg shadow-lg mt-5"
+              src="/snow1.jpg"
             />
             <img
-              class="flex-none my-5"
-              src="https://via.placeholder.com/400x300.png"
+              class="img-gallery rounded-lg shadow-lg mt-5"
+              src="/football1.jpg"
+            />
+            <img
+              class="img-gallery rounded-lg shadow-lg mt-5"
+              src="/drums.jpg"
             />
           </div>
         </div>
@@ -182,7 +191,13 @@
     </div>
   </section>
 </template>
-
+<style scoped>
+.img-gallery {
+  height: 300px;
+  width: 400px;
+  object-fit: cover;
+}
+</style>
 <script>
 export default {
   data: () => {
@@ -199,7 +214,7 @@ export default {
           projects: [
             {
               technologies: `JavaScript, AngularJs, Angular, Ionic, Stencil and Redux.`,
-              description: `I have worked at Rabobank, one of the main banks in The
+              description: `Rabobank: I have worked in one of the main banks in The
                 Netherlands, as a Senior Front End Developer. I was part of the
                 front end platform team, helping to deliver the new development
                 ecosystem that is now used across the entire organization. In
@@ -222,8 +237,8 @@ export default {
           projects: [
             {
               technologies: `AngularJs, Angular, Protractor and Jasmine.`,
-              description: `Worked at Backbase, an online banking platform, as a Front End
-                consultant for professional services, developing and helping the
+              description: `Backbase: I worked there as a Front End
+                consultant for this online banking platform for professional services, developing and helping the
                 team to integrate and implement the UI (Web Apps and Hybrid
                 Mobile Apps) of the company products with the different Bank
                 cores systems.`
@@ -263,7 +278,7 @@ export default {
           companyName: 'SPARK DIGITAL (former DevSpark )',
           location: 'Tandil, Argentina',
           role: 'Software Engineer',
-          period: 'Apr 2014 – Dec 2015',
+          period: 'APR 2014 – DEC 2015',
           description: `Within Devspark I did my first official step into Front End
                 development, something that I was already doing in my free time.
                 I also gained experience in integration strategies, management,
@@ -273,8 +288,8 @@ export default {
             {
               technologies: `Django, Heroku, AngularJs, JQuery, Protractor, jasmine, SASS,
                 CSS, Bootstrap, and Grunt.`,
-              description: `I have lead a front end development of a SPA. A private online
-                social media, which allows users to share and support private
+              description: `Likeminder: I have lead a front end development of a SPA. A private online
+                social media called Likeminder, which allows users to share and support private
                 and emotional conversations. Since we were a small team, I was
                 involved in all technical and non-technical discussions related
                 to the end product, and also was able to refactor the
@@ -283,7 +298,7 @@ export default {
             },
             {
               technologies: `APIGee products, JavaScript, RESTful, Jmeter and SoapUI.`,
-              description: `Worked as an APIgee 4G developer, which is a cloud-based
+              description: `Coca Cola: I worked as an APIgee 4G developer, which is a cloud-based
                 platform for APIs. My duties were the design and development of
                 RESTful APIs into Apigee Platform. In order to expose automatic
                 digital supply chain services to increase the platform’s
@@ -303,7 +318,7 @@ export default {
           projects: [
             {
               technologies: `JD Edwards, Oracle SQL, ERP technologies related and C/C++.`,
-              description: `Worked as a JD Edwards developer, an Enterprise Resource
+              description: `Johnson & Johnson: I worked as a JD Edwards developer, an Enterprise Resource
                 Planning. My responsibilities included business process
                 optimization, in order to improve our client’s business
                 activities such as sales, deliveries, payments, production,
