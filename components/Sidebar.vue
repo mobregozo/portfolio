@@ -19,7 +19,7 @@
       </button>
     </div>
     <div
-      v-bind:class="{ hidden: isActive }"
+      v-bind:class="{ hidden: !isActive }"
       class="flex-initial w-full block md:block"
     >
       <div class="md:text-center text-md">

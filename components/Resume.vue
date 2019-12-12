@@ -106,7 +106,7 @@
           <div
             v-for="job in experiences"
             v-bind:key="job.companyName"
-            class="flex flex-no-wrap flex-col md:flex-row border-solid border-t-2 border-gray-200 pt-10 pb-2"
+            class="flex flex-no-wrap flex-col md:flex-row border-solid border-t-2 border-gray-200 pt-10 pb-6"
           >
             <div class="mr-auto">
               <div class="md:flex items-center md:justify-between">
@@ -119,27 +119,45 @@
                   {{ job.period }}
                 </div>
               </div>
-              <div class="mb-3 mt-1 text-lg text-gray-600">
-                at <span class="font-bold">{{ job.companyName }} </span>-
-                {{ job.location }}
+
+              <div class="flex items-center mt-4 mb-4">
+                <img
+                  :src="`/${job.logo}`"
+                  class="w-16 h-16 shadow-md rounded-full border-solid border-4 border-white"
+                />
+                <div class="pl-4 ">
+                  <div class="text-lg text-gray-600">
+                    <span class="font-bold">{{ job.companyName }} </span>•
+                    {{ job.location }}
+                  </div>
+                </div>
               </div>
-              <p class="mt-4 mb-4 text-gray-600 font-semibold text-justify">
+
+              <p class="text-gray-600 font-semibold text-justify">
                 {{ job.description }}
               </p>
-              <div class="mt-5 font-bold text-xl text-gray-600">Projects</div>
               <div
                 v-for="project in job.projects"
                 :key="project.description"
-                class="mt-3 mb-8 pl-4 last:mb-0"
+                class="my-6 last:mb-0"
               >
-                <p class="text-gray-600 text-justify">
-                  {{ project.description }}
-                </p>
-                <div class="mt-2 text-gray-600">
-                  <div class="font-semibold">Main Technologies</div>
-                  <p>
-                    {{ project.technologies }}
+                <div class="pl-3">
+                  <div
+                    class="w-full text-xl font-semibold text-secondary-500 font-semibold"
+                  >
+                    > {{ project.client }}
+                  </div>
+                  <p class="text-gray-600 text-justify">
+                    {{ project.description }}
                   </p>
+                  <div class="mt-1 text-gray-600">
+                    <div class="font-semibold text-primary-600">
+                      Main Technologies
+                    </div>
+                    <p>
+                      {{ project.technologies }}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -166,24 +184,12 @@
             old punk rock songs that I used to listen to when I was at high
             school.
           </p>
-          <div
-            class="mt-10 flex flex-no-wrap sm:flex-wrap items-center md:justify-around"
-          >
+          <div class="mt-10 flex flex-wrap items-center justify-around">
             <img
-              class="img-gallery rounded-lg shadow-lg mt-5"
-              src="/beach.jpg"
-            />
-            <img
-              class="img-gallery rounded-lg shadow-lg mt-5"
-              src="/snow1.jpg"
-            />
-            <img
-              class="img-gallery rounded-lg shadow-lg mt-5"
-              src="/football1.jpg"
-            />
-            <img
-              class="img-gallery rounded-lg shadow-lg mt-5"
-              src="/drums.jpg"
+              v-for="img in interestPics"
+              :key="img"
+              :src="`/${img}.jpg`"
+              class="img-gallery rounded-lg shadow-lg mt-5 border-solid border-8 border-white"
             />
           </div>
         </div>
@@ -204,17 +210,28 @@ export default {
     return {
       isActive: false,
       menuActive: 'ABOUT',
+      interestPics: [
+        'beach',
+        'drums',
+        'football',
+        'football1',
+        'snow',
+        'football2',
+        'snow1'
+      ],
       experiences: [
         {
           companyName: 'FRONTMEN',
           location: 'Amsterdam, The Netherlands',
           role: 'Front End Developer',
           period: 'SINCE FEB 2018',
+          logo: 'frontmen.png',
           description: ``,
           projects: [
             {
               technologies: `JavaScript, AngularJs, Angular, Ionic, Stencil and Redux.`,
-              description: `Rabobank: I have worked in one of the main banks in The
+              client: 'Rabobank',
+              description: `I have worked in one of the main banks in The
                 Netherlands, as a Senior Front End Developer. I was part of the
                 front end platform team, helping to deliver the new development
                 ecosystem that is now used across the entire organization. In
@@ -231,13 +248,15 @@ export default {
           location: 'Amsterdam, The Netherlands',
           role: 'Front End Developer',
           period: 'JUN 2017 - JAN 2018',
+          logo: 'mobiquity.png',
           description: `Within Mobiquity I worked as a Front End Developer for different
                 business domains. Gained a lot of experience working in an
                 international environment, and interview recruiting process.`,
           projects: [
             {
               technologies: `AngularJs, Angular, Protractor and Jasmine.`,
-              description: `Backbase: I worked there as a Front End
+              client: 'Backbase',
+              description: `I worked there as a Front End
                 consultant for this online banking platform for professional services, developing and helping the
                 team to integrate and implement the UI (Web Apps and Hybrid
                 Mobile Apps) of the company products with the different Bank
@@ -245,8 +264,9 @@ export default {
             },
             {
               technologies: `Angular and Ionic`,
+              client: "The Children's Place",
               description: `Worked as a Web Developer for an e-commerce hybrid Mobile
-                Application called The Children's Place, based on the Us.`
+                Application called , based on the Us.`
             }
           ]
         },
@@ -255,6 +275,7 @@ export default {
           location: 'Tandil, Argentina',
           role: 'Front End Developer',
           period: 'JAN 2016 - MAY 2017',
+          logo: 'norsync.png',
           description: `At Norsync were we worked in a startup model, I was really
                 involved in all the phases of the development cycle of the
                 projects. I also gained experience in other areas such as design
@@ -263,6 +284,7 @@ export default {
             {
               technologies: `AngularJs, Angular, Ionic, NodeJs, Protractor, Jasmine,
                 Bootstrap and Gulp.`,
+              client: 'Norweigan Stores',
               description: `Worked as a Web and Mobile Front End Developer, where I
                 developed several hybrid applications and web apps from scratch
                 that are now still in production, including Application
@@ -275,10 +297,11 @@ export default {
           ]
         },
         {
-          companyName: 'SPARK DIGITAL (former DevSpark )',
+          companyName: 'SPARK DIGITAL',
           location: 'Tandil, Argentina',
           role: 'Software Engineer',
           period: 'APR 2014 – DEC 2015',
+          logo: 'sparkdigital.png',
           description: `Within Devspark I did my first official step into Front End
                 development, something that I was already doing in my free time.
                 I also gained experience in integration strategies, management,
@@ -288,7 +311,8 @@ export default {
             {
               technologies: `Django, Heroku, AngularJs, JQuery, Protractor, jasmine, SASS,
                 CSS, Bootstrap, and Grunt.`,
-              description: `Likeminder: I have lead a front end development of a SPA. A private online
+              client: 'Likeminder',
+              description: `I have lead a front end development of a SPA. A private online
                 social media called Likeminder, which allows users to share and support private
                 and emotional conversations. Since we were a small team, I was
                 involved in all technical and non-technical discussions related
@@ -298,7 +322,8 @@ export default {
             },
             {
               technologies: `APIGee products, JavaScript, RESTful, Jmeter and SoapUI.`,
-              description: `Coca Cola: I worked as an APIgee 4G developer, which is a cloud-based
+              client: 'Coca-Cola',
+              description: `I worked as an APIgee 4G developer, which is a cloud-based
                 platform for APIs. My duties were the design and development of
                 RESTful APIs into Apigee Platform. In order to expose automatic
                 digital supply chain services to increase the platform’s
@@ -313,12 +338,14 @@ export default {
           location: 'Tandil, Argentina',
           role: 'Technical Consultant',
           period: 'NOV 2011 - NOV 2012',
-          description: ` Gained experience in office environment, customer care, and
+          logo: 'grupoassa.png',
+          description: `Gained experience in multinational organizations, customer care, and
                 working with distributed remote teams.`,
           projects: [
             {
               technologies: `JD Edwards, Oracle SQL, ERP technologies related and C/C++.`,
-              description: `Johnson & Johnson: I worked as a JD Edwards developer, an Enterprise Resource
+              client: 'Johnson & Johnson',
+              description: `I worked as a JD Edwards developer, an Enterprise Resource
                 Planning. My responsibilities included business process
                 optimization, in order to improve our client’s business
                 activities such as sales, deliveries, payments, production,
