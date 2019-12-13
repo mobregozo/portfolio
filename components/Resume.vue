@@ -214,9 +214,7 @@ export default {
         'beach',
         'drums',
         'football',
-        'football1',
         'snow',
-        'football2',
         'snow1'
       ],
       experiences: [
