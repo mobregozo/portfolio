@@ -185,12 +185,21 @@
             school.
           </p>
           <div class="mt-10 flex flex-wrap items-center justify-around">
-            <img
+            <div
               v-for="img in interestPics"
               :key="img"
-              :src="`/${img}.jpg`"
-              class="img-gallery rounded-lg shadow-lg mt-5 border-solid border-8 border-white"
-            />
+              class="hover-text relative"
+            >
+              <div
+                class="description bottom-0 left-0 pl-3 font-semibold pb-2 z-50 text-white"
+              >
+                {{ img.description }}
+              </div>
+              <img
+                :src="`/${img.link}.jpg`"
+                class="img-gallery z-10 rounded-lg shadow-lg mt-5 border-solid border-8 border-white"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -198,6 +207,18 @@
   </section>
 </template>
 <style scoped>
+.hover-text .description {
+  visibility: hidden;
+  position: absolute;
+}
+
+.hover-text:hover .description {
+  visibility: visible;
+}
+.hover-text:hover img {
+  filter: brightness(0.5);
+}
+
 .img-gallery {
   height: 300px;
   width: 400px;
@@ -211,12 +232,12 @@ export default {
       isActive: false,
       menuActive: 'ABOUT',
       interestPics: [
-        'beach',
-        'drums',
-        'drums1',
-        'football',
-        'snow',
-        'snow1'
+        { link: 'beach', description: 'Necochea, Argentina' },
+        { link: 'drums', description: 'Rehearsal' },
+        { link: 'drums1', description: 'Rehearsal' },
+        { link: 'football', description: 'Warming Up' },
+        { link: 'snow', description: 'Snowboarding in Bariloche' },
+        { link: 'snow1', description: 'Snowboarding in Bariloche' }
       ],
       experiences: [
         {
