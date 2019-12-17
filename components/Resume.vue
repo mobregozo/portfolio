@@ -213,6 +213,7 @@ export default {
       interestPics: [
         'beach',
         'drums',
+        'drums1',
         'football',
         'snow',
         'snow1'
