@@ -187,7 +187,7 @@
           <div class="mt-10 flex flex-wrap items-center justify-around">
             <div
               v-for="img in interestPics"
-              :key="img"
+              :key="img.link"
               class="hover-text relative"
             >
               <div
