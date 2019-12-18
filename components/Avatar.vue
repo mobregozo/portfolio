@@ -2,6 +2,6 @@
   <img
     src="/profile.jpeg"
     alt="avatar"
-    class="h-40 w-40 object-cover rounded-full mb-5 border-4 hidden md:block"
+    class="h-12 w-12 md:h-40 md:w-40 object-cover rounded-full md:border-4"
   />
 </template>

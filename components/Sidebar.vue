@@ -2,8 +2,8 @@
   <nav
     class="fixed z-50 left-0 right-0 md:relative md:max-w-xs flex items-center justify-between flex-wrap md:flex-col md:align-center md:justify-center bg-primary-500 p-6"
   >
-    <avatar />
-    <div class="block md:hidden">
+    <avatar class="float-right md:mb-5" />
+    <div class="block md:hidden ">
       <button
         v-on:click="isActive = !isActive"
         class="flex items-center px-3 py-2 border rounded text-primary-200 border-primary-400 hover:text-white hover:border-white"
@@ -62,7 +62,6 @@ export default {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           this.menuActive = entry.target.id.toUpperCase()
-          console.log('changed menu to', this.menuActive)
         }
       })
     })

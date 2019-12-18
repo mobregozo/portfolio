@@ -1,7 +1,7 @@
 <template>
   <section id="wrapper" class="flex flex-col items-center">
     <div class="container">
-      <section id="about" class="min-h-screen md:px-10 flex pt-20 md:py-10">
+      <section id="about" class="min-h-screen md:px-10 flex pt-24 md:py-10">
         <div class="self-center flex-1 ">
           <h1 class="font-bold text-gray-800 text-6xl leading-none">
             MANUEL
@@ -74,7 +74,7 @@
       </section>
       <section
         id="experience"
-        class="min-h-screen md:px-10 flex pt-20 md:py-10"
+        class="min-h-screen md:px-10 flex pt-24 md:py-10"
       >
         <div class="my-auto">
           <h1 class="mb-5 text-6xl font-bold leading-none">Experience</h1>
@@ -166,7 +166,7 @@
       </section>
       <section
         id="interests"
-        class="min-h-screen w-sceen md:px-10 flex pt-20 md:py-10"
+        class="min-h-screen w-sceen md:px-10 flex pt-24 md:py-10"
       >
         <div class="my-auto">
           <h2 class="mb-5 text-6xl font-bold leading-none">Interests</h2>
