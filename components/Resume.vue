@@ -191,13 +191,13 @@
               class="hover-text relative"
             >
               <div
-                class="description bottom-0 left-0 pl-3 font-semibold pb-2 z-50 text-white"
+                class="description bottom-0 left-0 pl-4 font-semibold pb-2 z-50 text-white"
               >
                 {{ img.description }}
               </div>
               <img
                 :src="`/${img.link}.jpg`"
-                class="img-gallery z-10 rounded-lg shadow-lg mt-5 border-solid border-8 border-white"
+                class="img-gallery mx-1 z-10 rounded-lg shadow-lg mt-5 border-solid border-8 border-white"
               />
             </div>
           </div>
