@@ -740,7 +740,7 @@
   dependencies:
     "@fortawesome/fontawesome-common-types" "^0.1.7"
 
-"@fortawesome/fontawesome-svg-core@^1.2.12":
+"@fortawesome/fontawesome-svg-core@^1.2.12", "@fortawesome/fontawesome-svg-core@^1.2.26":
   version "1.2.26"
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-1.2.26.tgz#671569271d6b532cdea5e3deb8ff16f8b7ac251d"
   integrity sha512-3Dfd/v2IztP1TxKOxZiB5+4kaOZK9mNy0KU1vVK7nFlPWz3gzxrCWB+AloQhQUoJ8HhGqbzjliK89Vl7PExGbw==
@@ -754,7 +754,7 @@
   dependencies:
     "@fortawesome/fontawesome-common-types" "^0.2.26"
 
-"@fortawesome/vue-fontawesome@^0.1.4":
+"@fortawesome/vue-fontawesome@^0.1.4", "@fortawesome/vue-fontawesome@^0.1.9":
   version "0.1.9"
   resolved "https://registry.yarnpkg.com/@fortawesome/vue-fontawesome/-/vue-fontawesome-0.1.9.tgz#d3af6d4e50f337327de90447fe35fa1e117a2fbe"
   integrity sha512-h/emhmZz+DfB2zOGLWawNwXq82UYhn9waTfUjLLmeaIqtnIyNt6kYlpQT/vzJjLZRDRvY2IEJAh1di5qKpKVpA==
