@@ -14,42 +14,35 @@
       play since I was a little kid, and I still enjoy playing the good old punk
       rock songs that I used to listen to when I was at high school.
     </p>
-    <div class="mt-10 flex flex-wrap items-center justify-around">
+    <div class="mt-10 gallery">
       <div
         v-for="img in interestPics"
         :key="img.link"
-        class="hover-text relative"
+        class="hover-text relative gallery-panel rounded-lg shadow-lg border-solid border-8 border-white"
       >
-        <div
-          class="description bottom-0 left-0 pl-4 font-semibold pb-2 z-50 text-white"
-        >
-          {{ img.description }}
-        </div>
         <img
           :src="`/${img.link}.jpg`"
-          class="img-gallery mx-1 z-10 rounded-lg shadow-lg mt-5 border-solid border-8 border-white"
+          :alt="img.description"
+          class="img-gallery"
         />
+        <div class="py-2">
+          {{ img.description }}
+        </div>
       </div>
     </div>
   </div>
 </template>
 
-<style scoped>
-.hover-text .description {
-  visibility: hidden;
-  position: absolute;
+<style>
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-gap: 1rem;
+  margin: 5rem auto;
 }
-
-.hover-text:hover .description {
-  visibility: visible;
-}
-.hover-text:hover img {
-  filter: brightness(0.5);
-}
-
-.img-gallery {
-  height: 300px;
-  width: 400px;
+.gallery-panel img {
+  width: 100%;
+  height: 30vw;
   object-fit: cover;
 }
 </style>
