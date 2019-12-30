@@ -30,14 +30,6 @@ export default {
         type: 'text/css',
         href:
           'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i'
-      },
-      {
-        rel: 'stylesheet',
-        type: 'text/css',
-        href: 'https://use.fontawesome.com/releases/v5.1.0/css/all.css',
-        integrity:
-          'sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt',
-        crossorigin: 'anonymous'
       }
     ]
   },
@@ -67,7 +59,24 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: [
+    [
+      'nuxt-fontawesome',
+      {
+        component: 'fa',
+        imports: [
+          {
+            set: '@fortawesome/fontawesome-free-brands',
+            icons: ['faLinkedinIn', 'faGithubAlt', 'faStackOverflow']
+          },
+          {
+            set: '@fortawesome/free-solid-svg-icons',
+            icons: ['faCircle']
+          }
+        ]
+      }
+    ]
+  ],
   /*
    ** Build configuration
    */
@@ -75,6 +84,11 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) {
+      config.resolve.alias['@fortawesome/fontawesome-free-brands$'] =
+        '@fortawesome/fontawesome-free-brands/shakable.es.js'
+      config.resolve.alias['@fortawesome/fontawesome-free-solid$'] =
+        '@fortawesome/fontawesome-free-solid/shakable.es.js'
+    }
   }
 }
