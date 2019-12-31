@@ -20,6 +20,8 @@ I personally used Netlify to deploy and host the website, and I recommend this b
 
 ## Build Setup
 
+The project is running under the 'universal' mode in Nuxt, which means it has server-side rendering and client-side navigation.
+
 ``` bash
 # install dependencies
 $ yarn install
@@ -34,7 +36,6 @@ $ yarn start
 # generate static project
 $ yarn generate
 ```
-
 
 ## Credits
 
