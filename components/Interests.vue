@@ -42,7 +42,7 @@
 }
 .gallery-panel img {
   width: 100%;
-  height: 30vw;
+  height: 20vw;
   object-fit: cover;
 }
 </style>
