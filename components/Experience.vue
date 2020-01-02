@@ -45,6 +45,7 @@
 
         <div class="flex items-center mt-4 mb-4">
           <img
+            :alt="job.cocompanyName"
             :src="`/${job.logo}`"
             class="w-16 h-16 shadow-md rounded-full border-solid border-4 border-white"
           />
