@@ -105,11 +105,11 @@ export default {
               technologies: `JavaScript, AngularJs, Angular, Ionic, Stencil and Redux.`,
               client: 'Rabobank',
               description: `I have worked as a Senior Front End Developer in one of the main banks in The
-                Netherlands, around 2.5 million customers in the country use Rabobank’s mobile banking services and many more people visit website. In here I was part of the core front end platform team, helping to deliver the new development ecosystem that is now used across the entire organization. In this regard I have been actively involved in the decision-making
-                when selecting, migrating, introducing and implementing a new
+                Netherlands, around 2.5 million customers in the country use Rabobank’s mobile banking services and many more people visit website. In this project I was part of the core front end platform team, helping to deliver the new development ecosystem that is now used across the entire organization (more than 400 developers). In this regard I have been actively involved in the decision-making
+                when selecting, migrating, introducing and implementing the new
                 monorepo set-up (to enhance collaboration, code reachability,
                 coordinated deployments & versioning amongst others) along with
-                the new upcoming design of the different apps.`
+                the new upcoming design iterations of the different applications we support.`
             }
           ]
         },
