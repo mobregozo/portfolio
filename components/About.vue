@@ -37,9 +37,10 @@
     <div class="mt-10">
       <a
         target="blank"
-        class="mr-4 text-gray-600 hover:text-gray-500"
+        class="mr-4 text-gray-600 hover:text-gray-500 flex content-center"
         href="https://www.linkedin.com/in/manuelobregozo/?locale=en_US"
       >
+        <span class="hidden">Linkedin</span>
         <span class="fa-stack fa-lg">
           <fa :icon="['fas', 'circle']" class="fa-stack-2x" />
           <fa :icon="['fab', 'linkedin-in']" class="fa-stack-1x fa-inverse" />
@@ -47,9 +48,10 @@
       </a>
       <a
         target="blank"
-        class="mr-4 text-gray-600 hover:text-gray-500"
+        class="mr-4 text-gray-600 hover:text-gray-500 flex content-center"
         href="https://github.com/mobregozo"
       >
+        <span class="hidden">Github</span>
         <span class="fa-stack fa-lg">
           <fa :icon="['fas', 'circle']" class="fa-stack-2x" />
           <fa :icon="['fab', 'github-alt']" class="fa-stack-1x fa-inverse" />
@@ -57,9 +59,10 @@
       </a>
       <a
         target="blank"
-        class="mr-4 text-gray-600 hover:text-gray-500"
+        class="mr-4 text-gray-600 hover:text-gray-500 flex content-center"
         href="https://stackoverflow.com/users/6098430/manuel-obregozo"
       >
+        <span class="hidden">Stack Overflow</span>
         <span class="fa-stack fa-lg">
           <fa :icon="['fas', 'circle']" class="fa-stack-2x" />
           <fa
