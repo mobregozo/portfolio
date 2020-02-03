@@ -28,10 +28,10 @@
           v-bind:key="item.id"
           v-on:click="activeMenu(item.label)"
           v-bind:class="[
-            item.label === menuActive ? 'text-white' : 'text-primary-200'
+            item.label === menuActive ? 'font-bold' : 'font-semibold'
           ]"
           v-bind:href="'#' + item.label.toLowerCase()"
-          class="block mt-4 font-bold hover:text-white mr-4"
+          class="block mt-4 hover:font-bold text-gray-800 mr-4"
           >{{ item.label }}</a
         >
       </div>

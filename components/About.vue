@@ -37,7 +37,7 @@
     <div class="mt-10">
       <a
         target="blank"
-        class="mr-4 text-gray-600 hover:text-gray-500 flex content-center"
+        class="mr-4 text-gray-600 hover:text-gray-500"
         href="https://www.linkedin.com/in/manuelobregozo/?locale=en_US"
       >
         <span class="hidden">Linkedin</span>
@@ -48,7 +48,7 @@
       </a>
       <a
         target="blank"
-        class="mr-4 text-gray-600 hover:text-gray-500 flex content-center"
+        class="mr-4 text-gray-600 hover:text-gray-500"
         href="https://github.com/mobregozo"
       >
         <span class="hidden">Github</span>
@@ -59,7 +59,7 @@
       </a>
       <a
         target="blank"
-        class="mr-4 text-gray-600 hover:text-gray-500 flex content-center"
+        class="mr-4 text-gray-600 hover:text-gray-500"
         href="https://stackoverflow.com/users/6098430/manuel-obregozo"
       >
         <span class="hidden">Stack Overflow</span>
