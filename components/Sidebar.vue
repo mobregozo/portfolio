@@ -31,7 +31,7 @@
             item.label === menuActive ? 'font-bold' : 'font-semibold'
           ]"
           v-bind:href="'#' + item.label.toLowerCase()"
-          class="block mt-4 hover:font-bold text-gray-800 mr-4"
+          class="block mt-4 hover:font-bold text-white mr-4"
           >{{ item.label }}</a
         >
       </div>
