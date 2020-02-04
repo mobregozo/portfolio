@@ -74,7 +74,7 @@
             <p class="text-gray-600 text-justify">
               {{ project.description }}
             </p>
-            <div class="mt-1 text-gray-600">
+            <div class="mt-3 text-gray-600">
               <div class="font-semibold text-primary-600">
                 Main Technologies
               </div>
