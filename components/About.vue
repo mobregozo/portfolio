@@ -1,10 +1,12 @@
 <template>
   <div class="self-center flex-1 ">
-    <h1 class="font-bold text-gray-800 text-6xl leading-none">
+    <h1
+      class="font-bold text-gray-800 text-6xl leading-none animation-slide-left"
+    >
       MANUEL
       <span class="font-bold text-secondary-400">OBREGOZO</span>
     </h1>
-    <h3 class="font-bold text-gray-600 mb-2 text-2xl">
+    <h3 class="font-bold text-gray-600 mb-2 text-2xl animation-opacity">
       FRONT END DEVELOPER ·
       <a
         class="font-bold text-primary-500"
@@ -79,8 +81,38 @@ svg:not(:root).svg-inline--fa {
   overflow: visible;
 }
 
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .svg-inline--fa.fa-w-16 {
   width: 1em;
+}
+
+.animation-slide-left {
+  animation: slide-left 1.5s linear;
+}
+
+.animation-opacity {
+  animation: opacity 1.5s linear;
 }
 
 .svg-inline--fa {

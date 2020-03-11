@@ -31,13 +31,32 @@
             item.label === menuActive ? 'font-bold' : 'font-semibold'
           ]"
           v-bind:href="'#' + item.label.toLowerCase()"
-          class="block mt-4 hover:font-bold text-white mr-4"
+          class="block mt-4 hover:font-bold text-white mr-4 animation-scale"
           >{{ item.label }}</a
         >
       </div>
     </div>
   </nav>
 </template>
+<style>
+@keyframes scale-animation {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.4);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animation-scale:hover {
+  animation: scale-animation 0.4s linear;
+}
+</style>
 
 <script>
 import Avatar from './Avatar.vue'
