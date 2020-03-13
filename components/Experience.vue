@@ -22,6 +22,16 @@
           that I like to learn. Mainly about different Javascript
           frameworks/libraries such as React, Svelte, VueJs, Angular, Stencil,
           Ionic, among others.
+          <br /><br />
+          I am currently working on the MVP of a project with friends called
+          Servite, wich tends to be an app to helps restaurants to serve faster
+          and in a more organized way. <br />Feel free to take a look:
+          <a
+            class="font-bold hover:text-gray-700"
+            href="https://www.serviteonline.com/"
+            >Servite Online</a
+          >
+          <br />
         </p>
       </div>
     </div>
