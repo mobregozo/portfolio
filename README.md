@@ -44,3 +44,30 @@ https://github.com/wahyuway/nuxtjs-resume-template
 https://startbootstrap.com/themes/resume/
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+
+netlify login
+netlify link
+
+dependencies:
+
+
+brew install git-lfs
+brew upgrade git-lfs
+
+
+netlify plugins:install netlify-lm-plugin
+netlify lm:install
+
+
+Delete a site with Large Media enabled
+When you configure a repository to use Git LFS and Large Media, your designated LFS-tracked files will no longer be stored in your repository on your Git provider. Instead, they will be stored in the Large Media store for your connected Netlify site. This means that if you delete that site, you will not be able to recover the files at your Git provider.
+
+Don't forget to make a copy!
+
+To avoid permanent file loss, always clone your entire repository locally before deleting a site with Large Media enabled.
+
+To clone your entire repository with all branches and history, run the following command:
+
+git clone --mirror YOUR_REPOSITORY_URL
+Make sure your files have downloaded properly before deleting the connected site on Netlify.
