@@ -104,17 +104,33 @@ export default {
     return {
       experiences: [
         {
+          companyName: 'ADEVINTA',
+          location: 'Barcelona, Spain',
+          role: 'Front End Developer',
+          period: 'SINCE APR 2020',
+          logo: 'adevinta.jpg',
+          description:
+            'It is a global digital player, the biggest marketplace specialist in Europe.',
+          projects: [
+            {
+              technologies: `JavaScript, Vue and Vuex`,
+              client: 'Adevinta common components',
+              description: `Currently working as a Senior Front End Developer for a cross-platform team that develops a component that used in different market places across diffent countries.`
+            }
+          ]
+        },
+        {
           companyName: 'FRONTMEN',
           location: 'Amsterdam, The Netherlands',
           role: 'Front End Developer',
-          period: 'SINCE FEB 2018',
+          period: 'FEB 2018 - MAR 2020',
           logo: 'frontmen.png',
           description: ``,
           projects: [
             {
               technologies: `JavaScript, AngularJs, Angular, Ionic, Stencil and Redux.`,
               client: 'Rabobank',
-              description: `I have worked as a Senior Front End Developer in one of the main banks in The
+              description: `I worked as a Senior Front End Developer in one of the main banks in The
                 Netherlands, around 2.5 million customers in the country use Rabobank’s mobile banking services and many more people visit website. In this project I was part of the core front end platform team, helping to deliver the new development ecosystem that is now used across the entire organization (more than 400 developers). In this regard I have been actively involved in the decision-making
                 when selecting, migrating, introducing and implementing the new
                 monorepo set-up (to enhance collaboration, code reachability,
