@@ -1,18 +1,21 @@
 <template>
   <section id="wrapper" class="flex flex-col items-center">
     <div class="container">
-      <section id="about" class="min-h-screen md:px-10 flex pt-24 md:py-10">
+      <section
+        id="about"
+        class="min-h-screen w-full md:px-10 flex pt-24 md:py-10 overflow-x-hidden"
+      >
         <about />
       </section>
       <section
         id="experience"
-        class="min-h-screen md:px-10 flex pt-24 md:py-10"
+        class="min-h-screen md:px-10 flex pt-24 md:py-10 w-full"
       >
         <experience />
       </section>
       <section
         id="interests"
-        class="min-h-screen w-sceen md:px-10 flex pt-24 md:py-10"
+        class="min-h-screen w-sceen md:px-10 flex pt-24 md:py-10 w-full"
       >
         <interests />
       </section>
