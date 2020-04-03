@@ -115,7 +115,7 @@ export default {
             {
               technologies: `JavaScript, Vue and Vuex`,
               client: 'Adevinta common components',
-              description: `Currently working as a Senior Front End Developer for a cross-platform team that develops a general component that is used in different market places across various countries.`
+              description: `Currently working as a Senior Front End Developer for a cross-platform team that develops a component that is used in different market places across various countries.`
             }
           ]
         },
