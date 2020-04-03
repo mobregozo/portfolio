@@ -9,7 +9,7 @@
     <h3 class="font-bold text-gray-600 mb-2 text-2xl animation-opacity">
       FRONT END DEVELOPER ·
       <a
-        class="font-bold text-primary-500"
+        class="font-bold text-primary-500 hover:text-primary-400"
         href="mailto:obregozo.manuel@gmail.com"
       >
         OBREGOZO.MANUEL@GMAIL.COM
