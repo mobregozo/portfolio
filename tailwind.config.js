@@ -4,7 +4,8 @@
  ** Docs: https://tailwindcss.com/docs/configuration
  ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
  */
-const { colors } = require('tailwindcss/defaultTheme')
+const { colors, spacing } = require('tailwindcss/defaultTheme')
+
 module.exports = {
   theme: {
     colors: {
@@ -12,7 +13,8 @@ module.exports = {
       primary: colors.teal,
       secondary: colors.orange
     },
-    height: {
+    spacing: {
+      ...spacing,
       pic: '20vw'
     },
     extend: {
