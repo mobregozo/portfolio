@@ -77,10 +77,6 @@
   </div>
 </template>
 <style>
-svg:not(:root).svg-inline--fa {
-  overflow: visible;
-}
-
 @keyframes slide-left {
   from {
     margin-left: 100%;
@@ -102,34 +98,11 @@ svg:not(:root).svg-inline--fa {
     opacity: 1;
   }
 }
-
-.svg-inline--fa.fa-w-16 {
-  width: 1em;
-}
-
 .animation-slide-left {
   animation: slide-left 1.5s linear;
 }
 
 .animation-opacity {
   animation: opacity 1.5s linear;
-}
-
-.svg-inline--fa {
-  display: inline-block;
-  font-size: inherit;
-  height: 1em;
-  overflow: visible;
-  vertical-align: -0.125em;
-}
-
-.svg-inline--fa.fa-stack-2x {
-  height: 2em;
-  width: 2.5em;
-}
-
-.svg-inline--fa.fa-stack-1x {
-  height: 1em;
-  width: 1.25em;
 }
 </style>
