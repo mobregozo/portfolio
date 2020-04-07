@@ -11,6 +11,14 @@ module.exports = {
       ...colors,
       primary: colors.teal,
       secondary: colors.orange
+    },
+    height: {
+      pic: '20vw'
+    },
+    extend: {
+      gridTemplateColumns: {
+        auto: 'repeat(auto-fill, minmax(15rem, 1fr))'
+      }
     }
   },
   variants: {},

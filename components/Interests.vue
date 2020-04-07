@@ -14,7 +14,7 @@
       play since I was a little kid, and I still enjoy playing the good old punk
       rock songs that I used to listen to when I was at high school.
     </p>
-    <div class="mt-10 gallery">
+    <div class="mt-10 grid gap-5 grid-cols-auto my-5 mx-auto">
       <div
         v-for="img in interestPics"
         :key="img.link"
@@ -23,7 +23,7 @@
         <img
           :src="`/${img.link}.jpg`"
           :alt="img.description"
-          class="img-gallery"
+          class="w-full object-cover h-pic"
         />
         <div class="py-2">
           {{ img.description }}
@@ -32,20 +32,6 @@
     </div>
   </div>
 </template>
-
-<style>
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-  grid-gap: 1rem;
-  margin: 5rem auto;
-}
-.gallery-panel img {
-  width: 100%;
-  height: 20vw;
-  object-fit: cover;
-}
-</style>
 
 <script>
 export default {
