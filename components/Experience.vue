@@ -1,6 +1,6 @@
 <template>
   <div class="my-auto">
-    <h1 class="mb-5 text-6xl font-bold leading-none">Experience</h1>
+    <h1 class="mb-5 text-6xl font-bold">Experience</h1>
     <p class="text-gray-600 font-semibold text-justify">
       I have worked as a Developer since 2011, I started as a consultant/back
       end developer, and due to the fact that I always liked UI/UX related
@@ -43,9 +43,7 @@
     >
       <div class="mr-auto">
         <div class="md:flex items-center md:justify-between">
-          <h3
-            class="m-0 font-bold text-gray-700 text-3xl leading-none text-secondary-400"
-          >
+          <h3 class="m-0 font-bold text-gray-700 text-3xl  text-secondary-400">
             {{ job.role }}
           </h3>
           <div class="text-primary-500 font-bold whitespace-no-wrap">

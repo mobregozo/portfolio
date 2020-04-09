@@ -1,6 +1,6 @@
 <template>
   <div class="my-auto">
-    <h2 class="mb-5 text-6xl font-bold leading-none">Interests</h2>
+    <h2 class="mb-5 text-6xl font-bold">Interests</h2>
     <p class="mb-2 mt-8 text-gray-600 font-semibold text-justify">
       Besides work, I usually spend my free time outdoors playing sports and
       travelling around, taking pictures of everything I see.
