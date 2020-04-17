@@ -14,20 +14,13 @@
       play since I was a little kid, and I still enjoy playing the good old punk
       rock songs that I used to listen to when I was at high school.
     </p>
-    <div class="mt-10 grid gap-5 grid-cols-auto my-5 mx-auto">
-      <div
-        v-for="img in interestPics"
-        :key="img.link"
-        class="hover-text relative gallery-panel rounded-lg shadow-lg border-solid border-8 border-white"
-      >
+    <div class="mt-10 grid gap-1 grid-cols-3 my-5">
+      <div v-for="img in interestPics" :key="img.link" class="hover-text">
         <img
           :src="`/${img.link}.jpg`"
           :alt="img.description"
           class="w-full object-cover h-pic"
         />
-        <div class="py-2">
-          {{ img.description }}
-        </div>
       </div>
     </div>
   </div>
