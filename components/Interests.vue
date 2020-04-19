@@ -14,12 +14,12 @@
       play since I was a little kid, and I still enjoy playing the good old punk
       rock songs that I used to listen to when I was at high school.
     </p>
-    <div class="mt-10 grid grid-cols-1 sm:gap-1 md:grid-cols-3">
+    <div class="mt-10 grid gap-1 grid-cols-1 lg:grid-cols-3">
       <div v-for="img in interestPics" :key="img.link" class="hover-text">
         <img
           :src="`/${img.link}.jpg`"
           :alt="img.description"
-          class="w-full object-cover h-64 md:h-pic "
+          class="w-full object-cover h-64"
         />
       </div>
     </div>
@@ -31,12 +31,9 @@ export default {
   data: () => {
     return {
       interestPics: [
-        { link: 'beach', description: 'Necochea, Argentina' },
         { link: 'drums', description: 'Rehearsal' },
-        { link: 'drums1', description: 'Rehearsal' },
         { link: 'football', description: 'Warming Up' },
-        { link: 'snow', description: 'Snowboarding in Bariloche' },
-        { link: 'snow1', description: 'Snowboarding in Bariloche' }
+        { link: 'snow', description: 'Snowboarding in Bariloche' }
       ]
     }
   }
