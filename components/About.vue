@@ -2,7 +2,9 @@
   <div class="self-center flex-1">
     <h1 class="font-bold text-gray-800 text-6xl">
       MANUEL
-      <span class="font-bold text-secondary-400">OBREGOZO</span>
+      <transition appear name="fade">
+        <span class="font-bold text-secondary-400">OBREGOZO</span>
+      </transition>
     </h1>
     <h3 class="font-bold text-gray-600 mb-2 text-2xl">
       FRONT END DEVELOPER ·
@@ -80,3 +82,22 @@
     </div>
   </div>
 </template>
+<style>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 2s;
+  transition-delay: 0.4s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+</style>
+<script>
+export default {
+  data: () => {
+    return {
+      showElement: false
+    }
+  }
+}
+</script>

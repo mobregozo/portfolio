@@ -14,12 +14,12 @@
       play since I was a little kid, and I still enjoy playing the good old punk
       rock songs that I used to listen to when I was at high school.
     </p>
-    <div class="mt-10 grid gap-1 grid-cols-3 my-5">
+    <div class="mt-10 grid grid-cols-1 sm:gap-1 md:grid-cols-3">
       <div v-for="img in interestPics" :key="img.link" class="hover-text">
         <img
           :src="`/${img.link}.jpg`"
           :alt="img.description"
-          class="w-full object-cover h-pic"
+          class="w-full object-cover h-64 md:h-pic "
         />
       </div>
     </div>
