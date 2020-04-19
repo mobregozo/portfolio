@@ -58,10 +58,13 @@ export default {
     }
   },
   mounted() {
+    const animationClass = 'animation'
+    const animate = (element) => element.classList.add(animationClass)
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           this.menuActive = entry.target.id.toUpperCase()
+          animate(entry.target)
         }
       })
     })
