@@ -41,9 +41,12 @@
         href="https://www.linkedin.com/in/manuelobregozo/?locale=en_US"
       >
         <span class="hidden">Linkedin</span>
-        <span class="fa-stack fa-lg">
+        <span class="fa-stack">
           <fa :icon="['fas', 'circle']" class="fa-stack-2x" />
-          <fa :icon="['fab', 'linkedin-in']" class="fa-stack-1x fa-inverse" />
+          <fa
+            :icon="['fab', 'linkedin-in']"
+            class="fa-stack-1x fa-inverse h-6"
+          />
         </span>
       </a>
       <a
@@ -52,9 +55,12 @@
         href="https://github.com/mobregozo"
       >
         <span class="hidden">Github</span>
-        <span class="fa-stack fa-lg">
+        <span class="fa-stack">
           <fa :icon="['fas', 'circle']" class="fa-stack-2x" />
-          <fa :icon="['fab', 'github-alt']" class="fa-stack-1x fa-inverse" />
+          <fa
+            :icon="['fab', 'github-alt']"
+            class="fa-stack-1x h-6 fa-inverse"
+          />
         </span>
       </a>
       <a
@@ -63,11 +69,11 @@
         href="https://stackoverflow.com/users/6098430/manuel-obregozo"
       >
         <span class="hidden">Stack Overflow</span>
-        <span class="fa-stack fa-lg">
+        <span class="fa-stack">
           <fa :icon="['fas', 'circle']" class="fa-stack-2x" />
           <fa
             :icon="['fab', 'stack-overflow']"
-            class="fa-stack-1x fa-inverse"
+            class="fa-stack-1x fa-inverse h-6"
           />
         </span>
       </a>
