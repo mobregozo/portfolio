@@ -111,7 +111,7 @@ export default {
             'It is a global digital player, the biggest marketplace specialist in Europe.',
           projects: [
             {
-              technologies: `JavaScript, Vue and Vuex`,
+              technologies: `JavaScript, Tailwind, Vue and Vuex`,
               client: 'Adevinta common components',
               description: `Currently working as a Senior Front End Developer for a cross-platform team that develops a component that is used in different market places across various countries.`
             }
