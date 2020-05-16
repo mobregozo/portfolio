@@ -1,5 +1,5 @@
 <template>
-  <div class="my-auto">
+  <div class="self-end my-auto">
     <h1 class="mb-5 text-6xl font-bold">Experience</h1>
     <p class="text-gray-600 font-semibold text-justify">
       I have worked as a Developer since 2011, I started as a consultant/back
