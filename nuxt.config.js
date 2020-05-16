@@ -90,5 +90,16 @@ export default {
       config.resolve.alias['@fortawesome/fontawesome-free-solid$'] =
         '@fortawesome/fontawesome-free-solid/shakable.es.js'
     }
+  },
+  purge: {
+    // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
+    enabled: process.env.NODE_ENV === 'production',
+    content: [
+      'components/**/*.vue',
+      'layouts/**/*.vue',
+      'pages/**/*.vue',
+      'plugins/**/*.js',
+      'nuxt.config.js'
+    ]
   }
 }
