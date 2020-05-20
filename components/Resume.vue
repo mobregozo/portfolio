@@ -25,7 +25,7 @@
 <style>
 .animated-section {
   opacity: 0;
-  transform: translate3d(0, 100px, 0);
+  transform: translate3d(100px, 0, 0);
   transition-property: transform opacity;
   transition-duration: 1s;
 }
