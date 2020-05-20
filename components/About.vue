@@ -41,7 +41,7 @@
         href="https://www.linkedin.com/in/manuelobregozo/?locale=en_US"
       >
         <span class="hidden">Linkedin</span>
-        <span class="fa-stack">
+        <span class="fa-stack hover:scale-110 transform duration-300">
           <fa :icon="['fas', 'circle']" class="fa-stack-2x" />
           <fa
             :icon="['fab', 'linkedin-in']"
@@ -55,7 +55,7 @@
         href="https://github.com/mobregozo"
       >
         <span class="hidden">Github</span>
-        <span class="fa-stack">
+        <span class="fa-stack hover:scale-110 transform duration-300">
           <fa :icon="['fas', 'circle']" class="fa-stack-2x" />
           <fa
             :icon="['fab', 'github-alt']"
@@ -69,7 +69,7 @@
         href="https://stackoverflow.com/users/6098430/manuel-obregozo"
       >
         <span class="hidden">Stack Overflow</span>
-        <span class="fa-stack">
+        <span class="fa-stack hover:scale-110 transform duration-300">
           <fa :icon="['fas', 'circle']" class="fa-stack-2x" />
           <fa
             :icon="['fab', 'stack-overflow']"
