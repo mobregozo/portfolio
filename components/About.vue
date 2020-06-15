@@ -16,12 +16,12 @@
     <div class="font-bold mb-3 text-gray-500">
       <i class="fas fa-map-marker-alt"></i> AMSTERDAM, NETHERLANDS
     </div>
-    <p class="mb-2 mt-8 text-gray-600 font-semibold text-justify">
+    <p class="mb-2 mt-8 text-gray-600 font-semibold ">
       I am an enthusiastic Front End Developer from a little town called
       Necochea in the coast of Argentina. Passionate about software development
       and developer communities.
     </p>
-    <p class="mb-2 text-gray-600 font-semibold text-justify">
+    <p class="mb-2 text-gray-600 font-semibold ">
       Currently, I am centered on web, desktop, and hybrid mobile applications,
       using different JavaScript related Frameworks. I have worked as a
       developer for more than 8 years, in different kinds of business domains,
@@ -29,7 +29,7 @@
       development projects from design to testing and up to production
       deployment, with an emphasis on front end features.
     </p>
-    <p class="text-gray-600 font-semibold text-justify">
+    <p class="text-gray-600 font-semibold ">
       I consider myself a real team player who understands the importance of
       teamwork, proactivity, collaboration, continuous feedback, and open
       communication.

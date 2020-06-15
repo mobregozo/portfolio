@@ -1,7 +1,7 @@
 <template>
   <div class="self-end my-auto">
     <h1 class="mb-5 text-6xl font-bold">Experience</h1>
-    <p class="text-gray-600 font-semibold text-justify">
+    <p class="text-gray-600 font-semibold ">
       I have worked as a Developer since 2011, I started as a consultant/back
       end developer, and due to the fact that I always liked UI/UX related
       topics, I did a switch to front end in 2013 when I started my first
@@ -14,7 +14,7 @@
         <div class="mb-3 font-bold text-xl text-gray-600">
           Side Projects
         </div>
-        <p class="text-gray-600 text-justify">
+        <p class="text-gray-600 ">
           Since I started to work with front end technologies I work in
           different side-projects outside of my full-time assigments. In most of
           the cases, the products that I developed are for small local business,
@@ -39,7 +39,7 @@
     <div
       v-for="job in experiences"
       v-bind:key="job.companyName"
-      class="flex flex-no-wrap flex-col md:flex-row border-solid border-t-2 border-gray-200 pt-10 pb-6"
+      class="flex flex-no-wrap animated-section flex-col md:flex-row border-solid border-t-2 border-gray-200 pt-10 pb-6"
     >
       <div class="mr-auto">
         <div class="md:flex items-center md:justify-between">
@@ -65,7 +65,7 @@
           </div>
         </div>
 
-        <p class="text-gray-600 font-semibold text-justify">
+        <p class="text-gray-600 font-semibold ">
           {{ job.description }}
         </p>
         <div
@@ -79,7 +79,7 @@
             >
               > {{ project.client }}
             </div>
-            <p class="text-gray-600 text-justify">
+            <p class="text-gray-600 ">
               {{ project.description }}
             </p>
             <div class="mt-3 text-gray-600">

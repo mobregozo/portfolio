@@ -14,3 +14,16 @@ h5,
 h6 {
   font-family: 'Saira Extra Condensed', serif;
 }
+
+.animated-section {
+  opacity: 0;
+  transform: translate3d(100px, 0, 0);
+  overflow: hidden;
+  transition-property: transform opacity;
+  transition-duration: 1s;
+}
+
+.animated-section.animation {
+  opacity: 1;
+  transform: translateZ(0);
+}

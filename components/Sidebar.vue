@@ -70,10 +70,14 @@ export default {
     })
 
     const about = document.getElementById('about')
-    const experience = document.getElementById('experience')
+    const experiences = [
+      ...document.querySelectorAll('#experience .animated-section')
+    ]
     const interests = document.getElementById('interests')
     observer.observe(about)
-    observer.observe(experience)
+    experiences.forEach((exprienceElement) => {
+      observer.observe(exprienceElement)
+    })
     observer.observe(interests)
   },
   methods: {
