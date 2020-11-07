@@ -22,16 +22,6 @@
           that I like to learn. Mainly about different Javascript
           frameworks/libraries such as React, Svelte, VueJs, Angular, Stencil,
           Ionic, among others.
-          <br /><br />
-          I am currently working on the MVP of a project with friends called
-          Servite, wich tends to be an app to helps restaurants to serve faster
-          and in a more organized way. <br />Feel free to take a look:
-          <a
-            class="font-bold hover:text-gray-700"
-            href="https://www.serviteonline.com/"
-            >Servite Online</a
-          >
-          <br />
         </p>
       </div>
     </div>
@@ -43,7 +33,7 @@
     >
       <div class="mr-auto">
         <div class="md:flex items-center md:justify-between">
-          <h3 class="m-0 font-bold text-gray-700 text-3xl  text-secondary-400">
+          <h3 class="m-0 font-bold text-gray-700 text-3xl">
             {{ job.role }}
           </h3>
           <div class="text-primary-500 font-bold whitespace-no-wrap">
@@ -74,9 +64,7 @@
           class="my-6 last:mb-0"
         >
           <div class="pl-3">
-            <div
-              class="w-full text-xl font-semibold text-secondary-500 font-semibold"
-            >
+            <div class="w-full text-xl text-secondary-500 font-semibold">
               > {{ project.client }}
             </div>
             <p class="text-gray-600 ">
@@ -114,6 +102,26 @@ export default {
               technologies: `JavaScript, Tailwind, Vue and Vuex`,
               client: 'Adevinta common components',
               description: `Currently working as a Senior Front End Developer for a cross-platform team that develops a component that is used in different market places across various countries.`
+            }
+          ]
+        },
+        {
+          companyName: 'ServiteOnline',
+          location: 'Remote',
+          role: 'CWO & Co Founder',
+          period: 'SINCE JUL 2018',
+          logo: 'servite.png',
+          description:
+            'E-commerce solution that helps small stores to go digital.',
+          projects: [
+            {
+              technologies: `Stencil and Ionic`,
+              client: 'ServiteOnline Platform',
+              description: `I am one of the co-founders of ServiteOnline, a platform we created to help stores to digitalise their order management process.
+                We are currently in the process of increasing our customer base, improving our features and enhancing the product along the way based on market needs.
+                About my specific role, from a technical perspective I am responsible of the Web applications, for both User and Admin entry points.
+                And, putting the technical part aside, I work on the product vision and analysis (area that I currently focusing on, crucial for the development of our platform),
+                plus UI/UX concerns taking the usability and innovation as our main driving values.`
             }
           ]
         },
