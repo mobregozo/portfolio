@@ -14,7 +14,7 @@
       </a>
     </h3>
     <div class="font-bold mb-3 text-gray-500">
-      <i class="fas fa-map-marker-alt"></i> AMSTERDAM, NETHERLANDS
+      <i class="fas fa-map-marker-alt"></i> BARCELONA, SPAIN
     </div>
     <p class="mb-2 mt-8 text-gray-600 font-semibold ">
       I am an enthusiastic Front End Developer from a little town called
