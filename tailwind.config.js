@@ -20,6 +20,9 @@ module.exports = {
     extend: {
       gridTemplateColumns: {
         auto: 'repeat(auto-fill, minmax(15rem, 1fr))'
+      },
+      transitionProperty: {
+        opacity: 'opacity'
       }
     }
   },
