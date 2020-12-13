@@ -21,7 +21,8 @@
     }
   },
   "dependencies": {
-    "nuxt": "^2.0.0"
+    "@nuxtjs/prismic": "^1.2.4",
+    "nuxt": "^2.14.7"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free-brands": "^5.0.13",

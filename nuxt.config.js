@@ -1,5 +1,4 @@
 export default {
-  mode: 'universal',
   /*
    ** Headers of the page
    */
@@ -19,6 +18,11 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'preconnect',
+        href: 'https://fonts.gstatic.com/',
+        crossorigin: true
+      },
       {
         rel: 'stylesheet',
         type: 'text/css',
@@ -66,6 +70,7 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
+    '@nuxtjs/prismic',
     [
       'nuxt-fontawesome',
       {
@@ -83,6 +88,14 @@ export default {
       }
     ]
   ],
+  prismic: {
+    endpoint: 'https://manuel-portfolio.cdn.prismic.io/api/v2',
+    linkResolver: '@/plugins/link-resolver',
+    htmlSerializer: '@/plugins/html-serializer'
+  },
+  generate: {
+    fallback: '404.html'
+  },
   /*
    ** Build configuration
    */
