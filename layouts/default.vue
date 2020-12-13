@@ -4,7 +4,7 @@
   >
     <sidebar />
     <div
-      class="scrollable overflow-x-hidden flex-1 min-h-screen px-6 flex pt-24 md:py-10 w-full max-w-screen-lg"
+      class="scrollable overflow-x-hidden flex-1 min-h-screen px-8 flex pt-24 md:py-10 w-full"
     >
       <nuxt />
     </div>
