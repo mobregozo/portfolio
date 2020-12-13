@@ -2,7 +2,7 @@
   <div>
     <transition name="zoom-left" appear>
       <img
-        src="profile.jpg"
+        src="/profile.jpg"
         alt="avatar"
         class="h-12 w-12 md:h-40 md:w-40 object-cover rounded-full md:border-4"
       />

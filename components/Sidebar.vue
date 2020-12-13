@@ -3,7 +3,7 @@
     class="fixed z-50 left-0 right-0 md:relative md:max-w-xs flex items-center justify-between flex-wrap md:flex-col md:align-center md:justify-center bg-primary-500 p-6"
   >
     <avatar class="float-right md:mb-5" />
-    <div class="block md:hidden ">
+    <div class="block md:hidden">
       <button
         v-on:click="isActive = !isActive"
         class="flex items-center px-3 py-2 border rounded text-primary-200 border-primary-400 hover:text-white hover:border-white"
@@ -23,16 +23,16 @@
       class="flex-initial w-full block md:block"
     >
       <div class="md:text-center text-md">
-        <a
+        <NuxtLink
           v-for="item in menuItems"
           v-bind:key="item.id"
-          v-on:click="activeMenu(item.label)"
+          v-bind:to="item.link"
+          v-on:click="isActive = !isActive"
           v-bind:class="[
-            item.label === menuActive ? 'font-bold' : 'font-semibold'
+            item.link === $route.path ? 'font-bold' : 'font-semibold'
           ]"
-          v-bind:href="'#' + item.label.toLowerCase()"
           class="block mt-4 hover:font-bold text-white mr-4 hover:scale-150 transform duration-300"
-          >{{ item.label }}</a
+          >{{ item.label }}</NuxtLink
         >
       </div>
     </div>
@@ -51,39 +51,11 @@ export default {
       isActive: false,
       menuActive: 'ABOUT',
       menuItems: [
-        { label: 'ABOUT' },
-        { label: 'EXPERIENCE' },
-        { label: 'INTERESTS' }
+        { label: 'ABOUT', link: '/' },
+        { label: 'EXPERIENCE', link: '/experience' },
+        { label: 'INTERESTS', link: '/interests' },
+        { label: 'THOUGHTS', link: '/thoughts' }
       ]
-    }
-  },
-  mounted() {
-    const animationClass = 'animation'
-    const animate = (element) => element.classList.add(animationClass)
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          this.menuActive = entry.target.id.toUpperCase()
-          animate(entry.target)
-        }
-      })
-    })
-
-    const about = document.getElementById('about')
-    const experiences = [
-      ...document.querySelectorAll('#experience .animated-section')
-    ]
-    const interests = document.getElementById('interests')
-    observer.observe(about)
-    experiences.forEach((exprienceElement) => {
-      observer.observe(exprienceElement)
-    })
-    observer.observe(interests)
-  },
-  methods: {
-    activeMenu(label) {
-      this.menuActive = label
-      this.isActive = !this.isActive
     }
   }
 }
