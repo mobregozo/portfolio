@@ -49,14 +49,38 @@ export default function(type, element, content, children) {
     return result
   }
 
+  if (type === Elements.list) {
+    const id = element.text.replace(/\W+/g, '-').toLowerCase()
+    return (
+      '<ul class="list-disc list-inside my-4" id="' +
+      id +
+      '">' +
+      children.join('') +
+      '</li>'
+    )
+  }
+
+  if (type === Elements.listItem) {
+    const id = element.text.replace(/\W+/g, '-').toLowerCase()
+    return '<li id="' + id + '">' + children.join('') + '</li>'
+  }
+
   if (type === Elements.heading2) {
     const id = element.text.replace(/\W+/g, '-').toLowerCase()
     return '<h2 id="' + id + '">' + children.join('') + '</h2>'
   }
 
+  if (type === Elements.heading2) {
+    return '<p>' + children.join('') + '</p>'
+  }
+
   if (type === Elements.heading3) {
     const id = element.text.replace(/\W+/g, '-').toLowerCase()
     return '<h3 id="' + id + '">' + children.join('') + '</h3>'
+  }
+
+  if (type === Elements.paragraph) {
+    return '<p class="my-4" >' + children.join('') + '</p>'
   }
 
   // Return null to stick with the default behavior for everything else
