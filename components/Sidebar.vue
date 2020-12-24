@@ -1,40 +1,30 @@
 <template>
   <nav
-    class="fixed z-50 left-0 right-0 md:relative md:max-w-xs flex items-center justify-between flex-wrap md:flex-col md:align-center md:justify-center bg-primary-500 p-6"
+    class="fixed z-50 left-0 right-0 md:relative md:max-w-xs flex items-center justify-between md:flex-wrap md:flex-col md:align-center md:justify-center bg-primary-500 px-4 py-4 md:p-6"
   >
-    <avatar class="float-right md:mb-5" />
-    <div class="block md:hidden">
-      <button
-        v-on:click="isActive = !isActive"
-        class="flex items-center px-3 py-2 border rounded text-primary-200 border-primary-400 hover:text-white hover:border-white"
-      >
-        <svg
-          class="fill-current h-3 w-3"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <title>Menu</title>
-          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-        </svg>
-      </button>
-    </div>
+    <avatar class="mr-4 md:mr-0 md:mb-5 flex-shrink-0" />
     <div
-      v-bind:class="{ hidden: !isActive }"
-      class="flex-initial w-full block md:block"
+      class="flex w-full md:block md:text-center text-md justify-end md:justify-center space-x-4 md:space-x-0"
     >
-      <div class="md:text-center text-md">
-        <NuxtLink
-          v-for="item in menuItems"
-          v-bind:key="item.id"
-          v-bind:to="item.link"
-          v-on:click="isActive = !isActive"
-          v-bind:class="[
-            item.link === $route.path ? 'font-bold' : 'font-semibold'
-          ]"
-          class="block mt-4 hover:font-bold text-white mr-4 hover:scale-150 transform duration-300"
-          >{{ item.label }}</NuxtLink
-        >
-      </div>
+      <NuxtLink
+        v-for="item in menuItems"
+        v-bind:key="item.id"
+        v-bind:to="item.link"
+        v-bind:class="[
+          'flex items-center font-bold justify-center',
+          item.link === $route.path || $route.params[item.label]
+            ? ''
+            : 'opacity-50'
+        ]"
+        class="md:mt-4 hover:opacity-100 transition-all uppercase text-white hover:scale-150 md:transform md:duration-300 overflow-hidden"
+      >
+        <img
+          :src="'/' + item.icon"
+          :alt="item.label"
+          class="h-10 md:mr-2 block md:hidden"
+        />
+        <span class="hidden md:block">{{ item.label }}</span></NuxtLink
+      >
     </div>
   </nav>
 </template>
@@ -48,13 +38,13 @@ export default {
   },
   data: () => {
     return {
-      isActive: false,
-      menuActive: 'ABOUT',
+      isActive: true,
+      menuActive: 'about',
       menuItems: [
-        { label: 'ABOUT', link: '/' },
-        { label: 'EXPERIENCE', link: '/experience' },
-        { label: 'INTERESTS', link: '/interests' },
-        { label: 'THOUGHTS', link: '/thoughts' }
+        { label: 'about', link: '/', icon: 'about.svg' },
+        { label: 'experience', link: '/experience', icon: 'experience.svg' },
+        { label: 'thoughts', link: '/thoughts', icon: 'thoughts.svg' },
+        { label: 'interests', link: '/interests', icon: 'interests.svg' }
       ]
     }
   }
