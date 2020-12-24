@@ -4,7 +4,7 @@
     <p class="text-gray-600 font-semibold ">
       I have worked as a Developer since 2011, I started as a consultant/back
       end developer, and due to the fact that I always liked UI/UX related
-      topics, I did a switch to front end in 2013 when I started my first
+      topics, I did a switch to Frontend in 2013 when I started my first
       assigment. And since then, I have been exploring different technologies,
       and I still enjoy the challenges it brings.
     </p>
@@ -15,11 +15,11 @@
           Side Projects
         </div>
         <p class="text-gray-600 ">
-          Since I started to work with front end technologies I work in
-          different side-projects outside of my full-time assigments. In most of
-          the cases, the products that I developed are for small local business,
-          and with learning and testing purposes about a particular technology
-          that I like to learn. Mainly about different Javascript
+          Since I started to work with Frontend technologies I work in different
+          side-projects outside of my full-time assigments. In most of the
+          cases, the products that I developed are for small local business, and
+          with learning and testing purposes about a particular technology that
+          I like to learn. Mainly about different JavaScript
           frameworks/libraries such as React, Svelte, VueJs, Angular, Stencil,
           Ionic, among others.
         </p>
@@ -92,7 +92,7 @@ export default {
         {
           companyName: 'ADEVINTA',
           location: 'Barcelona, Spain',
-          role: 'Front End Developer',
+          role: 'Frontend Developer',
           period: 'SINCE APR 2020',
           logo: 'adevinta.jpg',
           description:
@@ -101,7 +101,7 @@ export default {
             {
               technologies: `JavaScript, Tailwind, Vue and Vuex`,
               client: 'Adevinta common components',
-              description: `Currently working as a Senior Front End Developer for a cross-platform team that develops a component that is used in different market places across various countries.`
+              description: `Currently working as a Senior Frontend Developer for a cross-platform team that develops a component that is used in different market places across various countries.`
             }
           ]
         },
@@ -115,7 +115,7 @@ export default {
             'E-commerce solution that helps small stores to go digital.',
           projects: [
             {
-              technologies: `Stencil, Ionic, React and TailwindCSS`,
+              technologies: `JavaScript, Stencil, Ionic, React and TailwindCSS`,
               client: 'ServiteOnline Platform',
               description: `I am one of the co-founders of ServiteOnline, a platform we created to help stores to digitalise their order management process.
                 We are currently in the process of increasing our customer base, improving our features and enhancing the product along the way based on market needs.
@@ -128,7 +128,7 @@ export default {
         {
           companyName: 'FRONTMEN',
           location: 'Amsterdam, The Netherlands',
-          role: 'Front End Developer',
+          role: 'Frontend Developer',
           period: 'FEB 2018 - MAR 2020',
           logo: 'frontmen.png',
           description: ``,
@@ -136,8 +136,8 @@ export default {
             {
               technologies: `JavaScript, AngularJs, Angular, Ionic, Stencil and Redux.`,
               client: 'Rabobank',
-              description: `I worked as a Senior Front End Developer in one of the main banks in The
-                Netherlands, around 2.5 million customers in the country use Rabobank’s mobile banking services and many more people visit website. In this project I was part of the core front end platform team, helping to deliver the new development ecosystem that is now used across the entire organization (more than 400 developers). In this regard I have been actively involved in the decision-making
+              description: `I worked as a Senior Frontend Developer in one of the main banks in The
+                Netherlands, around 2.5 million customers in the country use Rabobank’s mobile banking services and many more people visit website. In this project I was part of the core Frontend platform team, helping to deliver the new development ecosystem that is now used across the entire organization (more than 400 developers). In this regard I have been actively involved in the decision-making
                 when selecting, migrating, introducing and implementing the new
                 monorepo set-up (to enhance collaboration, code reachability,
                 coordinated deployments & versioning amongst others) along with
@@ -148,17 +148,17 @@ export default {
         {
           companyName: 'MOBIQUITY',
           location: 'Amsterdam, The Netherlands',
-          role: 'Front End Developer',
+          role: 'Frontend Developer',
           period: 'JUN 2017 - JAN 2018',
           logo: 'mobiquity.png',
-          description: `Within Mobiquity I worked as a Front End Developer for different
+          description: `Within Mobiquity I worked as a Frontend Developer for different
                 business domains. Gained a lot of experience working in an
                 international environment, and interview recruiting process.`,
           projects: [
             {
               technologies: `AngularJs, Angular, Protractor and Jasmine.`,
               client: 'Backbase',
-              description: `I worked there as a Front End
+              description: `I worked there as a Frontend
                 consultant for this online banking platform for professional services, developing and helping the
                 team to integrate and implement the UI (Web Apps and Hybrid
                 Mobile Apps) of the company products with the different Bank
@@ -175,7 +175,7 @@ export default {
         {
           companyName: 'NORSYNC',
           location: 'Tandil, Argentina',
-          role: 'Front End Developer',
+          role: 'Frontend Developer',
           period: 'JAN 2016 - MAY 2017',
           logo: 'norsync.png',
           description: `At Norsync were we worked in a startup model, I was really
@@ -187,7 +187,7 @@ export default {
               technologies: `AngularJs, Angular, Ionic, NodeJs, Protractor, Jasmine,
                 Bootstrap and Gulp.`,
               client: 'Norweigan Stores',
-              description: `Worked as a Web and Mobile Front End Developer, where I
+              description: `Worked as a Web and Mobile Frontend Developer, where I
                 developed several hybrid applications and web apps from scratch
                 that are now still in production, including Application
                 distribution into the different stores. Regarding the business
@@ -204,7 +204,7 @@ export default {
           role: 'Software Engineer',
           period: 'APR 2014 – DEC 2015',
           logo: 'sparkdigital.png',
-          description: `Within Devspark I did my first official step into Front End
+          description: `Within Devspark I did my first official step into Frontend
                 development, something that I was already doing in my free time.
                 I also gained experience in integration strategies, management,
                 and team building. I had direct contact with many stakeholders
@@ -214,7 +214,7 @@ export default {
               technologies: `Django, Heroku, AngularJs, JQuery, Protractor, jasmine, SASS,
                 CSS, Bootstrap, and Grunt.`,
               client: 'Likeminder',
-              description: `I have lead a front end development of a SPA. A private online
+              description: `I have lead a Frontend development of a SPA. A private online
                 social media called Likeminder, which allows users to share and support private
                 and emotional conversations. Since we were a small team, I was
                 involved in all technical and non-technical discussions related

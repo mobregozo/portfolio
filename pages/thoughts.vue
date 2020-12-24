@@ -32,7 +32,6 @@ export default {
       const blogPosts = await $prismic.api.query(
         $prismic.predicates.at('document.type', 'post')
       )
-      console.log({ posts: blogPosts.results })
       // Returns data to be used in template
       return {
         // homepageContent,

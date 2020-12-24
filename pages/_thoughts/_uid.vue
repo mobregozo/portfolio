@@ -1,12 +1,17 @@
 <template>
-  <div>
-    <div class="outer-container">
-      <div class="back">
-        <nuxt-link to="../thoughts">back to list</nuxt-link>
-      </div>
+  <div class="flex-1 max-w-screen-lg">
+    <div>
+      <nuxt-link
+        class="text-md font-bold tracking-wider text-gray-700 hover:underline hover:opacity-75"
+        to="../thoughts"
+      >
+        ← BACK TO THE LIST</nuxt-link
+      >
 
       <!-- Template for page title -->
-      <h1 class="font-bold text-secondary-500 text-6xl">
+      <h1
+        class="font-bold text-secondary-500 text-4xl leading-none md:leading-normal mt-4 md:pt-0 break-word md:text-6xl"
+      >
         {{ $prismic.asText(document.title) }}
       </h1>
       <!-- Template for published date -->
@@ -17,7 +22,7 @@
     <!-- Slice Block Componenet tag -->
     <slices-block :slices="slices" />
     <!-- Paragraph -->
-    <div class="text-gray-700 text-justify">
+    <div class="text-gray-700 text-justify pb-8">
       <prismic-rich-text :field="content" />
     </div>
   </div>
@@ -54,9 +59,6 @@ export default {
       // Returns error page
       error({ statusCode: 404, message: 'Page not found' })
     }
-  },
-  created() {
-    console.log({ blog: this.blog })
   }
 }
 </script>
