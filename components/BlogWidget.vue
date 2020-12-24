@@ -1,8 +1,8 @@
 <template>
-  <div class="my-4 w-1/2">
+  <div class="my-4 md:w-1/2">
     <NuxtLink :to="link">
       <h3
-        class="font-bold text-secondary-500 text-3xl leading-7 transition duration-500 ease-in-out hover:text-gray-600 "
+        class="font-bold text-secondary-500 text-3xl leading-7 hover:underline hover:opacity-75"
       >
         {{ $prismic.asText(post.data.title) }}
       </h3>

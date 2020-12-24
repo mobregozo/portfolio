@@ -7,9 +7,11 @@
 <script>
 export default {
   name: 'TextSlice',
-  props: ['slice'],
-  created() {
-    console.log({ slice: this.slice })
+  props: {
+    slices: {
+      type: Array,
+      default: null
+    }
   }
 }
 </script>
