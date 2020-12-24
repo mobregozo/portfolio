@@ -16,12 +16,12 @@ export default function(type, element, content, children) {
     const url = prismicDOM.Link.url(element.data, linkResolver)
 
     if (element.data.link_type === 'Document') {
-      result = `<a href="${url}" data-nuxt-link>${content}</a>`
+      result = `<a href="${url}" class="text-primary-500 hover:underline" data-nuxt-link>${content}</a>`
     } else {
       const target = element.data.target
         ? `target="'${element.data.target}'" rel="noopener"`
         : ''
-      result = `<a href="${url}" ${target}>${content}</a>`
+      result = `<a href="${url}" class="text-primary-500 hover:underline" ${target}>${content}</a>`
     }
     return result
   }
@@ -72,6 +72,14 @@ export default function(type, element, content, children) {
 
   if (type === Elements.heading2) {
     return '<p>' + children.join('') + '</p>'
+  }
+
+  if (type === Elements.strong) {
+    return '<strong>' + children.join('') + '</strong>'
+  }
+
+  if (type === Elements.em) {
+    return '<em>' + children.join('') + '</em>'
   }
 
   if (type === Elements.heading3) {
