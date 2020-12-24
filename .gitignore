@@ -65,6 +65,9 @@ typings/
 # next.js build output
 .next
 
+# netlify site config
+.netlify/
+
 # nuxt.js build output
 .nuxt
 
