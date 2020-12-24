@@ -53,43 +53,21 @@ export default {
    ** Nuxt.js dev-modules
    */
   buildModules: [
-    // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
-    // Doc: https://github.com/nuxt-community/stylelint-module
-    // '@nuxtjs/stylelint-module',
-    // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
     [
       '@nuxtjs/google-analytics',
       {
-        id: 'UA-167002609-1'
+        id: process.env.GA_ID
       }
     ]
   ],
   /*
    ** Nuxt.js modules
    */
-  modules: [
-    '@nuxtjs/prismic',
-    [
-      'nuxt-fontawesome',
-      {
-        component: 'fa',
-        imports: [
-          {
-            set: '@fortawesome/fontawesome-free-brands',
-            icons: ['faLinkedinIn', 'faGithubAlt', 'faStackOverflow']
-          },
-          {
-            set: '@fortawesome/free-solid-svg-icons',
-            icons: ['faCircle']
-          }
-        ]
-      }
-    ]
-  ],
+  modules: ['@nuxtjs/prismic'],
   prismic: {
-    endpoint: 'https://manuel-portfolio.cdn.prismic.io/api/v2',
+    endpoint: process.env.PRISMIC_API_URL,
     linkResolver: '@/plugins/link-resolver',
     htmlSerializer: '@/plugins/html-serializer'
   },
@@ -103,12 +81,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {
-      config.resolve.alias['@fortawesome/fontawesome-free-brands$'] =
-        '@fortawesome/fontawesome-free-brands/shakable.es.js'
-      config.resolve.alias['@fortawesome/fontawesome-free-solid$'] =
-        '@fortawesome/fontawesome-free-solid/shakable.es.js'
-    }
   },
   purge: {
     // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css

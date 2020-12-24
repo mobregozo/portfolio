@@ -1,7 +1,7 @@
 {
   "name": "portfolio-nuxt",
   "version": "1.0.0",
-  "description": "Welcome to personal web page",
+  "description": "Welcome to my personal website!",
   "author": "Manuel Obregozo",
   "private": true,
   "scripts": {
@@ -25,10 +25,6 @@
     "nuxt": "^2.14.7"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free-brands": "^5.0.13",
-    "@fortawesome/fontawesome-svg-core": "^1.2.26",
-    "@fortawesome/free-solid-svg-icons": "^5.12.0",
-    "@fortawesome/vue-fontawesome": "^0.1.9",
     "@nuxtjs/eslint-config": "^1.0.1",
     "@nuxtjs/eslint-module": "^1.0.0",
     "@nuxtjs/google-analytics": "^2.2.3",
@@ -44,7 +40,6 @@
     "husky": "^2.6.0",
     "jest": "^24.1.0",
     "lint-staged": "^8.2.1",
-    "nuxt-fontawesome": "^0.4.0",
     "prettier": "^1.16.4",
     "stylelint": "^10.1.0",
     "vue-jest": "^4.0.0-0"
