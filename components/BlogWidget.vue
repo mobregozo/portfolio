@@ -1,18 +1,18 @@
 <template>
-  <div class="my-4 md:w-1/2">
-    <NuxtLink :to="link">
-      <h2
-        class="font-bold text-secondary-700 text-3xl leading-7 hover:underline hover:opacity-75"
-      >
+  <div
+    class="md:w-1/2 my-4 bg-white p-4 shadow-md rounded-md hover:scale-105 transform transition-all duration-200"
+  >
+    <NuxtLink :to="link" class="">
+      <h2 class="font-bold text-secondary-700 text-3xl leading-7">
         {{ $prismic.asText(post.data.title) }}
       </h2>
+      <p class="mt-0">
+        <span class="text-primary-700 uppercase font-bold tracking-wide">{{
+          formattedDate
+        }}</span>
+      </p>
+      <p class="text-gray-700">{{ getFirstParagraph(post) }}</p>
     </NuxtLink>
-    <p class="mt-0">
-      <span class="text-primary-700 uppercase font-bold tracking-wide">{{
-        formattedDate
-      }}</span>
-    </p>
-    <p class="text-gray-700">{{ getFirstParagraph(post) }}</p>
   </div>
 </template>
 
