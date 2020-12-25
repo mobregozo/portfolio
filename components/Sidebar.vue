@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="fixed z-50 left-0 right-0 md:relative md:max-w-xs flex items-center justify-between md:flex-wrap md:flex-col md:align-center md:justify-center bg-primary-500 px-4 py-4 md:p-6"
+    class="fixed z-50 left-0 right-0 md:relative md:max-w-xs flex items-center justify-between md:flex-wrap md:flex-col md:align-center md:justify-center bg-primary-700 px-4 py-4 md:p-6"
   >
     <avatar class="mr-4 md:mr-0 md:mb-5 flex-shrink-0" />
     <div
@@ -13,8 +13,8 @@
         v-bind:class="[
           'flex items-center font-bold justify-center',
           item.link === $route.path || $route.params[item.label]
-            ? ''
-            : 'opacity-50'
+            ? 'underline'
+            : ''
         ]"
         class="md:mt-4 hover:opacity-100 transition-all uppercase text-white hover:scale-150 md:transform md:duration-300 overflow-hidden"
       >

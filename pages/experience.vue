@@ -1,7 +1,7 @@
 <template>
   <div class="flex-1 max-w-screen-lg">
     <h1 class="mb-5 text-6xl font-bold">Experience</h1>
-    <p class="text-gray-600 font-semibold ">
+    <p class="text-gray-700 font-semibold ">
       I have worked as a Developer since 2011, I started as a consultant/back
       end developer, and due to the fact that I always liked UI/UX related
       topics, I did a switch to Frontend in 2013 when I started my first
@@ -11,10 +11,10 @@
 
     <div class="flex flex-no-wrap flex-col md:flex-row mb-5 py-5">
       <div class="mr-auto">
-        <div class="mb-3 font-bold text-xl text-gray-600">
+        <div class="mb-3 font-bold text-xl text-gray-700">
           Side Projects
         </div>
-        <p class="text-gray-600 ">
+        <p class="text-gray-700 ">
           Since I started to work with Frontend technologies I work in different
           side-projects outside of my full-time assigments. In most of the
           cases, the products that I developed are for small local business, and
@@ -33,10 +33,10 @@
     >
       <div class="mr-auto">
         <div class="md:flex items-center md:justify-between">
-          <h3 class="m-0 font-bold text-gray-700 text-3xl">
+          <h2 class="m-0 font-bold text-gray-700 text-3xl">
             {{ job.role }}
-          </h3>
-          <div class="text-primary-500 font-bold whitespace-no-wrap">
+          </h2>
+          <div class="text-primary-700 font-bold whitespace-no-wrap">
             {{ job.period }}
           </div>
         </div>
@@ -48,14 +48,14 @@
             class="w-16 h-16 shadow-md rounded-full border-solid border-4 border-white"
           />
           <div class="pl-4 ">
-            <div class="text-lg text-gray-600">
+            <div class="text-lg text-gray-700">
               <span class="font-bold">{{ job.companyName }} </span>•
               {{ job.location }}
             </div>
           </div>
         </div>
 
-        <p class="text-gray-600 font-semibold ">
+        <p class="text-gray-700 font-semibold ">
           {{ job.description }}
         </p>
         <div
@@ -64,14 +64,14 @@
           class="my-6 last:mb-0"
         >
           <div class="pl-3">
-            <div class="w-full text-xl text-secondary-500 font-semibold">
+            <div class="w-full text-xl text-secondary-700 font-semibold">
               > {{ project.client }}
             </div>
-            <p class="text-gray-600 ">
+            <p class="text-gray-700 ">
               {{ project.description }}
             </p>
-            <div class="mt-3 text-gray-600">
-              <div class="font-semibold text-primary-600">
+            <div class="mt-3 text-gray-700">
+              <div class="font-semibold text-primary-700">
                 Main Technologies
               </div>
               <p>

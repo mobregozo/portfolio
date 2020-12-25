@@ -1,14 +1,14 @@
 <template>
   <div class="my-4 md:w-1/2">
     <NuxtLink :to="link">
-      <h3
-        class="font-bold text-secondary-500 text-3xl leading-7 hover:underline hover:opacity-75"
+      <h2
+        class="font-bold text-secondary-700 text-3xl leading-7 hover:underline hover:opacity-75"
       >
         {{ $prismic.asText(post.data.title) }}
-      </h3>
+      </h2>
     </NuxtLink>
     <p class="mt-0">
-      <span class="text-primary-500 uppercase font-bold tracking-wide">{{
+      <span class="text-primary-700 uppercase font-bold tracking-wide">{{
         formattedDate
       }}</span>
     </p>
