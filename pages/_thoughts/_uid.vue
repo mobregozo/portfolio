@@ -10,12 +10,12 @@
 
       <!-- Template for page title -->
       <h1
-        class="font-bold text-secondary-500 text-4xl leading-none md:leading-normal mt-4 md:pt-0 break-word md:text-6xl"
+        class="font-bold text-secondary-700 text-4xl leading-none md:leading-normal mt-4 md:pt-0 break-word md:text-6xl"
       >
         {{ $prismic.asText(document.title) }}
       </h1>
       <!-- Template for published date -->
-      <span class="text-primary-500 uppercase font-bold tracking-wide">{{
+      <span class="text-primary-700 uppercase font-bold tracking-wide">{{
         formattedDate
       }}</span>
     </div>
