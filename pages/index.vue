@@ -10,7 +10,7 @@
         <span class="text-gray-800">MANUEL</span>
         <span class="text-secondary-700">OBREGOZO</span>
       </h1>
-      <h3 class="font-bold text-gray-700 text-2xl">
+      <h2 class="font-bold text-gray-700 text-2xl">
         FRONTEND DEVELOPER ·
         <a
           class="font-bold text-primary-700 hover:text-opacity-75"
@@ -18,7 +18,7 @@
         >
           OBREGOZO.MANUEL@GMAIL.COM
         </a>
-      </h3>
+      </h2>
       <div class="font-bold mb-3 text-gray-700 flex items-center text-sm">
         <img class="h-6" src="/location.svg" alt="location" />BARCELONA, SPAIN
       </div>
@@ -34,21 +34,22 @@
           class="mr-6 bg-gray-600 w-10 h-10 p-2 rounded-full hover:scale-110 transform duration-300 hover:opacity-50"
           href="https://www.linkedin.com/in/manuelobregozo/?locale=en_US"
         >
-          <img src="/logo-linkedin.svg" />
+          <span class="hidden">linkedin</span>
+          <img src="/logo-linkedin.svg" alt="linkedin" />
         </a>
         <a
           target="blank"
           class="mr-6 bg-gray-600 w-10 h-10 p-2 rounded-full hover:scale-110 transform duration-300 hover:opacity-50"
           href="https://github.com/mobregozo"
-        >
-          <img src="/logo-github.svg" />
+          ><span class="hidden">github</span>
+          <img src="/logo-github.svg" alt="github" />
         </a>
         <a
           target="blank"
           class="bg-gray-600 w-10 h-10 p-2 rounded-full hover:scale-110 transform duration-300 hover:opacity-50"
           href="https://stackoverflow.com/users/6098430/manuel-obregozo"
-        >
-          <img src="/logo-stackoverflow.svg" />
+          ><span class="hidden">stackoverflow</span>
+          <img src="/logo-stackoverflow.svg" alt="stackoverflow" />
         </a>
       </div>
     </div>
