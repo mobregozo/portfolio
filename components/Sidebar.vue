@@ -10,13 +10,8 @@
         v-for="item in menuItems"
         v-bind:key="item.id"
         v-bind:to="item.link"
-        v-bind:class="[
-          'flex items-center font-bold justify-center',
-          item.link === $route.path || $route.params[item.label]
-            ? 'underline'
-            : ''
-        ]"
-        class="md:mt-4 hover:opacity-100 transition-all uppercase text-white hover:scale-150 md:transform md:duration-300 overflow-hidden"
+        v-bind:exact="item.exact"
+        class="flex items-center font-bold justify-center opacity-75 md:mt-4 hover:opacity-100 transition-all uppercase text-white hover:scale-150 md:transform md:duration-300 overflow-hidden"
       >
         <img
           :src="'/' + item.icon"
@@ -41,7 +36,7 @@ export default {
       isActive: true,
       menuActive: 'about',
       menuItems: [
-        { label: 'about', link: '/', icon: 'about.svg' },
+        { label: 'about', link: '/', icon: 'about.svg', exact: true },
         { label: 'experience', link: '/experience', icon: 'experience.svg' },
         { label: 'thoughts', link: '/thoughts', icon: 'thoughts.svg' },
         { label: 'interests', link: '/interests', icon: 'interests.svg' }
