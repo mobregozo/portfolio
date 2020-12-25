@@ -1,11 +1,14 @@
 <template>
   <div class="self-center flex-1 max-w-screen-lg">
     <div class="pb-10">
+      <h1 class="text-gray-800 text-5xl font-bold leading-tight">
+        Hello there! I'm am
+      </h1>
       <h1
-        class="font-bold text-gray-800 text-6xl leading-none md:leading-normal"
+        class="font-bold text-6xl leading-none md:leading-none shadow-inner-under max-w-sm text-secondary-200 mb-2"
       >
-        MANUEL
-        <span class="font-bold text-secondary-700">OBREGOZO</span>
+        <span class="text-gray-800">MANUEL</span>
+        <span class="text-secondary-700">OBREGOZO</span>
       </h1>
       <h3 class="font-bold text-gray-700 text-2xl">
         FRONTEND DEVELOPER ·
@@ -19,27 +22,11 @@
       <div class="font-bold mb-3 text-gray-700 flex items-center text-sm">
         <img class="h-6" src="/location.svg" alt="location" />BARCELONA, SPAIN
       </div>
-      <p class="mb-2 mt-8 text-gray-700 font-semibold ">
-        I am an enthusiastic JavaScript developer from a little town called
-        Necochea in the coast of Argentina. Passionate about software
-        development and its communities.
-      </p>
-      <p class="mb-2 text-gray-700 font-semibold ">
-        I have worked as a developer since 2011, in different kinds of business
-        domains, across a variety of platforms. I executed and contributed to
-        full-stack development projects from design to testing and up to
-        production deployment, with an emphasis on Frontend features.
-      </p>
-      <p class="mb-2 text-gray-700 font-semibold ">
-        Currently, I am centered on web, desktop, and hybrid mobile
-        applications, using different JavaScript related Frameworks. Curious
-        about UI/UX related topics and now focusing on an hibrid position role
-        taking product owner responsibilities as part of my duties.
-      </p>
-      <p class="text-gray-700 font-semibold ">
-        I consider myself a real team player who understands the importance of
-        teamwork, proactivity, collaboration, continuous feedback, and open
-        communication.
+      <p class="mb-2 mt-8 text-gray-700 font-semibold text-xl">
+        Enthusiastic JavaScript developer. <br />
+        Born and raised in Necochea, a small town located on the coast of
+        Argentina. <br />
+        Passionate about software development in its whole.
       </p>
       <div class="mt-10 flex items-center">
         <a
