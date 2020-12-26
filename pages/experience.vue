@@ -46,6 +46,8 @@
           <img
             :alt="job.companyName"
             :src="`/${job.logo}`"
+            width="64"
+            height="64"
             class="w-16 h-16 shadow-md rounded-full border-solid border-4 border-white"
           />
           <div class="pl-4 ">
