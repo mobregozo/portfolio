@@ -35,21 +35,26 @@
           href="https://www.linkedin.com/in/manuelobregozo/?locale=en_US"
         >
           <span class="hidden">linkedin</span>
-          <img src="/logo-linkedin.svg" alt="linkedin" />
+          <img width="24" height="24" src="/logo-linkedin.svg" alt="linkedin" />
         </a>
         <a
           target="blank"
           class="mr-6 bg-gray-600 w-10 h-10 p-2 rounded-full hover:scale-110 transform duration-300 hover:opacity-50"
           href="https://github.com/mobregozo"
           ><span class="hidden">github</span>
-          <img src="/logo-github.svg" alt="github" />
+          <img width="24" height="24" src="/logo-github.svg" alt="github" />
         </a>
         <a
           target="blank"
           class="bg-gray-600 w-10 h-10 p-2 rounded-full hover:scale-110 transform duration-300 hover:opacity-50"
           href="https://stackoverflow.com/users/6098430/manuel-obregozo"
           ><span class="hidden">stackoverflow</span>
-          <img src="/logo-stackoverflow.svg" alt="stackoverflow" />
+          <img
+            width="24"
+            height="24"
+            src="/logo-stackoverflow.svg"
+            alt="stackoverflow"
+          />
         </a>
       </div>
     </div>

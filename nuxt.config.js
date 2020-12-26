@@ -16,26 +16,7 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {
-        rel: 'preconnect',
-        href: 'https://fonts.gstatic.com/',
-        crossorigin: true
-      },
-      {
-        rel: 'stylesheet',
-        type: 'text/css',
-        href:
-          'https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:400,500,600,700,800,900&display=swap'
-      },
-      {
-        rel: 'stylesheet',
-        type: 'text/css',
-        href:
-          'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800,800i&display=swap'
-      }
-    ]
+    link: []
   },
   /*
    ** Customize the progress-bar color
