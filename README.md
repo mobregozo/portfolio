@@ -5,8 +5,7 @@ I have focused on having something simple with a clean UI.
 
 Please, feel free to fork it and create your own!!
 
-DEMO HERE:
-> [Manuel Obregozo](https://www.manuelobregozo.com)
+DEMO HERE: [Manuel Obregozo](https://www.manuelobregozo.com)
 
 # Contributing
 Pull requests are always welcome!
@@ -26,10 +25,10 @@ npm run generate
 For GA or Prismic as a CDN the following variables need to be defined to make it work
 
 - Prismic API URL
-PRISMIC_API_URL = https://<your-repository>.cdn.prismic.io/api/v2
+`PRISMIC_API_URL = https://<your-repository>.cdn.prismic.io/api/v2`
 
 - Google Analytics API
-GA_ID = UA-XXXXXXXXX-X 
+`GA_ID = UA-XXXXXXXXX-X`
 
 # Tech Stack
 ### Nuxt
