@@ -5,6 +5,7 @@ I have focused on having something simple with a clean UI.
 
 Please, feel free to fork it and create your own!!
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b7c84929-dd55-4f5e-80c3-5ea8e9f0e340/deploy-status)](https://app.netlify.com/sites/sharp-cori-9743b8/deploys)
 DEMO HERE: [Manuel Obregozo](https://www.manuelobregozo.com)
 
 # Contributing
