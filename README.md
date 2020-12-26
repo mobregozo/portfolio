@@ -10,7 +10,8 @@ DEMO HERE:
 
 # Contributing
 Pull requests are always welcome!
-### How to run it
+
+# How to run it
 
 ```
 npm run dev
@@ -31,22 +32,26 @@ PRISMIC_API_URL = https://<your-repository>.cdn.prismic.io/api/v2
 GA_ID = UA-XXXXXXXXX-X 
 
 # Tech Stack
-## Nuxt
+### Nuxt
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
-## Taildwind CSS
+### Taildwind CSS
 Low-level CSS [framework](https://tailwindcss.com/) that provides utility classes that let you build custom designs without ever leaving your HTML, and keeping your custom CSS files pretty small.
 
-## Prismic
+### Prismic
 In order to load the the posts I am writing I have use a CDN called [Prismic](https://prismic.io/)
 
-## Netlify
+### Netlify
 I personally used Netlify to deploy and host the website, and I recommend this because of its simplicity.
 Find more info [here](https://www.netlify.com/).
 # Credits
+
+[Google Fonts loader](https://google-webfonts-helper.herokuapp.com/): I used this tool to get the necessary info when loading custom fonts locally, without using the CDN to prevent render blocking resources
+
+[Ionicons](https://ionicons.com/): All the SVGs are part of Ionicons.
 
 I created the design of the website inspired by the following two projects:
 - https://github.com/wahyuway/nuxtjs-resume-template
 - https://startbootstrap.com/themes/resume/
 
-All the SVGs are part of [Ionicons](https://ionicons.com/)
+
 
