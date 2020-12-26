@@ -5,7 +5,7 @@
         Hello there! I'm am
       </h1>
       <h1
-        class="font-bold text-6xl leading-none md:leading-none shadow-inner-under max-w-sm text-secondary-200 mb-2"
+        class="font-bold text-6xl leading-none md:leading-none shadow-inner-under w-fit text-secondary-200 mb-2"
       >
         <span class="text-gray-800">MANUEL</span>
         <span class="text-secondary-700">OBREGOZO</span>
