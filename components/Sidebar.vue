@@ -16,6 +16,8 @@
         <img
           :src="'/' + item.icon"
           :alt="item.label"
+          width="40"
+          height="40"
           class="h-10 md:mr-2 block md:hidden"
         />
         <span class="hidden md:block">{{ item.label }}</span></NuxtLink

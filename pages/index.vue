@@ -20,7 +20,13 @@
         </a>
       </h2>
       <div class="font-bold mb-3 text-gray-700 flex items-center text-sm">
-        <img class="h-6" src="/location.svg" alt="location" />BARCELONA, SPAIN
+        <img
+          width="24"
+          height="24"
+          class="h-6"
+          src="/location.svg"
+          alt="location"
+        />BARCELONA, SPAIN
       </div>
       <p class="mb-2 mt-8 text-gray-700 font-semibold text-xl">
         Enthusiastic JavaScript developer. <br />
