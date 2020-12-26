@@ -11,7 +11,7 @@
         v-bind:key="item.id"
         v-bind:to="item.link"
         v-bind:exact="item.exact"
-        class="flex items-center font-bold justify-center opacity-75 md:mt-4 hover:opacity-100 transition-all uppercase text-white hover:scale-150 md:transform md:duration-300 overflow-hidden"
+        class="flex items-center font-semibold justify-center md:mt-4 hover:opacity-100 transition-all uppercase text-white hover:scale-150 transform md:duration-300 overflow-hidden"
       >
         <img
           :src="'/' + item.icon"

@@ -64,8 +64,8 @@ export default {
      */
   },
   router: {
-    linkExactActiveClass: 'opacity-100',
-    linkActiveClass: 'opacity-100'
+    linkExactActiveClass: 'font-extrabold',
+    linkActiveClass: 'font-extrabold'
   },
   purge: {
     // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
