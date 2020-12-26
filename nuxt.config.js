@@ -27,13 +27,13 @@ export default {
         rel: 'stylesheet',
         type: 'text/css',
         href:
-          'https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900'
+          'https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:400,500,600,700,800,900&display=swap'
       },
       {
         rel: 'stylesheet',
         type: 'text/css',
         href:
-          'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i'
+          'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800,800i&display=swap'
       }
     ]
   },
