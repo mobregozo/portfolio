@@ -1,19 +1,26 @@
 <template>
-  <div class="self-end my-auto">
+  <div class="self-end my-auto max-w-screen-lg">
     <h1 class="mb-5 text-6xl font-bold">Thoughts</h1>
     <p class="text-gray-700 font-semibold text-justify">
-      These are random thoughts that constantly come to my mind, on a daily
-      basis, not always related to technology. <br />
-      They are purely personal, and since I am doing this with learning
-      purposes, It can also be that I change my mind in the future. <br />
+      These posts are random thoughts that constantly come to my mind, on a
+      daily basis, not always related to technology. <br />
+      They are purely personal, and since I am doing it for the purpose of
+      learning, I may also change my mind in the future.
+      <br />
     </p>
     <p
-      class="mt-4 text-gray-700 font-semibold text-sm bg-gray-100 rounded-md p-3"
+      class="mt-4 text-gray-700 font-semibold text-sm bg-gray-100 rounded-md p-4 w-fit"
     >
-      > As you might realised, I am not a native English speaker, so in case you
-      noticed something wrong or that can be improved please do reach me out!.
+      As you may have realised, I am not a native English speaker! <br />
+      So in case you noticed something wrong or that could be improved, please
+      contact me!
     </p>
-    <div v-for="post in posts" :key="post.id" v-bind:post="post" class="mt-8">
+    <div
+      v-for="post in posts"
+      :key="post.id"
+      v-bind:post="post"
+      class="mt-8 p-4 md:p-0"
+    >
       <blog-widget :post="post"></blog-widget>
     </div>
   </div>

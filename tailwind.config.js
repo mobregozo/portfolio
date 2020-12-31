@@ -21,8 +21,14 @@ module.exports = {
       gridTemplateColumns: {
         auto: 'repeat(auto-fill, minmax(15rem, 1fr))'
       },
+      width: {
+        fit: 'fit-content'
+      },
       transitionProperty: {
         opacity: 'opacity'
+      },
+      boxShadow: {
+        'inner-under': 'inset 0 0 0 #fff, inset 0 -0.25em 0 0 currentColor'
       }
     }
   },

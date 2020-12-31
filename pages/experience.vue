@@ -1,29 +1,30 @@
 <template>
   <div class="flex-1 max-w-screen-lg">
     <h1 class="mb-5 text-6xl font-bold">Experience</h1>
-    <p class="text-gray-700 font-semibold ">
-      I have worked as a Developer since 2011, I started as a consultant/back
-      end developer, and due to the fact that I always liked UI/UX related
-      topics, I did a switch to Frontend in 2013 when I started my first
-      assigment. And since then, I have been exploring different technologies,
-      and I still enjoy the challenges it brings.
-    </p>
-
-    <div class="flex flex-no-wrap flex-col md:flex-row mb-5 py-5">
-      <div class="mr-auto">
-        <div class="mb-3 font-bold text-xl text-gray-700">
-          Side Projects
-        </div>
-        <p class="text-gray-700 ">
-          Since I started to work with Frontend technologies I work in different
-          side-projects outside of my full-time assigments. In most of the
-          cases, the products that I developed are for small local business, and
-          with learning and testing purposes about a particular technology that
-          I like to learn. Mainly about different JavaScript
-          frameworks/libraries such as React, Svelte, VueJs, Angular, Stencil,
-          Ionic, among others.
-        </p>
-      </div>
+    <div class="mb-8">
+      <p class="mb-2 text-gray-700 font-semibold ">
+        I have been working as a developer since 2011. At that time I started as
+        a backend consultant / developer, and due to the fact that I have always
+        liked UI / UX related topics, I made a switch to Frontend in 2013.
+        Something that I have been enjoying ever since, and I still like the
+        challenges it brings.
+      </p>
+      <p class="mb-2 text-gray-700 font-semibold ">
+        I consider myself a true team player who understands the importance of
+        teamwork, proactivity, collaboration, continuous feedback, and open
+        communication.
+      </p>
+      <p class="mb-2 text-gray-700 font-semibold ">
+        I am currently centered on web technologies fundamentals and lately I
+        have been focusing on a hybrid position assuming also product owner
+        responsibilities as part of my duties.
+      </p>
+      <p class="mb-2 text-gray-700 font-semibold ">
+        Apart from my full-time job, together with some friends we have been
+        developing an e-commerce platform called ServiteOnline, with the aim of
+        helping stores to digitize their order management process, you will find
+        more information below!
+      </p>
     </div>
 
     <div
@@ -45,6 +46,8 @@
           <img
             :alt="job.companyName"
             :src="`/${job.logo}`"
+            width="64"
+            height="64"
             class="w-16 h-16 shadow-md rounded-full border-solid border-4 border-white"
           />
           <div class="pl-4 ">

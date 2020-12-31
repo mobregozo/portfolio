@@ -19,6 +19,8 @@
         <img
           :src="`/${img.link}.jpg`"
           :alt="img.description"
+          width="320"
+          height="256"
           class="w-full object-cover h-64 rounded-md shadow-lg"
         />
       </div>

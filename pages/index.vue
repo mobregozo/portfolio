@@ -1,13 +1,16 @@
 <template>
   <div class="self-center flex-1 max-w-screen-lg">
     <div class="pb-10">
-      <h1
-        class="font-bold text-gray-800 text-6xl leading-none md:leading-normal"
-      >
-        MANUEL
-        <span class="font-bold text-secondary-700">OBREGOZO</span>
+      <h1 class="text-gray-800 text-5xl font-bold leading-tight">
+        Hello there! I'm am
       </h1>
-      <h3 class="font-bold text-gray-700 text-2xl">
+      <h1
+        class="font-bold text-6xl leading-none md:leading-none shadow-inner-under w-fit text-secondary-200 mb-2"
+      >
+        <span class="text-gray-800">MANUEL</span>
+        <span class="text-secondary-700">OBREGOZO</span>
+      </h1>
+      <h2 class="font-bold text-gray-700 text-2xl">
         FRONTEND DEVELOPER ·
         <a
           class="font-bold text-primary-700 hover:text-opacity-75"
@@ -15,31 +18,21 @@
         >
           OBREGOZO.MANUEL@GMAIL.COM
         </a>
-      </h3>
+      </h2>
       <div class="font-bold mb-3 text-gray-700 flex items-center text-sm">
-        <img class="h-6" src="/location.svg" alt="location" />BARCELONA, SPAIN
+        <img
+          width="24"
+          height="24"
+          class="h-6"
+          src="/location.svg"
+          alt="location"
+        />BARCELONA, SPAIN
       </div>
-      <p class="mb-2 mt-8 text-gray-700 font-semibold ">
-        I am an enthusiastic JavaScript developer from a little town called
-        Necochea in the coast of Argentina. Passionate about software
-        development and its communities.
-      </p>
-      <p class="mb-2 text-gray-700 font-semibold ">
-        I have worked as a developer since 2011, in different kinds of business
-        domains, across a variety of platforms. I executed and contributed to
-        full-stack development projects from design to testing and up to
-        production deployment, with an emphasis on Frontend features.
-      </p>
-      <p class="mb-2 text-gray-700 font-semibold ">
-        Currently, I am centered on web, desktop, and hybrid mobile
-        applications, using different JavaScript related Frameworks. Curious
-        about UI/UX related topics and now focusing on an hibrid position role
-        taking product owner responsibilities as part of my duties.
-      </p>
-      <p class="text-gray-700 font-semibold ">
-        I consider myself a real team player who understands the importance of
-        teamwork, proactivity, collaboration, continuous feedback, and open
-        communication.
+      <p class="mb-2 mt-8 text-gray-700 font-semibold text-xl">
+        Enthusiastic JavaScript developer. <br />
+        Born and raised in Necochea, a small town located on the coast of
+        Argentina. <br />
+        Passionate about software development in its whole.
       </p>
       <div class="mt-10 flex items-center">
         <a
@@ -47,21 +40,27 @@
           class="mr-6 bg-gray-600 w-10 h-10 p-2 rounded-full hover:scale-110 transform duration-300 hover:opacity-50"
           href="https://www.linkedin.com/in/manuelobregozo/?locale=en_US"
         >
-          <img src="/logo-linkedin.svg" />
+          <span class="hidden">linkedin</span>
+          <img width="24" height="24" src="/logo-linkedin.svg" alt="linkedin" />
         </a>
         <a
           target="blank"
           class="mr-6 bg-gray-600 w-10 h-10 p-2 rounded-full hover:scale-110 transform duration-300 hover:opacity-50"
           href="https://github.com/mobregozo"
-        >
-          <img src="/logo-github.svg" />
+          ><span class="hidden">github</span>
+          <img width="24" height="24" src="/logo-github.svg" alt="github" />
         </a>
         <a
           target="blank"
           class="bg-gray-600 w-10 h-10 p-2 rounded-full hover:scale-110 transform duration-300 hover:opacity-50"
           href="https://stackoverflow.com/users/6098430/manuel-obregozo"
-        >
-          <img src="/logo-stackoverflow.svg" />
+          ><span class="hidden">stackoverflow</span>
+          <img
+            width="24"
+            height="24"
+            src="/logo-stackoverflow.svg"
+            alt="stackoverflow"
+          />
         </a>
       </div>
     </div>

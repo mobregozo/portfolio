@@ -16,26 +16,7 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {
-        rel: 'preconnect',
-        href: 'https://fonts.gstatic.com/',
-        crossorigin: true
-      },
-      {
-        rel: 'stylesheet',
-        type: 'text/css',
-        href:
-          'https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900'
-      },
-      {
-        rel: 'stylesheet',
-        type: 'text/css',
-        href:
-          'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i'
-      }
-    ]
+    link: []
   },
   /*
    ** Customize the progress-bar color
@@ -81,6 +62,10 @@ export default {
     /*
      ** You can extend webpack config here
      */
+  },
+  router: {
+    linkExactActiveClass: 'font-extrabold',
+    linkActiveClass: 'font-extrabold'
   },
   purge: {
     // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
