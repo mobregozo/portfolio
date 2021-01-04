@@ -2,7 +2,7 @@
   <div class="self-center flex-1 max-w-screen-lg">
     <div class="pb-10">
       <h1 class="text-gray-800 text-5xl font-bold leading-tight">
-        Hello there! I'm am
+        Hello there! I am
       </h1>
       <h1
         class="font-bold text-6xl leading-none md:leading-none shadow-inner-under w-fit text-secondary-200 mb-2"
@@ -34,10 +34,22 @@
         Argentina. <br />
         Passionate about software development in its whole.
       </p>
-      <div class="mt-10 flex items-center">
+      <div class="my-10 flex items-center">
         <a
           target="blank"
-          class="mr-6 bg-gray-600 w-10 h-10 p-2 rounded-full hover:scale-110 transform duration-300 hover:opacity-50"
+          class="mr-4 bg-gray-600 w-10 h-10 p-2 rounded-full hover:scale-110 transform duration-300 hover:opacity-50"
+          href="https://twitter.com/ManuelObre"
+          ><span class="hidden">twitter</span>
+          <img
+            width="24"
+            height="24"
+            src="/logo-twitter.svg"
+            alt="stackoverflow"
+          />
+        </a>
+        <a
+          target="blank"
+          class="mr-4 bg-gray-600 w-10 h-10 p-2 rounded-full hover:scale-110 transform duration-300 hover:opacity-50"
           href="https://www.linkedin.com/in/manuelobregozo/?locale=en_US"
         >
           <span class="hidden">linkedin</span>
@@ -45,7 +57,7 @@
         </a>
         <a
           target="blank"
-          class="mr-6 bg-gray-600 w-10 h-10 p-2 rounded-full hover:scale-110 transform duration-300 hover:opacity-50"
+          class="mr-4 bg-gray-600 w-10 h-10 p-2 rounded-full hover:scale-110 transform duration-300 hover:opacity-50"
           href="https://github.com/mobregozo"
           ><span class="hidden">github</span>
           <img width="24" height="24" src="/logo-github.svg" alt="github" />
@@ -62,6 +74,14 @@
             alt="stackoverflow"
           />
         </a>
+      </div>
+      <div class="text-gray-700 text-sm w-fit font-semibold">
+        Curious about the code of this website? it is available in
+        <a
+          class="text-primary-500 hover:underline"
+          href="https://github.com/mobregozo/portfolio"
+          >here.</a
+        >
       </div>
     </div>
   </div>
