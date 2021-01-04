@@ -50,7 +50,7 @@ Find more info [here](https://www.netlify.com/).
 
 [Ionicons](https://ionicons.com/): All the SVGs are part of Ionicons.
 
-I created the design of the website inspired by the following two projects:
+The Design of this website is inspired by the following two projects:
 - https://github.com/wahyuway/nuxtjs-resume-template
 - https://startbootstrap.com/themes/resume/
 
