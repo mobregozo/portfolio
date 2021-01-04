@@ -40,12 +40,7 @@
           class="mr-4 bg-gray-600 w-10 h-10 p-2 rounded-full hover:scale-110 transform duration-300 hover:opacity-50"
           href="https://twitter.com/ManuelObre"
           ><span class="hidden">twitter</span>
-          <img
-            width="24"
-            height="24"
-            src="/logo-twitter.svg"
-            alt="stackoverflow"
-          />
+          <img width="24" height="24" src="/logo-twitter.svg" alt="twitter" />
         </a>
         <a
           target="blank"
