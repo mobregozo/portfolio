@@ -39,7 +39,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 Low-level CSS [framework](https://tailwindcss.com/) that provides utility classes that let you build custom designs without ever leaving your HTML, and keeping your custom CSS files pretty small.
 
 ### Prismic
-In order to load the the posts I am writing I have use a CDN called [Prismic](https://prismic.io/)
+In order to load the posts I am writing I have use a CDN called [Prismic](https://prismic.io/)
 
 ### Netlify
 I personally used Netlify to deploy and host the website, and I recommend this because of its simplicity.
