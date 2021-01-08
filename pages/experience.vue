@@ -244,7 +244,7 @@ export default {
           role: 'Technical Consultant',
           period: 'NOV 2011 - NOV 2012',
           logo: 'grupoassa.png',
-          description: `Gained experience in multinational organizations, customer care, and
+          description: `As this was my first IT related job, I gained experience in multinational organizations, customer care, and
                 working with distributed remote teams.`,
           projects: [
             {
