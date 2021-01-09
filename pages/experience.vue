@@ -30,14 +30,14 @@
     <div
       v-for="job in experiences"
       v-bind:key="job.companyName"
-      class="flex flex-no-wrap flex-col md:flex-row border-solid border-t-2 border-gray-200 pt-10 pb-6"
+      class="flex flex-nowrap flex-col md:flex-row border-solid border-t-2 border-gray-200 pt-10 pb-6"
     >
       <div class="mr-auto">
         <div class="md:flex items-center md:justify-between">
           <h2 class="m-0 font-bold text-gray-700 text-3xl">
             {{ job.role }}
           </h2>
-          <div class="text-primary-700 font-bold whitespace-no-wrap">
+          <div class="text-primary-700 font-bold whitespace-nowrap">
             {{ job.period }}
           </div>
         </div>
@@ -67,13 +67,15 @@
           class="my-6 last:mb-0"
         >
           <div class="pl-3">
-            <div class="w-full text-xl text-secondary-700 font-semibold">
-              > {{ project.client }}
+            <div
+              class="w-full text-xl text-secondary-700 font-semibold border-b pb-1 mb-3"
+            >
+              {{ project.client }}
             </div>
             <p class="text-gray-700 ">
               {{ project.description }}
             </p>
-            <div class="mt-3 text-gray-700">
+            <div class="mt-2 text-gray-700">
               <div class="font-semibold text-primary-700">
                 Main Technologies
               </div>
