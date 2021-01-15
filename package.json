@@ -21,15 +21,17 @@
     }
   },
   "dependencies": {
-    "@nuxtjs/prismic": "^1.2.4",
     "nuxt": "^2.14.7"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",
     "@nuxtjs/eslint-module": "^1.0.0",
+    "@nuxtjs/feed": "^2.0.0",
     "@nuxtjs/google-analytics": "^2.2.3",
+    "@nuxtjs/prismic": "^1.2.4",
     "@nuxtjs/stylelint-module": "^3.1.0",
     "@nuxtjs/tailwindcss": "^3.0.0",
+    "@prismicio/client": "^4.0.0",
     "@vue/test-utils": "^1.0.0-beta.27",
     "autoprefixer": "^9",
     "babel-eslint": "^10.0.1",
@@ -43,6 +45,7 @@
     "lint-staged": "^8.2.1",
     "postcss": "^7",
     "prettier": "^1.16.4",
+    "prismic-dom": "^2.2.4",
     "stylelint": "^10.1.0",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "vue-jest": "^4.0.0-0"

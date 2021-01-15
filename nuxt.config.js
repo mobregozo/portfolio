@@ -1,3 +1,4 @@
+import { feed } from './config/feeds'
 export default {
   /*
    ** Headers of the page
@@ -46,7 +47,8 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/prismic'],
+  modules: ['@nuxtjs/prismic', '@nuxtjs/feed'],
+  feed,
   prismic: {
     endpoint: process.env.PRISMIC_API_URL,
     linkResolver: '@/plugins/link-resolver',

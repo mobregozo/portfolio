@@ -49,6 +49,9 @@ module.exports = {
       pic: '20vw'
     },
     extend: {
+      scale: {
+        '101': '1.01'
+      },
       gridTemplateColumns: {
         auto: 'repeat(auto-fill, minmax(15rem, 1fr))'
       },
