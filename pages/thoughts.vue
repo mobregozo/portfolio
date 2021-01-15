@@ -38,18 +38,13 @@ export default {
   },
   async asyncData({ $prismic, error }) {
     try {
-      // Query to get blog home content
-      // const homepageContent = (await $prismic.api.getSingle('blog_home')).data
-
       // Query to get posts content to preview
       const blogPosts = await $prismic.api.query(
         $prismic.predicates.at('document.type', 'post')
       )
       // Returns data to be used in template
       return {
-        // homepageContent,
         posts: blogPosts.results
-        // image: homepageContent.image.url
       }
     } catch (e) {
       // Returns error page
