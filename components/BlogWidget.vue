@@ -1,6 +1,6 @@
 <template>
   <div
-    class="md:w-1/2 my-4 bg-white p-4 shadow-md rounded-md hover:shadow-lg hover:scale-105 transform transition-all duration-200 hover:border-t-2 border-secondary-700"
+    class="md:w-1/2 my-4 bg-white p-4 shadow-md rounded-md hover:shadow-lg hover:scale-101 transform transition-all duration-200 hover:border-t-2 border-secondary-700"
   >
     <NuxtLink :to="link" class="">
       <h2 class="font-bold text-secondary-700 text-3xl leading-7">
