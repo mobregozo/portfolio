@@ -75,7 +75,7 @@ export default function(type, element, content, children) {
   }
 
   if (type === Elements.strong) {
-    return '<strong>' + children.join('') + '</strong>'
+    return '<span class="font-semibold">' + children.join('') + '</span>'
   }
 
   if (type === Elements.em) {
@@ -89,6 +89,14 @@ export default function(type, element, content, children) {
 
   if (type === Elements.paragraph) {
     return '<p class="my-4" >' + children.join('') + '</p>'
+  }
+
+  if (type === Elements.preformatted) {
+    return (
+      '<p class="my-4 p-4 rounded-md bg-gray-200" >' +
+      children.join('') +
+      '</p>'
+    )
   }
 
   // Return null to stick with the default behavior for everything else
