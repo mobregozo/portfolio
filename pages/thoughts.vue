@@ -4,9 +4,9 @@
     <p class="text-gray-700 font-semibold text-justify">
       These posts are random thoughts that constantly come to my mind, on a
       daily basis.<br />
-      <strong>Opinions are my own, </strong>these articles are purely personal,
-      and since I am doing it for the purpose of learning, I may also change my
-      mind in the future.
+      <span class="font-bold text-gray-800">Opinions are my own, </span>these
+      articles are purely personal, and since I am doing it for the purpose of
+      learning, I may also change my mind in the future.
       <br />
       I usually write about aspects of the software that are not completely
       related to technology itself, but linked to the environment that surrounds
