@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-1 max-w-screen-lg">
+  <article class="flex-1 max-w-screen-lg">
     <div>
       <nuxt-link
         class="text-md font-bold tracking-wider text-gray-700 hover:underline hover:opacity-75"
@@ -10,7 +10,7 @@
 
       <!-- Template for page title -->
       <h1
-        class="font-bold text-secondary-700 text-4xl leading-none md:leading-normal mt-4 md:pt-0 break-word md:text-6xl"
+        class="font-bold text-secondary-700 text-4xl leading-none break-words mt-4 md:pt-0 break-word md:text-6xl"
       >
         {{ $prismic.asText(document.title) }}
       </h1>
@@ -22,10 +22,10 @@
     <!-- Slice Block Componenet tag -->
     <slices-block :slices="slices" />
     <!-- Paragraph -->
-    <div class="text-gray-700 text-justify pb-8">
+    <content class="text-gray-700 text-justify pb-8">
       <prismic-rich-text :field="content" />
-    </div>
-  </div>
+    </content>
+  </article>
 </template>
 
 <script>
