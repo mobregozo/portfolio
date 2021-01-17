@@ -22,8 +22,11 @@
     <!-- Slice Block Componenet tag -->
     <slices-block :slices="slices" />
     <!-- Paragraph -->
-    <content class="text-gray-700 text-justify pb-8">
-      <prismic-rich-text :field="content" />
+    <content>
+      <prismic-rich-text
+        :field="content"
+        class="text-gray-700 text-justify pb-8"
+      />
     </content>
   </article>
 </template>
