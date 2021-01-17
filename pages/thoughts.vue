@@ -23,7 +23,7 @@
       v-for="post in posts"
       :key="post.id"
       v-bind:post="post"
-      class="mt-8 p-4 md:p-0"
+      class="md:mt-8 md:p-0"
     >
       <blog-widget :post="post"></blog-widget>
     </div>
