@@ -28,10 +28,6 @@ For GA or Prismic as a CDN the following variables need to be defined to make it
 
 - Prismic API URL
 `PRISMIC_API_URL = https://<your-repository>.cdn.prismic.io/api/v2`
-
-- Google Analytics API
-`GA_ID = UA-XXXXXXXXX-X`
-
 # Tech Stack
 ### Nuxt
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

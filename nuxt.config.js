@@ -17,7 +17,14 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: []
+    script: [
+      {
+        src: 'https://nibspace.com/ns.js',
+        async: true,
+        defer: true,
+        'data-domain': 'manuelobregozo.com'
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -34,16 +41,7 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: [
-    '@nuxtjs/eslint-module',
-    '@nuxtjs/tailwindcss',
-    [
-      '@nuxtjs/google-analytics',
-      {
-        id: process.env.GA_ID
-      }
-    ]
-  ],
+  buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/tailwindcss'],
   /*
    ** Nuxt.js modules
    */
