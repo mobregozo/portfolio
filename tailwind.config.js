@@ -42,7 +42,8 @@ module.exports = {
         700: '#4a5568',
         800: '#2d3748',
         900: '#1a202c'
-      }
+      },
+      twitter: '#1DA1F2'
     },
     spacing: {
       ...spacing,
