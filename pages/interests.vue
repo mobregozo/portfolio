@@ -22,7 +22,7 @@
       got at the beginning of my career. In addition, there are always people
       willing to listen when I face any problem.
     </p>
-    <p class="mb-2 mt-8 text-gray-700 font-semibold">
+    <p class="my-2 text-gray-700 font-semibold">
       Besides work and technology, I usually spend my free time outdoors doing
       sports and traveling, taking pictures of everything I see.
     </p>
