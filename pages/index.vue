@@ -1,25 +1,16 @@
 <template>
   <div class="self-center flex-1 max-w-screen-lg">
-    <div class="pb-10">
-      <h1 class="text-gray-800 text-5xl font-bold leading-tight">
+    <div class="pb-10 mt-0 md:mt-20">
+      <h1 class="text-gray-800 text-5xl md:text-7xl font-bold leading-tight">
         Hello there! I am
       </h1>
       <h1
-        class="font-bold text-6xl leading-none md:leading-none shadow-inner-under w-fit text-secondary-200 mb-2"
+        class="font-bold text-6xl md:text-8xl leading-none md:leading-none shadow-inner-under w-fit text-secondary-200 mb-2"
       >
         <span class="text-gray-800">MANUEL</span>
         <span class="text-secondary-700">OBREGOZO</span>
       </h1>
-      <h2 class="font-bold text-gray-700 text-2xl">
-        FRONTEND DEVELOPER ·
-        <a
-          class="font-bold text-primary-700 hover:text-opacity-75"
-          href="mailto:obregozo.manuel@gmail.com"
-        >
-          OBREGOZO.MANUEL@GMAIL.COM
-        </a>
-      </h2>
-      <div class="font-bold mb-3 text-gray-700 flex items-center text-sm">
+      <div class="font-bold text-xl mb-3 text-gray-700 flex items-center">
         <img
           width="24"
           height="24"
@@ -30,10 +21,29 @@
       </div>
       <p class="mb-2 mt-8 text-gray-700 font-semibold text-xl">
         Enthusiastic JavaScript developer. <br />
-        Born and raised in Necochea, a small town located on the coast of
-        Argentina. <br />
+        Born and raised in a small town in Argentina. <br />
         Passionate about software development in its whole.
       </p>
+      <div class="rounded bg-gray-200 p-3 mt-6 w-fit">
+        <p>
+          • Supporting new devs at
+          <a
+            href="https://twitter.com/FrontEndCafe"
+            target="_blank"
+            class="font-semibold hover:underline text-primary-700"
+            >@FrontEndCafe
+          </a>
+          discord community, Come on and join us!
+        </p>
+        <p class="mt-2">
+          • I have recently started blogging, find my latest posts under
+          <NuxtLink
+            to="thoughts"
+            class="font-semibold hover:underline text-primary-700"
+            >/Thoughs
+          </NuxtLink>
+        </p>
+      </div>
       <div class="my-10 flex items-center">
         <a
           target="blank"
@@ -76,14 +86,6 @@
           ><span class="hidden">twitter</span>
           <img width="24" height="24" src="/logo-rss.svg" alt="rss" />
         </a>
-      </div>
-      <div class="text-gray-700 text-sm w-fit font-semibold">
-        Curious about the code of this website? it is available in
-        <a
-          class="text-primary-500 hover:underline"
-          href="https://github.com/mobregozo/portfolio"
-          >here.</a
-        >
       </div>
     </div>
   </div>

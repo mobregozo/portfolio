@@ -1,12 +1,24 @@
 <template>
   <div
-    class="md:h-screen md:absolute md:top-0 md:bottom-0 md:left-0 md:right-0 md:flex"
+    class="h-screen md:absolute md:top-0 md:bottom-0 md:left-0 md:right-0 md:flex"
   >
-    <sidebar />
-    <div
-      class="scrollable overflow-x-hidden flex-1 min-h-screen px-4 md:px-10 flex pt-24 md:py-10 w-full"
-    >
-      <nuxt />
+    <sidebar class="flex-shrink-0" />
+    <div class="h-full flex flex-col justify-between w-full">
+      <div
+        class="flex-grow overflow-x-hidden px-4 md:px-10 pt-24 md:py-10 w-full"
+      >
+        <nuxt />
+      </div>
+      <div
+        class="text-white p-4 flex-grow-0 text-sm w-full bg-gray-800 font-semibold"
+      >
+        Curious about the code of this website? it is available in
+        <a
+          class="text-primary-500 hover:underline"
+          href="https://github.com/mobregozo/portfolio"
+          >here.</a
+        >
+      </div>
     </div>
   </div>
 </template>
