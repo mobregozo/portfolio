@@ -31,7 +31,7 @@
             href="https://twitter.com/FrontEndCafe"
             target="_blank"
             class="font-semibold hover:underline text-primary-700"
-            >@FrontEndCafe
+            >@FrontendCafé
           </a>
           discord community, Come on and join us!
         </p>
