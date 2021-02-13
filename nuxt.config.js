@@ -64,8 +64,10 @@ export default {
      */
   },
   router: {
-    linkExactActiveClass: 'font-extrabold',
-    linkActiveClass: 'font-extrabold'
+    scrollBehavior: () => {
+      document.getElementById('main-view').scrollTo(0, 0)
+      return { x: 0, y: 0 }
+    }
   },
   purge: {
     // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
