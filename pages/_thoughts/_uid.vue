@@ -1,8 +1,8 @@
 <template>
-  <article class="flex-1 max-w-screen-lg">
+  <article>
     <div>
       <nuxt-link
-        class="text-md font-bold tracking-wider text-gray-700 hover:underline hover:opacity-75"
+        class="text-md font-bold tracking-wider text-gray-700 hover:underline hover:opacity-75 bg-none"
         to="../thoughts"
       >
         ← BACK TO THE LIST</nuxt-link
@@ -31,18 +31,13 @@
       />
       Share on Twitter</a
     >
-    <slices-block :slices="slices" />
     <content>
-      <prismic-rich-text
-        :field="content"
-        class="text-gray-700 text-justify pb-8"
-      />
+      <prismic-rich-text :field="content" class="text-gray-700 text-justify" />
     </content>
   </article>
 </template>
 
 <script>
-import SlicesBlock from '~/components/SlicesBlock.vue'
 import { global } from '~/config/global'
 
 export default {
@@ -50,9 +45,6 @@ export default {
     return {
       title: this.$prismic.asText(this.document.title)
     }
-  },
-  components: {
-    SlicesBlock
   },
   data() {
     return {
