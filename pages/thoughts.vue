@@ -1,5 +1,5 @@
 <template>
-  <div class="self-end my-auto max-w-screen-lg">
+  <div>
     <h1 class="mb-5 text-6xl font-bold">Thoughts</h1>
     <p class="text-gray-700 font-semibold text-justify">
       These posts are random thoughts that constantly come to my mind, on a
@@ -13,17 +13,20 @@
       us and things we can find there.
     </p>
     <p
-      class="mt-4 text-gray-700 font-semibold text-sm bg-gray-100 rounded-md p-4 w-fit"
+      class="mt-4 text-gray-700 font-semibold text-sm bg-gray-200 rounded-md p-4"
     >
       As you may have realised, I am not a native English speaker! <br />
       So in case you noticed something wrong or that could be improved, please
       contact me!
     </p>
+    <h2 class="text-primary-700 text-5xl mt-8 mb-4 font-semibold">
+      Articles
+    </h2>
     <div
       v-for="post in posts"
       :key="post.id"
       v-bind:post="post"
-      class="md:mt-8 md:p-0"
+      class="mt-8 p-0"
     >
       <blog-widget :post="post"></blog-widget>
     </div>
@@ -38,17 +41,14 @@ export default {
   },
   async asyncData({ $prismic, error }) {
     try {
-      // Query to get posts content to preview
       const blogPosts = await $prismic.api.query(
         $prismic.predicates.at('document.type', 'post'),
         { orderings: '[my.post.date desc]' }
       )
-      // Returns data to be used in template
       return {
         posts: blogPosts.results
       }
     } catch (e) {
-      // Returns error page
       error({ statusCode: 404, message: 'Page not found' })
     }
   }

@@ -1,29 +1,27 @@
 <template>
-  <div class="flex-1 max-w-screen-lg">
+  <div class="">
     <h1 class="mb-5 text-6xl font-bold">Experience</h1>
     <div class="mb-8">
-      <p class="mb-2 text-gray-700 font-semibold ">
-        I have been working as a developer since 2011. At that time I started as
-        a backend consultant / developer, and due to the fact that I have always
-        liked UI / UX related topics, I made a switch to Frontend in 2013.
-        Something that I have been enjoying ever since, and I still like the
-        challenges it brings.
+      <p class="mb-2 text-gray-700">
+        I have been working as a developer since 2011. Due to the fact that I
+        have always liked UI / UX related topics, I made a switch to Frontend in
+        2013. Something that I have been enjoying ever since.
       </p>
-      <p class="mb-2 text-gray-700 font-semibold ">
+      <p class="mb-2 text-gray-700">
         I consider myself a true team player who understands the importance of
         teamwork, proactivity, collaboration, continuous feedback, and open
         communication.
       </p>
-      <p class="mb-2 text-gray-700 font-semibold ">
-        I am currently centered on web technologies fundamentals and lately I
-        have been focusing on a hybrid position assuming also product owner
-        responsibilities as part of my duties.
-      </p>
-      <p class="mb-2 text-gray-700 font-semibold ">
+      <p class="mt-4 text-gray-700 bg-gray-200 rounded-md p-4">
         Apart from my full-time job, together with some friends we have been
-        developing an e-commerce platform called ServiteOnline, with the aim of
-        helping stores to digitize their order management process, you will find
-        more information below!
+        developing an e-commerce platform called
+        <a
+          href="https://www.serviteonline.com"
+          target="_blank"
+          class="font-semibold hover:underline text-primary-700"
+          >ServiteOnline </a
+        >, with the aim of helping stores to digitize their order management
+        process, you will find more information below!
       </p>
     </div>
 
@@ -72,7 +70,7 @@
             >
               {{ project.client }}
             </div>
-            <p class="text-gray-700 ">
+            <p class="text-gray-700">
               {{ project.description }}
             </p>
             <div class="mt-2 text-gray-700">
