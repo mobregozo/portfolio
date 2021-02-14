@@ -1,10 +1,7 @@
 <template>
   <article>
     <div>
-      <social-head
-        :title="$prismic.asText(document.title)"
-        :description="postDescription"
-      ></social-head>
+      <social-head :title="$prismic.asText(document.title)"></social-head>
       <nuxt-link
         class="text-md font-bold tracking-wider text-gray-700 hover:underline hover:opacity-75 bg-none"
         to="../thoughts"
@@ -55,8 +52,7 @@ export default {
   },
   data() {
     return {
-      linkToshare: '',
-      postDescription: global.postDescription
+      linkToshare: ''
     }
   },
   async asyncData({ $prismic, params, error }) {

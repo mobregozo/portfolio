@@ -31,7 +31,7 @@ export default {
       {
         hid: 'twitter:title',
         name: 'twitter:title',
-        content: global.generalDescription
+        content: global.mainTitle
       },
       {
         hid: 'twitter:description',
@@ -41,7 +41,7 @@ export default {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: global.mainImage
+        content: global.webURL + global.mainImage
       },
 
       // Open Graph
@@ -60,7 +60,7 @@ export default {
       {
         hid: 'og:title',
         property: 'og:title',
-        content: global.generalDescription
+        content: global.mainTitle
       },
       {
         hid: 'og:description',
@@ -70,12 +70,12 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: global.mainImage
+        content: global.webURL + global.mainImage
       },
       {
         hid: 'og:image:secure_url',
         property: 'og:image:secure_url',
-        content: global.mainImage
+        content: global.webURL + global.mainImage
       },
       {
         hid: 'og:image:alt',

@@ -12,11 +12,11 @@ export default {
     },
     description: {
       type: String,
-      required: true
+      default: global.postDescription
     },
     image: {
       type: String,
-      default: global.mainImage
+      default: global.webURL + global.mainImage
     }
   },
 
