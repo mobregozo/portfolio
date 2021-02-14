@@ -111,7 +111,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/prismic', '@nuxtjs/feed'],
+  modules: ['@nuxtjs/prismic', '@nuxtjs/feed', '@nuxtjs/sitemap'],
   feed,
   prismic: {
     endpoint: process.env.PRISMIC_API_URL,
