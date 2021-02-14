@@ -1,6 +1,10 @@
 <template>
   <article>
     <div>
+      <social-head
+        :title="$prismic.asText(document.title)"
+        :description="postDescription"
+      ></social-head>
       <nuxt-link
         class="text-md font-bold tracking-wider text-gray-700 hover:underline hover:opacity-75 bg-none"
         to="../thoughts"
@@ -38,9 +42,12 @@
 </template>
 
 <script>
-import { global } from '~/config/global'
-
+import { global } from '@/config/global'
+import SocialHead from '@/components/SocialHead'
 export default {
+  components: {
+    SocialHead
+  },
   head() {
     return {
       title: this.$prismic.asText(this.document.title)
@@ -48,7 +55,8 @@ export default {
   },
   data() {
     return {
-      linkToshare: ''
+      linkToshare: '',
+      postDescription: global.postDescription
     }
   },
   async asyncData({ $prismic, params, error }) {

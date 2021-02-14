@@ -89,6 +89,9 @@
 </template>
 <script>
 export default {
+  head: {
+    title: 'Experience'
+  },
   data: () => {
     return {
       experiences: [

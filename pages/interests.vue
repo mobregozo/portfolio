@@ -51,6 +51,9 @@
 
 <script>
 export default {
+  head: {
+    title: 'Interests'
+  },
   data: () => {
     return {
       interestPics: [

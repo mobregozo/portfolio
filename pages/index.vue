@@ -93,6 +93,9 @@
 import Avatar from '@/components/Avatar'
 
 export default {
+  head: {
+    title: 'About'
+  },
   components: {
     Avatar
   }

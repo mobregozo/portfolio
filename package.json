@@ -1,7 +1,7 @@
 {
   "name": "portfolio-nuxt",
   "version": "1.0.0",
-  "description": "Welcome to my personal website!",
+  "description": "Welcome to my personal website! Recently start blogging, find the new articles under the thoughts sections.",
   "author": "Manuel Obregozo",
   "private": true,
   "scripts": {

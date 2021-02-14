@@ -34,8 +34,11 @@
 </template>
 
 <script>
-import BlogWidget from '~/components/BlogWidget.vue'
+import BlogWidget from '@/components/BlogWidget.vue'
 export default {
+  head: {
+    title: 'Thoughts'
+  },
   components: {
     BlogWidget
   },
