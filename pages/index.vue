@@ -20,7 +20,7 @@
       />BARCELONA, SPAIN
     </div>
     <p class="mb-2 mt-8 text-gray-700 font-semibold md:text-xl">
-      Enthusiastic JavaScript developer. <br />
+      Enthusiastic Frontend developer. <br />
       Born and raised in a small town in Argentina. <br />
       Passionate about software development in its whole.
     </p>
