@@ -92,6 +92,7 @@ export default {
       }
     ]
   },
+  target: 'static',
   /*
    ** Customize the progress-bar color
    */
@@ -117,6 +118,9 @@ export default {
     '@nuxt/content',
     '@nuxtjs/sitemap'
   ],
+  sitemap: {
+    hostname: global.webURL
+  },
   feed,
   prismic: {
     endpoint: process.env.PRISMIC_API_URL,
@@ -133,12 +137,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-  },
-  router: {
-    scrollBehavior: () => {
-      document.getElementById('main-view').scrollTo(0, 0)
-      return { x: 0, y: 0 }
-    }
   },
   purge: {
     // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
