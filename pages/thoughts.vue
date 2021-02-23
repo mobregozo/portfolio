@@ -2,15 +2,12 @@
   <div>
     <h1 class="mb-5 text-6xl font-bold">Thoughts</h1>
     <p class="text-gray-700 font-semibold text-justify">
-      These posts are random thoughts that constantly come to my mind, on a
-      daily basis.<br />
-      <span class="font-bold text-gray-800">Opinions are my own, </span>these
-      articles are purely personal, and since I am doing it for the purpose of
-      learning, I may also change my mind in the future.
-      <br />
-      I usually write about aspects of the software that are not completely
-      related to technology itself, but linked to the environment that surrounds
-      us and things we can find there.
+      <strong class="font-bold text-gray-800">Opinions are my own! </strong
+      >These are random thoughts that constantly come to my mind, and from time
+      to time I translate them into articles.<br />
+      I usually write about aspects of the software that are not technolofy
+      related, but linked to the environment that surrounds us and things we can
+      find there.
     </p>
     <p
       class="mt-4 text-gray-700 font-semibold text-sm bg-gray-200 rounded-md p-4"

@@ -9,9 +9,8 @@
         2013. Something that I have been enjoying ever since.
       </p>
       <p class="mb-2 text-gray-700">
-        I consider myself a true team player who understands the importance of
-        teamwork, proactivity, collaboration, continuous feedback, and open
-        communication.
+        I have been told that I am a team player who understands the importance
+        of teamwork, collaboration, continuous feedback, and open communication.
       </p>
       <p class="mt-4 text-gray-700 bg-gray-200 rounded-md p-4">
         Apart from my full-time job, together with other colleagues we have been
@@ -24,6 +23,18 @@
         >, with the aim of helping stores to digitize their order management
         process, you will find more information below!
       </p>
+      <div class="text-gray-700 rounded-md bg-gray-200 p-3 mt-6">
+        <p>
+          Supporting new devs at
+          <a
+            href="https://twitter.com/FrontEndCafe"
+            target="_blank"
+            class="font-semibold hover:underline text-primary-700"
+            >@FrontendCafé
+          </a>
+          discord community, Come on and join us!
+        </p>
+      </div>
     </div>
 
     <div

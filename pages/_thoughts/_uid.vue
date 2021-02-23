@@ -33,7 +33,7 @@
       Share on Twitter</a
     >
     <content>
-      <prismic-rich-text :field="content" class="text-gray-700 text-justify" />
+      <prismic-rich-text :field="content" class="text-gray-700" />
     </content>
   </article>
 </template>
