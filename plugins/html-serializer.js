@@ -67,7 +67,7 @@ export default function(type, element, content, children) {
 
   if (type === Elements.heading2) {
     const id = element.text.replace(/\W+/g, '-').toLowerCase()
-    return '<h2 id="' + id + '">' + children.join('') + '</h2>'
+    return '<h2 class="text-3xl" id="' + id + '">' + children.join('') + '</h2>'
   }
 
   if (type === Elements.heading2) {
