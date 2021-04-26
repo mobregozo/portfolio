@@ -1,7 +1,10 @@
 <template>
   <article>
     <div>
-      <social-head :title="$prismic.asText(document.title)"></social-head>
+      <social-head
+        :title="$prismic.asText(document.title)"
+        description=""
+      ></social-head>
       <nuxt-link
         class="text-md font-bold tracking-wider text-gray-700 hover:underline hover:opacity-75 bg-none"
         to="../thoughts"
@@ -41,13 +44,16 @@
 <script>
 import { global } from '@/config/global'
 import SocialHead from '@/components/SocialHead'
+import { getPrismicFirstParagraph } from '@/plugins/prismicApi'
+
 export default {
   components: {
     SocialHead
   },
   head() {
     return {
-      title: this.$prismic.asText(this.document.title)
+      title: this.$prismic.asText(this.document.title),
+      description: getPrismicFirstParagraph(this.document)
     }
   },
   data() {

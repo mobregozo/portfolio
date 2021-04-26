@@ -17,7 +17,8 @@
 </template>
 
 <script>
-import LinkResolver from '~/plugins/link-resolver.js'
+import LinkResolver from '@/plugins/link-resolver.js'
+import { getPrismicFirstParagraph } from '@/plugins/prismicApi'
 
 export default {
   name: 'BlogWidget',
@@ -42,26 +43,8 @@ export default {
     }).format(new Date(this.post.data.date))
   },
   methods: {
-    // Function to get the first paragraph of text in a blog post and limit the displayed text at 300 characters
     getFirstParagraph(post) {
-      const textLimit = 300
-      const slices = post.data.body_content
-      let firstParagraph = ''
-      let haveFirstParagraph = false
-      slices.map(function(slice) {
-        if (!haveFirstParagraph && slice.type === 'paragraph') {
-          firstParagraph += slice.text
-          haveFirstParagraph = true
-        }
-      })
-
-      const limitedText = firstParagraph.substr(0, textLimit)
-
-      if (firstParagraph.length > textLimit) {
-        return limitedText.substr(0, limitedText.lastIndexOf(' ')) + '...'
-      } else {
-        return firstParagraph
-      }
+      return getPrismicFirstParagraph(post)
     }
   }
 }
