@@ -3,7 +3,7 @@
     <div>
       <social-head
         :title="$prismic.asText(document.title)"
-        description=""
+        :description="getFirstParagraph(content)"
       ></social-head>
       <nuxt-link
         class="text-md font-bold tracking-wider text-gray-700 hover:underline hover:opacity-75 bg-none"
@@ -53,7 +53,7 @@ export default {
   head() {
     return {
       title: this.$prismic.asText(this.document.title),
-      description: getPrismicFirstParagraph(this.document)
+      description: getPrismicFirstParagraph(this.content)
     }
   },
   data() {
@@ -88,6 +88,11 @@ export default {
     )}" by ${global.author} - &url=${global.webURL}/${global.postsPath}/${
       this.uid
     }`
+  },
+  methods: {
+    getFirstParagraph() {
+      return getPrismicFirstParagraph(this.content)
+    }
   }
 }
 </script>

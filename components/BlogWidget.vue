@@ -44,7 +44,7 @@ export default {
   },
   methods: {
     getFirstParagraph(post) {
-      return getPrismicFirstParagraph(post)
+      return getPrismicFirstParagraph(post.data.body_content)
     }
   }
 }

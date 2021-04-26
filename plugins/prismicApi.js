@@ -1,6 +1,6 @@
-export const getPrismicFirstParagraph = (post) => {
+export const getPrismicFirstParagraph = (content) => {
   const textLimit = 500
-  const slices = post.data.body_content
+  const slices = content
   let firstParagraph = ''
   let haveFirstParagraph = false
   slices.map(function(slice) {

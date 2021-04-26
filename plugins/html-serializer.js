@@ -56,13 +56,13 @@ export default function(type, element, content, children) {
       id +
       '">' +
       children.join('') +
-      '</li>'
+      '</ul>'
     )
   }
 
   if (type === Elements.listItem) {
     const id = element.text.replace(/\W+/g, '-').toLowerCase()
-    return '<li id="' + id + '">' + children.join('') + '</li>'
+    return '<li class="mb-2" id="' + id + '">' + children.join('') + '</li>'
   }
 
   if (type === Elements.heading2) {
