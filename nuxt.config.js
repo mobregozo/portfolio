@@ -89,6 +89,11 @@ export default {
         async: true,
         defer: true,
         'data-domain': 'manuelobregozo.com'
+      },
+      {
+        src: '/console.js',
+        async: true,
+        defer: true
       }
     ]
   },
