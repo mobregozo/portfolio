@@ -65,6 +65,18 @@
           <a
             target="blank"
             class="mr-4 bg-gray-600 w-10 h-10 p-2 rounded-full hover:scale-110 transform duration-300 hover:opacity-50"
+            href="https://dev.to/manuelobre"
+            ><span class="hidden">dev.to profile</span>
+            <img
+              width="24"
+              height="24"
+              src="/logo-devto.svg"
+              alt="stackoverflow"
+            />
+          </a>
+          <a
+            target="blank"
+            class="mr-4 bg-gray-600 w-10 h-10 p-2 rounded-full hover:scale-110 transform duration-300 hover:opacity-50"
             href="https://stackoverflow.com/users/6098430/manuel-obregozo"
             ><span class="hidden">stackoverflow</span>
             <img
