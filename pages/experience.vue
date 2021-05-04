@@ -12,7 +12,7 @@
         I have been told that I am a team player who understands the importance
         of teamwork, collaboration, continuous feedback, and open communication.
       </p>
-      <p class="mt-4 text-gray-700 bg-gray-200 rounded-md p-4">
+      <p class="mt-4 text-gray-700 bg-gray-200 rounded-md p-4 shadow">
         Apart from my full-time job, together with other colleagues we have been
         developing an e-commerce platform called
         <a
@@ -23,7 +23,7 @@
         >, with the aim of helping stores to digitize their order management
         process, you will find more information below!
       </p>
-      <div class="text-gray-700 rounded-md bg-gray-200 p-3 mt-6">
+      <div class="text-gray-700 rounded-md bg-gray-200 p-3 mt-6 shadow">
         <p>
           Supporting new devs at
           <a

@@ -17,12 +17,11 @@
           alt="github"
         />
         <span
-          >Curious about the code of this website? it is available in&nbsp;
+          >Curious about the code of this website? it is available in
           <a
             class="text-primary-500 hover:underline"
             href="https://github.com/mobregozo/portfolio"
-          >
-            here.</a
+            >here.</a
           ></span
         >
       </div>

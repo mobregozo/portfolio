@@ -6,7 +6,7 @@
           <h1
             class="text-gray-800 text-4xl md:text-7xl font-bold leading-tight"
           >
-            Hello there! I am
+            👋 Hello there! I am
           </h1>
           <h1
             class="font-bold text-5xl md:text-8xl leading-none md:leading-none shadow-inner-under w-fit text-secondary-200 mb-2"
@@ -33,6 +33,10 @@
           Enthusiastic Frontend developer. <br />
           Born and raised in a small town in Argentina. <br />
           Passionate about software development in its whole.
+        </p>
+        <p class="text-gray-700 tracking-wide">
+          Feel free to contact me on Twitter! <br />You can also find me at
+          other platforms.
         </p>
         <div class="mt-4 flex items-center">
           <a

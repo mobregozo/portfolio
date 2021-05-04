@@ -21,7 +21,7 @@
       >.
     </p>
     <p
-      class="mt-4 text-gray-700 font-semibold text-sm bg-gray-200 rounded-md p-4"
+      class="mt-4 text-gray-700 font-semibold text-sm bg-gray-200 rounded-md p-4 shadow"
     >
       As you may have realized, I am not a native English speaker! <br />
       So in case, you noticed something wrong or that could be improved, please
