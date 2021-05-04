@@ -91,6 +91,12 @@ export default {
         'data-domain': 'manuelobregozo.com'
       },
       {
+        src: 'https://nibspace.com/ns.js',
+        async: true,
+        defer: true,
+        'data-domain': 'manuelobregozo.com'
+      },
+      {
         src: '/console.js',
         async: true,
         defer: true
