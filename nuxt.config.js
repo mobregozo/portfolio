@@ -85,7 +85,7 @@ export default {
     ],
     script: [
       {
-        src: 'https://nibspace.com/ns.js',
+        src: 'https://plausible.io/js/plausible.js',
         async: true,
         defer: true,
         'data-domain': 'manuelobregozo.com'
