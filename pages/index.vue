@@ -30,9 +30,10 @@
           />BARCELONA, SPAIN
         </div>
         <p class="my-8 text-gray-700 font-semibold md:text-xl">
-          Enthusiastic Frontend developer a future product manager. <br />
+          Enthusiastic Frontend Developer moving towards a Product Management
+          role. <br />
           Born and raised in a small town in Argentina. <br />
-          Passionate about software development in its whole.
+          Keen on the human side of software
         </p>
         <p class="text-gray-700 tracking-wide">
           Feel free to contact me on Twitter! <br />You can also find me at
