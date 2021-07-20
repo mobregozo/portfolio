@@ -15,16 +15,16 @@ Pull requests are always welcome!
 # How to run it
 
 ```
-npm run dev
+yarn dev
 ```
 
 Generate the `/dist` folder
 ```
-npm run generate
+yarn generate
 ```
 ## ENV Variables
 
-For GA or Prismic as a CDN the following variables need to be defined to make it work
+For GA or Prismic as a CMS the following variables need to be defined to make it work
 
 - Prismic API URL
 `PRISMIC_API_URL = https://<your-repository>.cdn.prismic.io/api/v2`
