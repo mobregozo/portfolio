@@ -44,6 +44,11 @@ export default {
           content: this.title
         },
         {
+          hid: 'og:site_name',
+          property: 'og:site_name',
+          content: this.title
+        },
+        {
           hid: 'og:title',
           property: 'og:title',
           content: this.title
