@@ -97,8 +97,8 @@ export default {
       isOpen: false,
       menuItems: [
         { label: 'about', link: '/', icon: 'about.svg', exact: true },
+        { label: 'blog', link: '/thoughts', icon: 'thoughts.svg' },
         { label: 'experience', link: '/experience', icon: 'experience.svg' },
-        { label: 'thoughts', link: '/thoughts', icon: 'thoughts.svg' },
         { label: 'interests', link: '/interests', icon: 'interests.svg' }
       ]
     }

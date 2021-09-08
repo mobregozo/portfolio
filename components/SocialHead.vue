@@ -50,6 +50,7 @@ export default {
         },
         {
           hid: 'og:title',
+          name: 'title',
           property: 'og:title',
           content: this.title
         },
