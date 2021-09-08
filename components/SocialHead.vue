@@ -53,8 +53,12 @@ export default {
           content: this.title
         },
         {
-          hid: 'og:title',
           name: 'title',
+          property: 'og:title',
+          content: this.title
+        },
+        {
+          hid: 'og:title',
           property: 'og:title',
           content: this.title
         },
