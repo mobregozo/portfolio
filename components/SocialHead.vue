@@ -24,6 +24,10 @@ export default {
     return {
       meta: [
         {
+          name: 'author',
+          content: global.fullName
+        },
+        {
           hid: 'twitter:title',
           name: 'twitter:title',
           content: this.title
