@@ -12,7 +12,7 @@ export default function(doc) {
   }
 
   if (doc.type === 'post') {
-    return '/thoughts/' + doc.uid
+    return '/blog/' + doc.uid
   }
 
   return '/not-found'

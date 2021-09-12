@@ -93,13 +93,13 @@ export default {
   data: () => {
     return {
       isActive: true,
-      menuActive: 'about',
+      menuActive: 'home',
       isOpen: false,
       menuItems: [
-        { label: 'about', link: '/', icon: 'about.svg', exact: true },
-        { label: 'blog', link: '/thoughts', icon: 'thoughts.svg' },
+        { label: 'home', link: '/', icon: 'about.svg', exact: true },
+        { label: 'blog', link: '/blog', icon: 'thoughts.svg' },
         { label: 'experience', link: '/experience', icon: 'experience.svg' },
-        { label: 'interests', link: '/interests', icon: 'interests.svg' }
+        { label: 'bio', link: '/bio', icon: 'interests.svg' }
       ]
     }
   }

@@ -8,7 +8,7 @@ export default {
     htmlAttrs: {
       lang: 'en'
     },
-    titleTemplate: "%s | Manu's Personal Website",
+    titleTemplate: "%s | Manu's Personal Blog",
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -110,6 +110,11 @@ export default {
    ** Plugins to load before mounting the App
    */
   plugins: [],
+  serverMiddleware: [
+    {
+      handler: './middleware/index'
+    }
+  ],
   /*
    ** Nuxt.js dev-modules
    */

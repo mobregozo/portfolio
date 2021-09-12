@@ -1,6 +1,10 @@
 <template>
   <div>
-    <h2 class="mb-5 text-6xl font-bold">Interests</h2>
+    <h2 class="mb-5 text-6xl font-bold">Bio</h2>
+    <p class="my-2 text-gray-700 ">
+      Born and raised in a small town in Argentina, currently living in
+      Barcelona.
+    </p>
     <p class="my-2 text-gray-700 ">
       I was attached to art since I was born, which eventually developed my
       interest in Frontend Development. Influenced by my mother (art teacher)
@@ -49,7 +53,7 @@
 <script>
 export default {
   head: {
-    title: 'Interests'
+    title: 'Bio'
   },
   data: () => {
     return {

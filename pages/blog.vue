@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="mb-5 text-6xl font-bold">Thoughts</h1>
+    <h1 class="mb-5 text-6xl font-bold">Blog</h1>
     <p class="text-gray-700 text-justify">
       <strong class="font-bold text-gray-800">Opinions are my own! </strong>
       These are random thoughts that constantly come to my mind, and from time
@@ -20,13 +20,6 @@
         Dev.to</a
       >.
     </p>
-    <p
-      class="mt-4 text-gray-700 font-semibold text-sm bg-gray-200 rounded-md p-4 shadow"
-    >
-      As you may have realized, I am not a native English speaker! <br />
-      So in case, you noticed something wrong or that could be improved, please
-      contact me!
-    </p>
     <h2 class="text-primary-700 text-5xl mt-8 mb-4 font-semibold">
       Articles
     </h2>
@@ -45,7 +38,7 @@
 import BlogWidget from '@/components/BlogWidget.vue'
 export default {
   head: {
-    title: 'Thoughts'
+    title: 'Blog'
   },
   components: {
     BlogWidget

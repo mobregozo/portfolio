@@ -1,6 +1,6 @@
 export const global = {
   author: '@ManuelObre',
-  mainTitle: "Manu's Personal Website",
+  mainTitle: "Manu's Personal Blog",
   fullName: 'Manuel Obregozo',
   postsPath: 'thoughts',
   mainImage: '/profile.jpg',

@@ -23,7 +23,8 @@
   "dependencies": {
     "@nuxt/content": "^1.13.1",
     "@nuxtjs/sitemap": "^2.4.0",
-    "nuxt": "^2.14.7"
+    "nuxt": "^2.14.7",
+    "url-parse": "^1.5.3"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",

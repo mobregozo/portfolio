@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="relative border-b border-gray-200 pb-8 mt-12">
+    <div class="relative border-b border-gray-200 pb-8 mt-12 mb-10">
       <div class="flex align-top justify-between">
         <div>
           <h1
             class="text-gray-800 text-4xl md:text-7xl font-bold leading-tight"
           >
-            👋 Hello there! I am
+            👋 Hola! I'm
           </h1>
           <h1
             class="font-bold text-5xl md:text-8xl leading-none md:leading-none shadow-inner-under w-fit text-secondary-200 mb-2"
@@ -20,21 +20,14 @@
         />
       </div>
       <div>
-        <div class="font-bold md:text-xl mb-3 text-gray-700 flex items-center">
-          <img
-            width="24"
-            height="24"
-            class="h-6"
-            src="/location.svg"
-            alt="location"
-          />BARCELONA, SPAIN
+        <div class="mb-8">
+          <p class="text-gray-800 font-semibold md:text-2xl">
+            Product manager, former frontend developer.
+          </p>
+          <div class="font-bold md:text-lg text-gray-700 flex items-center">
+            📍 BARCELONA, SPAIN
+          </div>
         </div>
-        <p class="my-8 text-gray-700 font-semibold md:text-xl">
-          Born and raised in a small town in Argentina. <br />
-          Keen on the human side of software<br />Enthusiastic Frontend
-          Developer<br />
-          moving towards a Product Management role. <br />
-        </p>
         <div class="mt-4 flex items-center">
           <a
             target="blank"
@@ -97,18 +90,17 @@
         </div>
       </div>
     </div>
-    <div>
+    <div class="mb-8">
       <h2 class="text-primary-700 text-5xl mt-8 mb-4 font-semibold">
-        Blog
+        Latest blog post
       </h2>
-
       <blog-widget :post="post"></blog-widget>
       <div class="text-sm">
         Find more under the
         <NuxtLink
           to="thoughts"
-          class="font-semibold hover:underline text-primary-700"
-          >THOUGHTS
+          class="font-semibold text-lg hover:underline text-primary-700"
+          >BLOG
         </NuxtLink>
         section
       </div>
@@ -121,7 +113,7 @@ import BlogWidget from '@/components/BlogWidget.vue'
 
 export default {
   head: {
-    title: 'About'
+    title: 'Home'
   },
   components: {
     Avatar,
