@@ -98,7 +98,7 @@
       <div class="text-sm">
         Find more under the
         <NuxtLink
-          to="thoughts"
+          to="blog"
           class="font-semibold text-lg hover:underline text-primary-700"
           >BLOG
         </NuxtLink>
