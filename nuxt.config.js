@@ -129,7 +129,8 @@ export default {
     '@nuxtjs/sitemap'
   ],
   sitemap: {
-    hostname: global.webURL
+    hostname: global.webURL,
+    trailingSlash: true
   },
   feed,
   prismic: {
