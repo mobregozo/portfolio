@@ -4,21 +4,21 @@
       <social-head
         :title="$prismic.asText(document.title)"
         :description="getFirstParagraph(content)"
-      ></social-head>
+      />
       <nuxt-link
-        class="text-md font-bold tracking-wider text-gray-700 hover:underline hover:opacity-75 bg-none"
-        to="../thoughts"
+        class="text-md font-bold text-gray-700 dark:text-white hover:underline hover:opacity-75 bg-none"
+        to="../blog"
       >
-        ← BACK TO THE LIST</nuxt-link
-      >
+        ← BACK TO THE LIST
+      </nuxt-link>
       <h1
-        class="font-bold text-secondary-700 text-4xl leading-none break-words mt-4 md:pt-0 break-word md:text-6xl"
+        class="font-bold mb-2 text-secondary-700 dark:text-secondary-500 text-3xl break-words mt-4 md:pt-0 break-word md:text-5xl leading-8 tracking-tight"
       >
         {{ $prismic.asText(document.title) }}
       </h1>
-      <span class="text-primary-700 uppercase font-bold tracking-wide">{{
-        formattedDate
-      }}</span>
+      <span
+        class="text-primary-700 uppercase font-bold dark:text-primary-500"
+      >{{ formattedDate }}</span>
     </div>
 
     <a
@@ -32,11 +32,13 @@
         src="/logo-twitter.svg"
         alt="twitter"
         class="mr-2"
-      />
-      Share on Twitter</a
-    >
+      >
+      Share on Twitter</a>
     <content>
-      <prismic-rich-text :field="content" class="text-gray-700" />
+      <prismic-rich-text
+        :field="content"
+        class="text-gray-700 dark:text-gray-400"
+      />
     </content>
   </article>
 </template>
@@ -50,18 +52,7 @@ export default {
   components: {
     SocialHead
   },
-  head() {
-    return {
-      title: this.$prismic.asText(this.document.title),
-      description: getPrismicFirstParagraph(this.content)
-    }
-  },
-  data() {
-    return {
-      linkToshare: ''
-    }
-  },
-  async asyncData({ $prismic, params, error }) {
+  async asyncData ({ $prismic, params, error }) {
     try {
       // Query to get post content
       const post = (await $prismic.api.getByUID('post', params.uid)).data
@@ -82,7 +73,18 @@ export default {
       error({ statusCode: 404, message: 'Page not found' })
     }
   },
-  created() {
+  data () {
+    return {
+      linkToshare: ''
+    }
+  },
+  head () {
+    return {
+      title: this.$prismic.asText(this.document.title),
+      description: getPrismicFirstParagraph(this.content)
+    }
+  },
+  created () {
     this.linkToshare = `http://twitter.com/share/?text="${this.$prismic.asText(
       this.document.title
     )}" by ${global.author} - &url=${global.webURL}/${global.postsPath}/${
@@ -90,7 +92,7 @@ export default {
     }`
   },
   methods: {
-    getFirstParagraph() {
+    getFirstParagraph () {
       return getPrismicFirstParagraph(this.content)
     }
   }

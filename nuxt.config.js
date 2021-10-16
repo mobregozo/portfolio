@@ -126,7 +126,8 @@ export default {
     '@nuxtjs/prismic',
     '@nuxtjs/feed',
     '@nuxt/content',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    '@nuxtjs/color-mode'
   ],
   sitemap: {
     hostname: global.webURL,
@@ -148,6 +149,9 @@ export default {
     /*
      ** You can extend webpack config here
      */
+  },
+  colorMode: {
+    classSuffix: ''
   },
   purge: {
     // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css

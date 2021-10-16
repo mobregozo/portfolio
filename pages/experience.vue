@@ -1,91 +1,91 @@
 /* eslint-disable prettier/prettier */
 <template>
   <div class="">
-    <h1 class="mb-5 text-6xl font-bold">Experience</h1>
-    <div class="mb-8">
-      <p class="mb-2 text-gray-700">
-        I have been working as a developer since 2011. Due to the fact that I
-        have always liked UI / UX related topics, I made a switch to Frontend in
-        2013. Something that I have been enjoying ever since.
+    <h1 class="mb-5 text-6xl font-semibold text-gray-700 dark:text-gray-300">
+      Experience
+    </h1>
+    <div class="mb-8 text-gray-700 dark:text-white">
+      <p class="mb-2">
+        After working as a frontend developer since 2011, I have recently
+        switched to a product management position.
       </p>
-      <p class="mb-2 text-gray-700">
+      <p class="mb-2">
         I have been told that I am a team player who understands the importance
         of teamwork, collaboration, continuous feedback, and open communication.
       </p>
-      <p class="mt-4 text-gray-700 bg-gray-200 rounded-md p-4 shadow">
-        Apart from my full-time job, together with other colleagues we have been
-        developing an e-commerce platform called
+      <p class="mb-2">
+        I co-founded an e-commerce platform called
         <a
           href="https://www.serviteonline.com"
           target="_blank"
-          class="font-semibold hover:underline text-primary-700"
-          >ServiteOnline </a
-        >, with the aim of helping stores to digitize their order management
+          class="font-semibold hover:underline text-primary-700 dark:text-primary-500"
+        >ServiteOnline</a>, with the aim of helping stores to digitize their order management
         process, you will find more information below!
       </p>
-      <div class="text-gray-700 rounded-md bg-gray-200 p-3 mt-6 shadow">
-        <p>
-          Supporting new devs at
-          <a
-            href="https://twitter.com/FrontEndCafe"
-            target="_blank"
-            class="font-semibold hover:underline text-primary-700"
-            >@FrontendCafé
-          </a>
-          discord community, come on and join us!
-        </p>
-      </div>
+      <p class="mb-2">
+        Apart from my full-time job, I do volunteering work at
+        <a
+          href="https://twitter.com/FrontEndCafe"
+          target="_blank"
+          class="font-semibold hover:underline text-primary-700 dark:text-primary-500"
+        >@FrontendCafé
+        </a>
+        discord community, come on and join us!
+      </p>
     </div>
-
     <div
       v-for="job in experiences"
-      v-bind:key="job.companyName"
-      class="flex flex-nowrap flex-col md:flex-row border-solid border-t-2 border-gray-200 pt-10 pb-6"
+      :key="job.period"
+      class="flex flex-nowrap flex-col md:flex-row border-solid border-t border-gray-200 dark:border-gray-700 pt-10 pb-6"
     >
       <div class="mr-auto">
-        <div class="md:flex items-center md:justify-between">
-          <h2 class="m-0 font-bold text-gray-700 text-3xl">
-            {{ job.role }}
-          </h2>
-          <div class="text-primary-700 font-bold whitespace-nowrap">
-            {{ job.period }}
-          </div>
-        </div>
-
-        <div class="flex items-center mt-4 mb-4">
+        <div class="flex items-start">
           <img
             :alt="job.companyName"
             :src="`/${job.logo}`"
             width="64"
             height="64"
-            class="w-16 h-16 shadow-md rounded-full border-solid border-4 border-white"
-          />
-          <div class="pl-4 ">
-            <div class="text-lg text-gray-700">
-              <span class="font-bold">{{ job.companyName }} </span>•
+            class="w-16 h-16"
+          >
+          <div class="ml-4">
+            <h2 class="font-bold text-gray-700 text-xl dark:text-white">
+              {{ job.companyName }}
+            </h2>
+            <div
+              class="text-primary-700 text-sm font-bold whitespace-nowrap dark:text-white leading-4"
+            >
+              {{ job.period }}
+            </div>
+            <div class="text-gray-600 dark:text-gray-400 leading-4 text-sm">
               {{ job.location }}
             </div>
           </div>
         </div>
-        <div class="text-gray-700 font-semibold">
-          <p class="whitespace-pre-line">{{ job.description }}</p>
+        <div class="text-gray-700 dark:text-gray-200 mt-2">
+          {{ job.description }}
         </div>
         <div
           v-for="project in job.projects"
           :key="project.description"
-          class="my-6 last:mb-0"
+          class="my-2 last:mb-0"
         >
-          <div class="pl-3">
+          <div>
+            <div class="w-full text-xl text-secondary-700 font-semibold dark:text-white">
+              {{ project.role }}
+            </div>
+            <div class="text-sm text-gray-600 dark:text-gray-500 dark:font-semibold">
+              {{ project.period }}
+            </div>
+            <div class="text-gray-700 break-words dark:text-gray-300 whitespace-pre-line text-sm">
+              <p>{{ project.description }}</p>
+            </div>
             <div
-              class="w-full text-xl text-secondary-700 font-semibold border-b pb-1 mb-3"
+              v-if="project.technologies"
+              class="mt-2 text-gray-700 dark:text-white text-sm"
             >
-              {{ project.client }}
-            </div>
-            <div class="text-gray-700 break-words">
-              <p class="whitespace-pre-line">{{ project.description }}</p>
-            </div>
-            <div class="mt-2 text-gray-700">
-              <div class="font-semibold text-primary-700">
+              <div
+                class="font-semibold text-primary-700 dark:text-primary-500 "
+              >
                 Main Technologies
               </div>
               <p>
@@ -100,12 +100,12 @@
 </template>
 <script>
 export default {
-  head: {
-    title: 'Experience'
-  },
-  async asyncData({ $content }) {
+  async asyncData ({ $content }) {
     const experiences = await $content('experiences').fetch()
     return { experiences }
+  },
+  head: {
+    title: 'Experience'
   }
 }
 </script>

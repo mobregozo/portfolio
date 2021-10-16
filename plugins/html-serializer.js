@@ -8,7 +8,7 @@ import linkResolver from './link-resolver'
 
 const Elements = prismicDOM.RichText.Elements
 
-export default function(type, element, content, children) {
+export default function (type, element, content, children) {
   // Generate links to Prismic Documents as <router-link> components
   // Present by default, it is recommended to keep this
   if (type === Elements.hyperlink) {
@@ -16,12 +16,12 @@ export default function(type, element, content, children) {
     const url = prismicDOM.Link.url(element.data, linkResolver)
 
     if (element.data.link_type === 'Document') {
-      result = `<a href="${url}" class="text-primary-700 font-semibold hover:underline" data-nuxt-link>${content}</a>`
+      result = `<a href="${url}" class="text-primary-700 font-semibold hover:underline dark:text-primary-500" data-nuxt-link>${content}</a>`
     } else {
       const target = element.data.target
         ? `target="'${element.data.target}'" rel="noopener"`
         : ''
-      result = `<a href="${url}" class="text-primary-700 font-semibold hover:underline" ${target}>${content}</a>`
+      result = `<a href="${url}" class="text-primary-700 dark:text-primary-500 font-semibold hover:underline" ${target}>${content}</a>`
     }
     return result
   }
@@ -67,7 +67,13 @@ export default function(type, element, content, children) {
 
   if (type === Elements.heading2) {
     const id = element.text.replace(/\W+/g, '-').toLowerCase()
-    return '<h2 class="text-3xl" id="' + id + '">' + children.join('') + '</h2>'
+    return (
+      '<h2 class="text-3xl dark:text-white" id="' +
+      id +
+      '">' +
+      children.join('') +
+      '</h2>'
+    )
   }
 
   if (type === Elements.heading2) {
@@ -93,7 +99,7 @@ export default function(type, element, content, children) {
 
   if (type === Elements.preformatted) {
     return (
-      '<p class="my-4 p-4 rounded-md bg-gray-200" >' +
+      '<p class="my-4 p-4 rounded-md bg-gray-200 dark:text-gray-600" >' +
       children.join('') +
       '</p>'
     )

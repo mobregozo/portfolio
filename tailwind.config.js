@@ -7,6 +7,7 @@
 const { spacing } = require('tailwindcss/defaultTheme')
 
 module.exports = {
+  darkMode: 'class',
   theme: {
     colors: {
       white: '#fff',
@@ -51,7 +52,7 @@ module.exports = {
     },
     extend: {
       scale: {
-        '101': '1.01'
+        101: '1.01'
       },
       gridTemplateColumns: {
         auto: 'repeat(auto-fill, minmax(15rem, 1fr))'
@@ -70,7 +71,8 @@ module.exports = {
   },
   variants: {
     extend: {
-      borderWidth: ['hover']
+      borderWidth: ['hover', 'dark'],
+      fontWeight: ['dark']
     }
   },
   plugins: []
