@@ -4,7 +4,7 @@
   >
     <NuxtLink :to="link" class="">
       <h2
-        class="text-secondary-700 font-medium text-xl md:text-2xl dark:text-secondary-500 tracking-tight leading-tight"
+        class="text-secondary-700 font-medium text-xl md:text-2xl dark:text-secondary-500 tracking-tighter leading-tighter"
       >
         {{ $prismic.asText(post.data.title) }}
       </h2>

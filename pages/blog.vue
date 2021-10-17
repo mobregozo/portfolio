@@ -25,7 +25,7 @@
         Dev.to</a>.
     </p>
     <h2
-      class="text-primary-700 text-2xl md:text-4xl mt-8 mb-4 font-semibold dark:text-white"
+      class="text-primary-700 text-2xl md:text-4xl mt-8 mb-4 font-semibold dark:text-white tracking-tighter"
     >
       Articles
     </h2>

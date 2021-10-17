@@ -5,9 +5,9 @@
     >
       <avatar class="mx-auto" />
       <div class="text-center mt-8">
-        <h1 class="text-gray-800 text-xl dark:text-white mx-auto">
+        <h1 class="text-gray-700 text-xl dark:text-white mx-auto">
           Hola, my name is
-          <div class="text-5xl font-semibold tracking-tight">
+          <div class="text-5xl font-bold tracking-tighter">
             <span class="text-secondary-700 dark:text-secondary-500">MANU</span>
             <span class="text-gray-700 dark:text-gray-300">OBREGOZO</span>
           </div>
@@ -83,7 +83,7 @@
     </div>
     <div class="mb-8">
       <h2
-        class="text-primary-700 text-2xl md:text-4xl mt-8 mb-4 font-semibold dark:text-white"
+        class="text-primary-700 text-2xl md:text-4xl mt-8 mb-4 font-semibold dark:text-white tracking-tighter"
       >
         Latest blog post
       </h2>
