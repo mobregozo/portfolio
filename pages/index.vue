@@ -92,7 +92,7 @@
         Find other articles in the
         <NuxtLink
           to="blog"
-          class="font-semibold hover:underline text-primary-700 dark:text-white"
+          class="font-semibold underline hover:underline text-primary-700 dark:text-white"
         >
           BLOG
         </NuxtLink>
