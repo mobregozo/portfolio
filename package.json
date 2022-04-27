@@ -24,7 +24,7 @@
     "@nuxtjs/sitemap": "^2.4.0",
     "core-js": "^3.15.1",
     "nuxt": "^2.14.7",
-    "url-parse": "^1.5.3"
+    "url-parse": "^1.5.9"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.14.7",
