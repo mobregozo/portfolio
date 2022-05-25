@@ -8,8 +8,6 @@
         class="font-bold text-gray-800 dark:text-white"
       >Opinions are my own!
       </strong>
-      These are random thoughts that constantly come to my mind, and from time
-      to time I translate them into articles.<br>
       I usually write about aspects of the software that are not
       technology-related but linked to the environment that surrounds us and
       things we can find there.

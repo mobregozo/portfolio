@@ -111,8 +111,7 @@ export default {
       menuItems: [
         { label: 'home', link: '/', icon: 'about.svg', exact: true },
         { label: 'blog', link: '/blog', icon: 'thoughts.svg' },
-        { label: 'experience', link: '/experience', icon: 'experience.svg' },
-        { label: 'bio', link: '/bio', icon: 'interests.svg' }
+        { label: 'experience', link: '/experience', icon: 'experience.svg' }
       ]
     }
   },

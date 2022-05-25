@@ -6,31 +6,19 @@
     </h1>
     <div class="mb-8 text-gray-700 dark:text-white">
       <p class="mb-2">
-        After working as a frontend developer since 2011, I have recently
-        switched to a product management position.
+        I have worked as a developer since 2011, across different domains and technologies.
       </p>
       <p class="mb-2">
-        I have been told that I am a team player who understands the importance
-        of teamwork, collaboration, continuous feedback, and open communication.
+        My main focus right now is helping products and solutions get better, from a product and engineering standpoint.
       </p>
       <p class="mb-2">
-        I co-founded an e-commerce platform called
+        I have the opportunity to co-found an e-commerce platform called
         <a
           href="https://www.serviteonline.com"
           target="_blank"
           class="font-semibold hover:underline text-primary-700 dark:text-primary-500"
         >ServiteOnline</a>, with the aim of helping stores to digitize their order management
         process, you will find more information below!
-      </p>
-      <p class="mb-2">
-        Apart from my full-time job, I do volunteering work at
-        <a
-          href="https://twitter.com/FrontEndCafe"
-          target="_blank"
-          class="font-semibold hover:underline text-primary-700 dark:text-primary-500"
-        >@FrontendCafé
-        </a>
-        discord community, come on and join us!
       </p>
     </div>
     <div

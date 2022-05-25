@@ -6,7 +6,7 @@
       <avatar class="mx-auto" />
       <div class="text-center mt-8">
         <h1 class="text-gray-700 text-xl dark:text-white mx-auto">
-          Hola, my name is
+          <span class="font-bold">Hola</span>, my name is
           <div class="text-5xl font-bold tracking-tighter">
             <span class="text-secondary-700 dark:text-secondary-500">MANU</span>
             <span class="text-gray-700 dark:text-gray-300">OBREGOZO</span>
@@ -15,18 +15,11 @@
         <p
           class="max-w-4xl md:text-xl font-bold mx-auto dark:text-gray-400 text-gray-600 text-center py-2"
         >
-          Product Manager. Former Frontend Developer. Part time Blogger.
+          Product Manager & Frontend Developer. Part time Blogger.
         </p>
       </div>
       <div>
         <div class="mt-10 flex items-center justify-center">
-          <a
-            target="blank"
-            class="mr-4 bg-gray-600 w-10 md:h-10 p-2 rounded-full hover:scale-110 transform duration-300 hover:opacity-50"
-            href="https://twitter.com/ManuelObre"
-          ><span class="hidden">twitter</span>
-            <img width="24" height="24" src="/logo-twitter.svg" alt="twitter">
-          </a>
           <a
             target="blank"
             class="mr-4 bg-gray-600 w-10 md:h-10 p-2 rounded-full hover:scale-110 transform duration-300 hover:opacity-50"
@@ -75,7 +68,7 @@
             target="blank"
             class="mr-4 bg-gray-600 w-10 md:h-10 p-2 rounded-full hover:scale-110 transform duration-300 hover:opacity-50"
             href="/feed.xml"
-          ><span class="hidden">twitter</span>
+          ><span class="hidden">rss</span>
             <img width="24" height="24" src="/logo-rss.svg" alt="rss">
           </a>
         </div>
