@@ -11,6 +11,7 @@
       >
         ← BACK TO THE LIST
       </nuxt-link>
+      <progress-bar height="1rem" />
       <h1
         class="font-bold mb-2 text-secondary-700 dark:text-secondary-500 text-3xl break-words mt-4 md:pt-0 break-word md:text-5xl leading-8 tracking-tight"
       >
@@ -46,11 +47,13 @@
 <script>
 import { global } from '@/config/global'
 import SocialHead from '@/components/SocialHead'
+import ProgressBar from '@/components/ProgressBar'
 import { getPrismicFirstParagraph } from '@/plugins/prismicApi'
 
 export default {
   components: {
-    SocialHead
+    SocialHead,
+    ProgressBar
   },
   async asyncData ({ $prismic, params, error }) {
     try {
