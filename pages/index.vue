@@ -1,5 +1,9 @@
 <template>
   <div>
+    <social-head
+      title="Home | Manu's Personal Blog"
+      description="Welcome to my personal website! Recently start blogging, find the new articles under the blog section."
+    />
     <div
       class="border-b border-gray-200 dark:border-gray-800 pb-8 mt-12 mb-10 text-center"
     >
@@ -97,11 +101,13 @@
 <script>
 import Avatar from '@/components/Avatar'
 import BlogWidget from '@/components/BlogWidget.vue'
+import SocialHead from '@/components/SocialHead'
 
 export default {
   components: {
     Avatar,
-    BlogWidget
+    BlogWidget,
+    SocialHead
   },
   async asyncData ({ $prismic, error }) {
     try {

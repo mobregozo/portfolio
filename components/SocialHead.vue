@@ -20,7 +20,7 @@ export default {
     }
   },
 
-  head() {
+  head () {
     return {
       meta: [
         {
@@ -56,6 +56,16 @@ export default {
           name: 'title',
           property: 'og:title',
           content: this.title
+        },
+        {
+          name: 'title',
+          hid: 'title',
+          content: this.title
+        },
+        {
+          name: 'description',
+          hid: 'description',
+          content: this.description
         },
         {
           hid: 'og:title',

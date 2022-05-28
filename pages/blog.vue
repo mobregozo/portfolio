@@ -1,5 +1,9 @@
 <template>
   <div class="dark:text-white">
+    <social-head
+      title="Blog | Manu's Personal Blog"
+      description="Welcome to my blog, where I usually write about the human side of software."
+    />
     <h1 class="mb-5 text-6xl font-semibold text-gray-700 dark:text-gray-300">
       Blog
     </h1>
@@ -40,9 +44,12 @@
 
 <script>
 import BlogWidget from '@/components/BlogWidget.vue'
+import SocialHead from '@/components/SocialHead'
+
 export default {
   components: {
-    BlogWidget
+    BlogWidget,
+    SocialHead
   },
   async asyncData ({ $prismic, error }) {
     try {

@@ -9,7 +9,7 @@ export default (req, res, next) => {
   next()
 }
 
-function redirect(res, location) {
+function redirect (res, location) {
   res.writeHead(301, {
     location
   })

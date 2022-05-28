@@ -1,6 +1,10 @@
 /* eslint-disable prettier/prettier */
 <template>
   <div class="">
+    <social-head
+      title="Experience | Manu's Personal Blog"
+      description="Take a deeper look at my experience, and what I have been doing lately."
+    />
     <h1 class="mb-5 text-6xl font-semibold text-gray-700 dark:text-gray-300">
       Experience
     </h1>
@@ -87,7 +91,13 @@
   </div>
 </template>
 <script>
+
+import SocialHead from '@/components/SocialHead'
+
 export default {
+  components: {
+    SocialHead
+  },
   async asyncData ({ $content }) {
     const experiences = await $content('experiences').fetch()
     return { experiences }
